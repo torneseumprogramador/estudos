@@ -43,8 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Diretorio\Arquivo.cs" />
+    <Compile Include="Calculo\Media.cs" />
+    <Compile Include="Funcoes\Generias.cs" />
+    <Compile Include="Funcoes\Tabuada.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tela\Menu.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -4,3 +4,9 @@ C:\projetos\torne-se-programador\csharp\console-app\console-app\bin\Debug\consol
 C:\projetos\torne-se-programador\csharp\console-app\console-app\obj\Debug\console-app.csprojResolveAssemblyReference.cache
 C:\projetos\torne-se-programador\csharp\console-app\console-app\obj\Debug\console-app.exe
 C:\projetos\torne-se-programador\csharp\console-app\console-app\obj\Debug\console-app.pdb
+C:\projetos\estudos\C#\console-app\console-app\bin\Debug\console-app.exe.config
+C:\projetos\estudos\C#\console-app\console-app\obj\Debug\console-app.exe
+C:\projetos\estudos\C#\console-app\console-app\obj\Debug\console-app.pdb
+C:\projetos\estudos\C#\console-app\console-app\bin\Debug\console-app.exe
+C:\projetos\estudos\C#\console-app\console-app\bin\Debug\console-app.pdb
+C:\projetos\estudos\C#\console-app\console-app\obj\Debug\console-app.csprojResolveAssemblyReference.cache
