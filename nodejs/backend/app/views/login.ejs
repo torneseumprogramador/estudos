@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/bootstrap/css/bootstrap.min.css' />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+	<script type="text/javascript" src="/javascripts/jquery-1.12.0.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  </head>
+  <body>
+	<fieldset id="formCadastro">
+		<legend>Digite o usuário e a senha</legend>
+		<form action="/fazer-login" method="POST">
+			<div>
+				<label for="usuario">Usuario: </label>
+				<input type="text" class="form-control" name="usuario" id="usuario" /> 
+			</div>
+			<div>
+				<label for="senha">Senha:  </label>
+				<input type="password" class="form-control" name="senha" id="senha" /> 
+			</div>
+			<hr>
+			<div>
+				<input type="submit" class="btn btn-success" value="Logar" /> 
+			</div>
+		</form>
+	</fieldset>
+  </body>
+</html>

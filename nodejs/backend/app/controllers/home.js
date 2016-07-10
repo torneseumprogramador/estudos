@@ -1,8 +1,49 @@
 var Pessoa = require('../models/pessoa');
 
 var homeController = {
+  login: function(request, response, next) {
+    response.render('login', { 
+      title: 'login do usuário'
+    });
+  },
+  fazer_login: function(request, response, next) {
+
+    if(request.body.usuario != "" && request.body.usuario != undefined){
+      if(request.body.senha != "" && request.body.senha != undefined){
+        if(request.body.usuario == "didox" && request.body.senha == "didox"){
+          response.cookie('autenticado', '1', { httpOnly: true });
+          response.redirect("/");
+          return;
+        }
+      }
+    }
+
+    response.send("Usuario não autorizado", 401);
+  },
+  verifica_autenticado: function(request, response){
+    if(request.cookies == undefined || request.cookies.autenticado == undefined){
+      response.redirect("/login");
+      return false;
+    }
+
+    return true;
+  },
   index: function(request, response, next) {
-    console.log(" ============== controller ============");
+    if(!homeController.verifica_autenticado(request, response)){
+      return;
+    }
+    
+
+    console.log(" ============== cookie ============");
+
+
+    // 1 milliseconds
+    // 30 segundos = 30000
+    // 1 minuto  = 60000
+    // 10 minuto  = 600000
+    response.cookie('didox', 'valor1', { maxAge: 600000, httpOnly: true });
+    console.log(request.cookies.didox)
+
     Pessoa.todos(function(pessoas) {
       response.render('index', { 
         title: 'Node.js com framework express',
@@ -11,7 +52,20 @@ var homeController = {
     });
   },
   pessoas: function(request, response, next) {
-    console.log(" ============== controller ============");
+    if(!homeController.verifica_autenticado(request, response)){
+      return;
+    }
+
+    console.log(" ============== ler cookie ============");
+
+    console.log(request.cookies.didox)
+
+    //console.log(" ============== ler cookie ============");
+    //response.clearCookie('didox');
+
+    //cliente cookie
+    //http://www.w3schools.com/js/js_cookies.asp
+
     if(request.query.cpf){
       Pessoa.buscar(request.query.cpf, function(pessoa) {
         if (pessoa == null) { 
@@ -30,12 +84,15 @@ var homeController = {
     }
     else{
       Pessoa.todos(function(pessoas) {
-        console.log(" ============== view ============");
         response.send(pessoas);
       });
     }
   },
   alterar: function(request, response, next) {
+    if(!homeController.verifica_autenticado(request, response)){
+      return;
+    }
+
     Pessoa.buscar(request.query.cpf, function(pessoa) {
       if (pessoa == null) { 
         console.log("Pessoa não encontrada");
@@ -73,6 +130,10 @@ var homeController = {
     }, request.query.cpfAterar)
   },
   excluir: function(request, response, next) {
+    if(!homeController.verifica_autenticado(request, response)){
+      return;
+    }
+
     var pessoa = new Pessoa();
     pessoa.cpf = request.query.cpf;
     pessoa.excluir(function(){
@@ -87,6 +148,10 @@ var homeController = {
     })
   },
   pesquisar: function(request, response, next) {
+    if(!homeController.verifica_autenticado(request, response)){
+      return;
+    }
+    
     Pessoa.buscarPorNome(request.query.nome, function(pessoas) {
       response.render('index', { 
         title: 'Pesquisando em arquivos', 
