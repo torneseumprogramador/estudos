@@ -26,6 +26,8 @@ namespace Classes
 
         public override void Olhar()
         {
+            int resultado = this.CalcularUmMaisDois();
+            //this.CalcularUmMaisDois4();
             Console.WriteLine("O usuario " + this.Nome + " não tem o sobrenome, pois este é atributo da clase pai, está olhando para mim");
             Console.WriteLine("====================================");
             Console.WriteLine("O método original é:");

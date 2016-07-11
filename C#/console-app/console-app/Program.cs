@@ -1,4 +1,5 @@
 ﻿using Classes;
+using Componentes;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -30,12 +31,18 @@ namespace console_app
                 Console.WriteLine("================================");
             }*/
 
+            Ferramentas f = new Ferramentas();
+            bool d = f.ValidarCPF("sddsds");
+
+            Cliente c = new Cliente();
+            c.CalcularUmMaisDois4();
             Console.WriteLine("===========Cadastro de usuario=====================");
             Usuario u = new Usuario();
             u.Nome = "Usuario";
             u.Telefone = "23223";
             u.CPF = "3333";
             u.Olhar();
+
             /*foreach(Usuario us in Usuario.LerUsuarios())
             {
                 Console.WriteLine(us.Nome);

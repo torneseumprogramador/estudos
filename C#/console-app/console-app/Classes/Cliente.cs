@@ -45,8 +45,30 @@ namespace Classes
 
         private string sobrenome = "Santos";
 
+        protected int CalcularUmMaisDois()
+        {
+            return 1 + 2;
+        }
+
+        private int CalcularUmMaisDois2()
+        {
+            return 1 + 2;
+        }
+
+        public int CalcularUmMaisDois3()
+        {
+            return 1 + 2;
+        }
+
+        internal int CalcularUmMaisDois4()
+        {
+            return 1 + 2;
+        }
+
+
         public virtual void Gravar()
         {
+            //this.Cal
             var clientes = Cliente.LerClientes();
             clientes.Add(this);
             if (File.Exists(caminhoBase()))
