@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Classes
 {
-    public class Base : IPessoa
+    public abstract class Base : IPessoa
     {
         public Base(string nome, string telefone, string cpf)
         {
