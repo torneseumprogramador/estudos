@@ -54,7 +54,34 @@ var UsuariosController = {
       else{
         response.status(201).send({mensagem: "Usuário criado com sucesso"});
       }
-    })
+    });
+  },
+  atualizar: function(request, response, next){
+    Usuario.buscarPorID(request.body.id, function(retorno){
+      if(retorno.usuario.id === undefined){
+        response.status(400).send({
+          erro:'Erro ao atualizar, id de usuario não encontrado'
+        });
+      }
+      else{
+        var usuario = new Usuario();
+        usuario.id = request.body.id;
+        usuario.nome = request.body.nome;
+        usuario.login = request.body.login;
+        usuario.senha = request.body.senha;
+        usuario.email = request.body.email;
+        usuario.salvar(function(retorno){
+          if(retorno.erro){
+            response.status(500).send({
+              erro:'Erro ao atualizar usuario (' + retorno.mensagem + ')'
+            });
+          }
+          else{
+            response.status(200).send({mensagem: "Usuário atualizado com sucesso"});
+          }
+        });
+      }
+    });
   }
 };
 

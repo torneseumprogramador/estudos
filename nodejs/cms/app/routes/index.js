@@ -9,6 +9,7 @@ router.get('/usuario', HomeController.usuario);
 
 router.get('/usuarios.json', UsuariosController.todos);
 router.post('/usuarios.json', UsuariosController.criar);
+router.put('/usuarios.json', UsuariosController.atualizar);
 router.get('/usuarios/:id.json', UsuariosController.porId);
 
 

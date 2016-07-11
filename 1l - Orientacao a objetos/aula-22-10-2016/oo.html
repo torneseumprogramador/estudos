@@ -1,0 +1,48 @@
+<head>
+<meta charset="UTF-8">
+</head>
+
+<div id="resultado"></div>
+
+<script src="file:///Users/didox/projects/torne-se-programador/1l%20-%20Orientacao%20a%20objetos/aula-22-10-2016/abstracao.js"></script>
+<script src="file:///Users/didox/projects/torne-se-programador/1l%20-%20Orientacao%20a%20objetos/aula-22-10-2016/pessoa.js"></script>
+<script src="file:///Users/didox/projects/torne-se-programador/1l%20-%20Orientacao%20a%20objetos/aula-22-10-2016/cliente.js"></script>
+<script src="file:///Users/didox/projects/torne-se-programador/1l%20-%20Orientacao%20a%20objetos/aula-22-10-2016/fornecedor.js"></script>
+<script>
+
+
+var p = new Pessoa();
+p.nome = "pessoa";
+p.cpf = 9080909;
+p.telefone = 89798789;
+debugger
+p.GravarEmMomoria();
+console.log(Pessoa.Base);
+
+var f = new Fornecedor();
+f.nome = "Fornecedor";
+f.cff = 9080909;
+f.telefone = 89798789;
+f.GravarEmMomoria();
+console.log(Fornecedor.Base);
+
+var c = new Cliente();
+c.nome = "Cliente";
+c.cpf = 9080909;
+c.telefone = 89798789;
+c.GravarEmMomoria();
+console.log(Cliente.Base);
+
+
+console.log("======== Metodo da Instancia de p ============")
+p.Original();
+console.log("==============================================")
+
+console.log("======== Metodo da Instancia de c ============")
+c.Original();
+console.log("==============================================")
+
+
+</script>
+
+<h1>Programa em JS para fazer códigos em Orientação a Objetos<h1>
