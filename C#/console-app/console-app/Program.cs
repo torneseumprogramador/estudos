@@ -16,24 +16,33 @@ namespace console_app
         {
             //Menu.Criar();
 
-            var clientes = Cliente.LerClientes();
+            Console.WriteLine("===========Cadastro de cliente=====================");
+            Cliente c = new Cliente();
+            c.Nome = "Danilo 2";
+            c.Telefone = "23223";
+            c.CPF = "3333";
+            c.Gravar();
+            foreach (Cliente cl in Cliente.LerClientes())
+            {
+                Console.WriteLine(cl.Nome);
+                Console.WriteLine(cl.Telefone);
+                Console.WriteLine(cl.CPF);
+                Console.WriteLine("================================");
+            }
 
-            var cliente = new Cliente();
-            cliente.Nome = "danilo";
-            cliente.Telefone = "21128398373";
-            cliente.CPF = "2187987493";
-            cliente.Gravar();
-
-            /*
-            var cliente2 = new Cliente();
-            cliente2.Telefone = "3232323223";
-            cliente2.CPF = "121322323";
-            cliente2.Nome = "Sheila";
-            cliente2.Gravar();
-            */
-
-
-
+            Console.WriteLine("===========Cadastro de usuario=====================");
+            Usuario u = new Usuario();
+            u.Nome = "Danilo 2";
+            u.Telefone = "23223";
+            u.CPF = "3333";
+            u.Gravar();
+            foreach(Usuario us in Usuario.LerUsuarios())
+            {
+                Console.WriteLine(us.Nome);
+                Console.WriteLine(us.Telefone);
+                Console.WriteLine(us.CPF);
+                Console.WriteLine("================================");
+            }
         }
     }
 }
