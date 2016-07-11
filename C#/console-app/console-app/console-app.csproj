@@ -48,7 +48,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Base.cs" />
     <Compile Include="Classes\Cliente.cs" />
+    <Compile Include="Classes\IPessoa.cs" />
     <Compile Include="Classes\Usuario.cs" />
     <Compile Include="Diretorio\Arquivo.cs" />
     <Compile Include="Calculo\Media.cs" />
