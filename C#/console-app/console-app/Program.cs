@@ -15,6 +15,20 @@ namespace console_app
     {
         static void Main(string[] args)
         {
+
+            var c = new Cachorro();
+            c.Idade = 1;
+            Console.WriteLine(c.Idade);
+
+            c.Idade2 = 1;
+
+            Console.WriteLine(c.Idade2);
+
+            c.SetIdade2(2);
+            c.GetIdade2();
+
+
+            /*
             var cachorro = new Classes.Cachorro();
             cachorro.Latir();
             //Menu.Criar();
