@@ -4,19 +4,17 @@
 
 <div id="resultado"></div>
 
-<script src="file:///Users/didox/projects/torne-se-programador/1l%20-%20Orientacao%20a%20objetos/aula-01-10-2016/pessoa.js"></script>
-<script src="file:///Users/didox/projects/torne-se-programador/1l%20-%20Orientacao%20a%20objetos/aula-01-10-2016/cliente.js"></script>
-<script src="file:///Users/didox/projects/torne-se-programador/1l%20-%20Orientacao%20a%20objetos/aula-01-10-2016/fornecedor.js"></script>
+<script src="file:///Users/didox/projects/torne-se-programador/1l%20-%20Orientacao%20a%20objetos/aula-01-10-2016/media.js"></script>
 <script>
 
 
-var danilo = new Pessoa();
-danilo.nome = "danilo";
-danilo.cpf = 9080909;
-danilo.telefone = 89798789;
-danilo.GravarEmMomoria();
+var danilo = new Media();
+danilo.nota1 = 8;
+danilo.nota2 = 9;
 
-console.log(Pessoa.BaseDePessoas);
+var m = danilo.calculo();
+
+document.write("A nota do Danilo é de: " + m);
 
 </script>
 
