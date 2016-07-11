@@ -1,44 +1,132 @@
 var db = require('../../config/db.js');
 
-var Usuario = function(){
-  this.id = 0;
-  this.nome = "";
-  this.login = "";
-  this.senha = "";
-  this.email = "";
+var Usuario = function(usuario){
+  if(usuario !== undefined){
+    this.id = usuario.id;
+    this.nome = usuario.nome;
+    this.login = usuario.login;
+    this.senha = usuario.senha;
+    this.email = usuario.email;
+  }
+  else{
+    this.id = 0;
+    this.nome = "";
+    this.login = "";
+    this.senha = "";
+    this.email = "";
+  }
 
-  this.salvar = function(){
+  this.salvar = function(callback){
+    if(this.nome === ""){
+      console.log("[Modelo:Usuario] Nome de usuário obrigatório");
+      return;
+    }
+
+    if(this.login === ""){
+      console.log("[Modelo:Usuario] Nome de login obrigatório");
+      return;
+    }
+
+    if(this.senha === ""){
+      console.log("[Modelo:Usuario] Nome de senha obrigatório");
+      return;
+    }
+
+    var query = "";
     if(this.id === 0 || this.id === "" || this.id === undefined){
-
-      if(this.nome === ""){
-        console.log("[Modelo:Usuario] Nome de usuário obrigatório");
-        return;
-      }
-
-      if(this.login === ""){
-        console.log("[Modelo:Usuario] Nome de login obrigatório");
-        return;
-      }
-
-      if(this.senha === ""){
-        console.log("[Modelo:Usuario] Nome de senha obrigatório");
-        return;
-      }
-
-      var query = "INSERT INTO CMS.usuarios (nome, login, senha, email) VALUES ('" + this.nome + "', '" + this.login + "', '" + this.senha + "', '" + this.email + "');";
+      query = "INSERT INTO usuarios (nome, login, senha, email) VALUES ('" + this.nome + "', '" + this.login + "', '" + this.senha + "', '" + this.email + "');";
       db.cnn.exec(query, function(rows, err){
-        if(err !== undefined){
-          console.log("Erro ao incluir dados de Usuario");
+        if(err !== undefined && err !== null){
+          callback.call(null, {erro:true, mensagem: err.message});
         }
         else{
-          console.log("Usuario incluido com sucesso");
+          callback.call(null, {erro:false});
         }
       });
     }
     else{
-      // TODO: atualizar na base de dados
+      query = "UPDATE usuarios SET nome='" + this.nome + "', login='" + this.login + "', senha='" + this.senha + "', email='" + this.email + "' WHERE id='" + this.id + "';";
+      db.cnn.exec(query, function(rows, err){
+        if(err !== undefined && err !== null){
+          callback.call(null, {erro:true, mensagem: err.message});
+        }
+        else{
+          callback.call(null, {erro:false});
+        }
+      });
     }
   };
 };
+
+Usuario.excluirTodos = function(callback){
+  query = "delete from usuarios;";
+  db.cnn.exec(query, function(rows, err){
+    if(err !== undefined && err !== null){
+      callback.call(null, {erro:true, mensagem: err.message});
+    }
+    else{
+      callback.call(null, {erro:false});
+    }
+  });
+};
+
+Usuario.truncateTable = function(callback){
+  query = "TRUNCATE usuarios;";
+  db.cnn.exec(query, function(rows, err){
+    if(err !== undefined && err !== null){
+      callback.call(null, {erro:true, mensagem: err.message});
+    }
+    else{
+      callback.call(null, {erro:false});
+    }
+  });
+};
+
+Usuario.todos = function(callback){
+  query = "select * from usuarios;";
+  db.cnn.exec(query, function(rows, err){
+    if(err !== undefined && err !== null){
+      callback.call(null, {
+        erro:true,
+        mensagem: err.message,
+        usuarios: []
+      });
+    }
+    else{
+      callback.call(null, {
+        erro:false,
+        usuarios:rows
+      });
+    }
+  });
+};
+
+Usuario.buscarPorID = function(id, callback){
+  query = "select * from usuarios where id=" + id + ";";
+  db.cnn.exec(query, function(rows, err){
+    if(err !== undefined && err !== null){
+      callback.call(null, {
+        erro:true,
+        mensagem: err.message,
+        usuario: {}
+      });
+    }
+    else{
+      if(rows.length > 0){
+        callback.call(null, {
+          erro:false,
+          usuario:rows[0]
+        });
+      }
+      else{
+        callback.call(null, {
+          erro:false,
+          usuario:{}
+        });
+      }
+    }
+  });
+};
+
 
 module.exports = Usuario;

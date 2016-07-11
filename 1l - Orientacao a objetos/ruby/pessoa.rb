@@ -1,5 +1,5 @@
 class Pessoa
-	def initialize
+	def initialize(temp,temp2)
 		@nome_temp = "tmp nome"
 	end
 
