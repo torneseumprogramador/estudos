@@ -1,0 +1,34 @@
+@(tasks: List[Task]) 
+@main("Todas as Tasks", "tasks") {
+	<h1>Tasks</h1>
+	<hr />
+	<a href="@routes.Tasks.novo()" class="btn btn-large btn-primary"
+		type="submit">Novo</a>
+	<hr />
+	@if(tasks.size() > 0){
+		<table class="table">
+			<tr>
+				<th>nome</th>
+				<th>data</th>
+				<th>pronto?</th>
+				<th></th>
+			</tr>
+			@for(task <- tasks) {
+			<tr>
+				<td>@task.name</td>
+				<td>@task.dueDate.toString("dd/MM/yyyy")</td>
+				<td>@task.done</td>
+				<td width="60px"><a class="btn"
+					href="@routes.Tasks.editar(task.id)">Editar</a></td>
+				<td width="60px"><a class="btn btn-danger"
+					href="@routes.Tasks.apagar(task.id)">Apagar</a></td>
+			</tr>
+			}
+		</table>
+	} else{
+		<div class="error">Nenhum resultado encontrado</div>
+	} 
+}
+
+
+

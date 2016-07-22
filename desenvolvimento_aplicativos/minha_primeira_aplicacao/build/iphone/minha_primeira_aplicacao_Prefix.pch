@@ -1,0 +1,19 @@
+//
+// Prefix header for all source files of the 'minha_primeira_aplicacao' target in the 'minha_primeira_aplicacao' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+#endif
+ 
+#import "defines.h"
+#include "ThirdpartyNS.h"
+#import <AvailabilityInternal.h>
+
+#ifdef __IPHONE_9_0
+#define IS_XCODE_7 true
+#else
+#define IS_XCODE_7 false
+#endif
+

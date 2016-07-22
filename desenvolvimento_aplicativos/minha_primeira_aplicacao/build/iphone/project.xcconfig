@@ -1,0 +1,10 @@
+TI_VERSION=5.0.3
+TI_SDK_DIR=/Users/didox/Library/Application Support/Titanium/mobilesdk/osx/$(TI_VERSION).v20151028143139/iphone
+TI_APPID=com.didox.MinhaPrimeiraAplicacao
+JSCORE_LD_FLAGS=-weak_framework JavaScriptCore
+TICORE_LD_FLAGS=-weak-lti_ios_profiler -weak-lti_ios_debugger -weak-lTiCore
+OTHER_LDFLAGS[sdk=iphoneos*]=$(inherited) $(TICORE_LD_FLAGS)
+OTHER_LDFLAGS[sdk=iphonesimulator*]=$(inherited) $(TICORE_LD_FLAGS)
+OTHER_LDFLAGS[sdk=iphoneos9.*]=$(inherited) -weak_framework Contacts -weak_framework ContactsUI -weak_framework WatchConnectivity -weak_framework CoreSpotlight
+OTHER_LDFLAGS[sdk=iphonesimulator9.*]=$(inherited) -weak_framework Contacts -weak_framework ContactsUI -weak_framework WatchConnectivity -weak_framework CoreSpotlight
+#include "module"

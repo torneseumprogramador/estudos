@@ -1,0 +1,6 @@
+"/Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/android/gen/android/support/v7/appcompat/R.java"
+"/Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/android/gen/com/didox/MinhaPrimeiraAplicacao/Minha_primeira_aplicacaoActivity.java"
+"/Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/android/gen/com/didox/MinhaPrimeiraAplicacao/Minha_primeira_aplicacaoAppInfo.java"
+"/Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/android/gen/com/didox/MinhaPrimeiraAplicacao/Minha_primeira_aplicacaoApplication.java"
+"/Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/android/gen/com/didox/MinhaPrimeiraAplicacao/R.java"
+"/Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/android/gen/ti/modules/titanium/ui/R.java"

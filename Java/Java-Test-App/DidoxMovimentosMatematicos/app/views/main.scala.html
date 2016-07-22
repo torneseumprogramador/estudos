@@ -1,0 +1,43 @@
+@(title: String, active: String)(content: Html)
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>@title</title>
+	<link rel="stylesheet" media="screen" href="@routes.Assets.at("bootstrap/css/bootstrap.min.css")">
+</head>
+<body>
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<button type="button" class="btn btn-navbar" data-toggle="collapse"
+					data-target=".nav-collapse">
+					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="brand" href="/">Didox Play App</a>
+				<div class="nav-collapse collapse">
+					<ul class="nav">
+						<li @if(active.equals("home")){ class="active" }><a href="/">Home</a></li>
+						<li @if(active.equals("tasks")){ class="active" }><a href="/tasks">Tasks</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="hero-unit">
+			@content
+		</div>
+		<hr>
+		<footer>
+			<p>&copy; Didox 2013</p>
+		</footer>
+	</div>
+	<!-- /container -->
+	<link rel="stylesheet" media="screen" href="@routes.Assets.at("bootstrap/css/bootstrap-responsive.min.css")">
+	<script src="@routes.Assets.at("bootstrap/js/bootstrap.min.js")" type="text/javascript"></script>
+	<script src="@routes.Assets.at("javascripts/jquery-1.9.0.min.js")" type="text/javascript"></script>
+</body>
+</html>

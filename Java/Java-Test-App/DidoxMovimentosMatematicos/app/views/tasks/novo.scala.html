@@ -1,0 +1,4 @@
+@main("Criar Task", "tasks") {
+	<h1>Cadastrar tasks</h1>
+	@views.html.tasks.form.render(new Task(), routes.Tasks.criar().toString())
+}

@@ -1,0 +1,5 @@
+@(task: Task) 
+@main("Editar Task", "tasks") {
+	<h1>Editar task</h1>
+	@views.html.tasks.form.render(task, routes.Tasks.update(task.id).toString())
+}

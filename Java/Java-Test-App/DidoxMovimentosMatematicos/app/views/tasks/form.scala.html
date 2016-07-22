@@ -1,0 +1,14 @@
+@(task: Task, action: String)
+<form class="form-signin" action="@action" method="post" name="task_form">
+	<h2 class="form-signin-heading">Preencha os campos abaixo</h2>
+	<label> Nome <input type="text" class="input-block-level" value="@task.name"
+		name="name">
+	</label> <label> Data <input type="text" name="dueDate" value='@task.dueDate.toString("dd/MM/yyyy")'
+		class="input-block-level">
+	</label> <label class="checkbox"> <input type="checkbox" name="done"
+		@if(task.done){ checked='true' }
+		value="true"> Done?
+	</label>
+	<button class="btn btn-primary" type="submit">Salvar</button>
+	<a class="btn" href="@routes.Tasks.index()" type="submit">Voltar</a>
+</form>

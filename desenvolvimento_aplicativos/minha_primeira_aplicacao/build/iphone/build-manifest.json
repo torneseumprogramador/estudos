@@ -1,0 +1,3142 @@
+{
+	"files": {
+		"Info.plist": {
+			"hash": "3b88e60b50d958f4304586adc7e1054b",
+			"mtime": 0,
+			"size": 1966
+		},
+		"5.0.3.v20151028143139/iphone/libTiCore.a": {
+			"hash": null,
+			"mtime": "2015-10-28T16:35:44.000Z",
+			"size": 34042504
+		},
+		"5.0.3.v20151028143139/iphone/libtiverify.a": {
+			"hash": null,
+			"mtime": "2015-10-28T16:31:02.000Z",
+			"size": 1410344
+		},
+		"5.0.3.v20151028143139/iphone/libti_ios_debugger.a": {
+			"hash": null,
+			"mtime": "2015-10-28T16:31:02.000Z",
+			"size": 972448
+		},
+		"5.0.3.v20151028143139/iphone/libti_ios_profiler.a": {
+			"hash": null,
+			"mtime": "2015-10-28T16:31:02.000Z",
+			"size": 396352
+		},
+		"5.0.3.v20151028143139/iphone/Classes/AFOpenFlow/AFItemView.h": {
+			"hash": "937e7f8314bd8cdb044bf9b4db130e16",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1857
+		},
+		"5.0.3.v20151028143139/iphone/Classes/AFOpenFlow/AFItemView.m": {
+			"hash": "820cddfabcdc3f8f32fb0d32fe9197e9",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 2989
+		},
+		"5.0.3.v20151028143139/iphone/Classes/AFOpenFlow/AFOpenFlowConstants.h": {
+			"hash": "4a9dac631db5aedd6808e9adcedd3d74",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1369
+		},
+		"5.0.3.v20151028143139/iphone/Classes/AFOpenFlow/AFOpenFlowView.h": {
+			"hash": "85389740d94a5c4dc92d416c825fa333",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 2972
+		},
+		"5.0.3.v20151028143139/iphone/Classes/AFOpenFlow/AFOpenFlowView.m": {
+			"hash": "76f5ed4893688b7da26021d7eb3d2421",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 18341
+		},
+		"5.0.3.v20151028143139/iphone/Classes/AFOpenFlow/AFUIImageReflection.h": {
+			"hash": "d8fdb3409078dcd1663430d4c778ba1f",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1573
+		},
+		"5.0.3.v20151028143139/iphone/Classes/AFOpenFlow/AFUIImageReflection.m": {
+			"hash": "2242027a782a8c97f4ef44cae175bd8a",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 4568
+		},
+		"5.0.3.v20151028143139/iphone/Classes/AFOpenFlow/UIImageExtras.h": {
+			"hash": "e22e7a87b21022876023356ce25d4672",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1543
+		},
+		"5.0.3.v20151028143139/iphone/Classes/AFOpenFlow/UIImageExtras.m": {
+			"hash": "397185ccc9be492d3cd6b858a585a7a7",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 3169
+		},
+		"5.0.3.v20151028143139/iphone/Classes/APIModule.h": {
+			"hash": "3acf574556c34467612b99712c902627",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 392
+		},
+		"5.0.3.v20151028143139/iphone/Classes/APIModule.m": {
+			"hash": "245492c625a63a32a6eec965446a836f",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 3369
+		},
+		"5.0.3.v20151028143139/iphone/Classes/APSAnalytics/APSAnalytics.h": {
+			"hash": "76cd94f1da9ff5918b2d3928080ce735",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 2830
+		},
+		"5.0.3.v20151028143139/iphone/Classes/APSAnalytics/libAPSAnalytics.a": {
+			"hash": "ab83bd41b825cdf6c431892dca714ac7",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 3583008
+		},
+		"5.0.3.v20151028143139/iphone/Classes/APSHTTPClient/APSHTTPClient.h": {
+			"hash": "9fbc4d54ad9fbd4bbf90bddbce993d29",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 499
+		},
+		"5.0.3.v20151028143139/iphone/Classes/APSHTTPClient/APSHTTPHelper.h": {
+			"hash": "00825c2db2adbafa3d8c269707adbca1",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 921
+		},
+		"5.0.3.v20151028143139/iphone/Classes/APSHTTPClient/APSHTTPPostForm.h": {
+			"hash": "157e9f4dfff6a03e173d50faf1280fed",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1314
+		},
+		"5.0.3.v20151028143139/iphone/Classes/APSHTTPClient/APSHTTPRequest.h": {
+			"hash": "29409c5269514b6de3a61e72ca8430bc",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 3870
+		},
+		"5.0.3.v20151028143139/iphone/Classes/APSHTTPClient/APSHTTPResponse.h": {
+			"hash": "f63e2978c16d2edbd4cd4c81c59bc064",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 2900
+		},
+		"5.0.3.v20151028143139/iphone/Classes/APSHTTPClient/libAPSHTTPClient.a": {
+			"hash": "e562d787880efc465afa506fcb8b3f3b",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1745848
+		},
+		"5.0.3.v20151028143139/iphone/Classes/AccelerometerModule.h": {
+			"hash": "b70d942b9eb22978290ae4418341259d",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 518
+		},
+		"5.0.3.v20151028143139/iphone/Classes/AccelerometerModule.m": {
+			"hash": "c274943219d6f4babebf74fb0c6acba0",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 2483
+		},
+		"5.0.3.v20151028143139/iphone/Classes/AnalyticsModule.h": {
+			"hash": "b57176350d7e8a6d3218f12f770852f0",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 352
+		},
+		"5.0.3.v20151028143139/iphone/Classes/AnalyticsModule.m": {
+			"hash": "2c85c872905407e7878c77816101abdb",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 3083
+		},
+		"5.0.3.v20151028143139/iphone/Classes/AppModule.h": {
+			"hash": "ae7948dd5470f34ef61b76e7770616ba",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1803
+		},
+		"5.0.3.v20151028143139/iphone/Classes/AppModule.m": {
+			"hash": "c486364da8e77b6704abe7f098c7fe18",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 15812
+		},
+		"5.0.3.v20151028143139/iphone/Classes/ApplicationDefaults.h": {
+			"hash": "6a9bbeb766ec050f14e50f1e693307e4",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 482
+		},
+		"5.0.3.v20151028143139/iphone/Classes/ApplicationDefaults.m": {
+			"hash": "ed3e36a01e67e71eafba623f9c0ee950",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 419
+		},
+		"5.0.3.v20151028143139/iphone/Classes/ApplicationMods.h": {
+			"hash": "93592487b17df28a8d62111a91868054",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 219
+		},
+		"5.0.3.v20151028143139/iphone/Classes/ApplicationMods.m": {
+			"hash": "77020f23932b409be15bf5c16de95351",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 221
+		},
+		"5.0.3.v20151028143139/iphone/Classes/ApplicationRouting.h": {
+			"hash": "32751179afb245b52205e79e58ce6820",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 368
+		},
+		"5.0.3.v20151028143139/iphone/Classes/AsyncSocket.h": {
+			"hash": "1157ace78ea368b2dbab25fe47572bfa",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 31367
+		},
+		"5.0.3.v20151028143139/iphone/Classes/AsyncSocket.m": {
+			"hash": "48f51c01311fd691e6718603ab2d2cb1",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 125663
+		},
+		"5.0.3.v20151028143139/iphone/Classes/AsyncUdpSocket.h": {
+			"hash": "45ddd5b8b610e3ea8742b370edb14fab",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 14306
+		},
+		"5.0.3.v20151028143139/iphone/Classes/AsyncUdpSocket.m": {
+			"hash": "f481f0109c446aceea38cf637a348f57",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 66335
+		},
+		"5.0.3.v20151028143139/iphone/Classes/AudioStreamer/AudioStreamer.h": {
+			"hash": "db165a56772b746251c8fdcb92185826",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 4516
+		},
+		"5.0.3.v20151028143139/iphone/Classes/AudioStreamer/AudioStreamer.m": {
+			"hash": "86a4b7311d18e47f3e3ef93ed91fbfea",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 6554
+		},
+		"5.0.3.v20151028143139/iphone/Classes/AudioStreamer/AudioStreamerCUR.h": {
+			"hash": "31a500af84b9bc9ffaa8d7061e8f3315",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 3973
+		},
+		"5.0.3.v20151028143139/iphone/Classes/AudioStreamer/AudioStreamerCUR.m": {
+			"hash": "0c338199592ab81a90b3fe03b30bf79e",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 43999
+		},
+		"5.0.3.v20151028143139/iphone/Classes/Base64Transcoder.c": {
+			"hash": "9ec0f7458deb9d32d7ba96ef78059645",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 9459
+		},
+		"5.0.3.v20151028143139/iphone/Classes/Base64Transcoder.h": {
+			"hash": "ac2b19b653c899278070a2a7a3fadfad",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1732
+		},
+		"5.0.3.v20151028143139/iphone/Classes/Bridge.h": {
+			"hash": "b3e8181c6e7420e1150df1ac6483f2ec",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 616
+		},
+		"5.0.3.v20151028143139/iphone/Classes/Bridge.m": {
+			"hash": "000bcd2a5de6c5a4fc1ff09fee5c8334",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1357
+		},
+		"5.0.3.v20151028143139/iphone/Classes/CalendarModule.h": {
+			"hash": "6dfb38cd099372afa58ce52133766b9f",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1759
+		},
+		"5.0.3.v20151028143139/iphone/Classes/CalendarModule.m": {
+			"hash": "2ebf6b1f5e5882ff763187ffed1842de",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 10188
+		},
+		"5.0.3.v20151028143139/iphone/Classes/CodecModule.h": {
+			"hash": "8a819eb41b3394084ce11f43e67e66be",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1369
+		},
+		"5.0.3.v20151028143139/iphone/Classes/CodecModule.m": {
+			"hash": "75c51b1e6075f314712e641ab9a314ba",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 13082
+		},
+		"5.0.3.v20151028143139/iphone/Classes/ContactsModule.h": {
+			"hash": "268a99862b5607de2cdd70651e4f0bbd",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 2255
+		},
+		"5.0.3.v20151028143139/iphone/Classes/ContactsModule.m": {
+			"hash": "5e6b56ed9824c79d0992ee46354c131c",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 41062
+		},
+		"5.0.3.v20151028143139/iphone/Classes/DatabaseModule.h": {
+			"hash": "e5c487e0f102af4d8c1fa3494d0b64ca",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 467
+		},
+		"5.0.3.v20151028143139/iphone/Classes/DatabaseModule.m": {
+			"hash": "24db3f7c74ffe816ea5e9bf456d16652",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1224
+		},
+		"5.0.3.v20151028143139/iphone/Classes/FilesystemModule.h": {
+			"hash": "ae20e30c601c8809598fb6252de4f70a",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1235
+		},
+		"5.0.3.v20151028143139/iphone/Classes/FilesystemModule.m": {
+			"hash": "50db759a46452590592c3388954eb108",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 5331
+		},
+		"5.0.3.v20151028143139/iphone/Classes/GDataXMLNode.h": {
+			"hash": "047de64dd277b8ed10a7510b33c50739",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 8023
+		},
+		"5.0.3.v20151028143139/iphone/Classes/GDataXMLNode.m": {
+			"hash": "a5fb72c12c88dba999dc18ce77448331",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 51012
+		},
+		"5.0.3.v20151028143139/iphone/Classes/GeolocationModule.h": {
+			"hash": "d72a5f137d876a78528801c39f632357",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 3896
+		},
+		"5.0.3.v20151028143139/iphone/Classes/GeolocationModule.m": {
+			"hash": "2d415822a0af4e89dd4a5c4e39ac4c68",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 33274
+		},
+		"5.0.3.v20151028143139/iphone/Classes/GestureModule.h": {
+			"hash": "61d0c4f03d0cf5591741147144a83319",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 793
+		},
+		"5.0.3.v20151028143139/iphone/Classes/GestureModule.m": {
+			"hash": "a09a2a615942bf65780c3c52bb624ec4",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 3660
+		},
+		"5.0.3.v20151028143139/iphone/Classes/ImageLoader.h": {
+			"hash": "193c4a1dd92b4ae33df296eda62df48e",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 5376
+		},
+		"5.0.3.v20151028143139/iphone/Classes/ImageLoader.m": {
+			"hash": "6a25b7a11fb7d23a7ffe68cd56e7bb52",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 23240
+		},
+		"5.0.3.v20151028143139/iphone/Classes/KrollBridge.h": {
+			"hash": "78a9fb39c2b702db919e439fa75f6fff",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 2334
+		},
+		"5.0.3.v20151028143139/iphone/Classes/KrollBridge.m": {
+			"hash": "56c522374edbfce8132056ca4324462f",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 33829
+		},
+		"5.0.3.v20151028143139/iphone/Classes/KrollCallback.h": {
+			"hash": "ef76b0d3425da187e0429f938c5d1675",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 2765
+		},
+		"5.0.3.v20151028143139/iphone/Classes/KrollCallback.m": {
+			"hash": "800e0bef50a72bc3bd4a176fdb359685",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 6739
+		},
+		"5.0.3.v20151028143139/iphone/Classes/KrollContext.h": {
+			"hash": "f3ccabda288fcfabd58497bad48a36e3",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 5151
+		},
+		"5.0.3.v20151028143139/iphone/Classes/KrollContext.m": {
+			"hash": "1ed3725a021e39be458deda204498c6d",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 48134
+		},
+		"5.0.3.v20151028143139/iphone/Classes/KrollCoverage.h": {
+			"hash": "fb1bd974a2b2dd2311eccc0535eb6a1e",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 2204
+		},
+		"5.0.3.v20151028143139/iphone/Classes/KrollCoverage.m": {
+			"hash": "09a3bf4fa3ddeb85d6f24e3751b133b7",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 8620
+		},
+		"5.0.3.v20151028143139/iphone/Classes/KrollMethod.h": {
+			"hash": "ae1d9698618e6a4044f8f9c1b7d9a9be",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1428
+		},
+		"5.0.3.v20151028143139/iphone/Classes/KrollMethod.m": {
+			"hash": "e5bd1e4a5aec9326a240006ca30ecedd",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 12889
+		},
+		"5.0.3.v20151028143139/iphone/Classes/KrollMethodDelegate.h": {
+			"hash": "3e4fbe959afdda71c16ff97b3c0bea17",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 686
+		},
+		"5.0.3.v20151028143139/iphone/Classes/KrollMethodDelegate.m": {
+			"hash": "e8561373742aabb303dda5df9a5d39ff",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 668
+		},
+		"5.0.3.v20151028143139/iphone/Classes/KrollObject.h": {
+			"hash": "0492258af6baa5abbde026132135890d",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 3588
+		},
+		"5.0.3.v20151028143139/iphone/Classes/KrollObject.m": {
+			"hash": "324a06ad5258d9ffe369bd428bb2ab13",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 43457
+		},
+		"5.0.3.v20151028143139/iphone/Classes/KrollPropertyDelegate.h": {
+			"hash": "bc1e4b45346a1595dc8b748e5f80e197",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 648
+		},
+		"5.0.3.v20151028143139/iphone/Classes/KrollPropertyDelegate.m": {
+			"hash": "ba433db52cfba48ccc66cbcbd7a7a447",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 607
+		},
+		"5.0.3.v20151028143139/iphone/Classes/KrollTimer.h": {
+			"hash": "a332ff6a8cb0560e6dfe2df732df5ea2",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 862
+		},
+		"5.0.3.v20151028143139/iphone/Classes/KrollTimer.m": {
+			"hash": "bef43abfff15d7d03e609e8b0b94817c",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 3751
+		},
+		"5.0.3.v20151028143139/iphone/Classes/LauncherButton.h": {
+			"hash": "aabebf3d2b6bf3f0f5a364687aec4b2f",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1479
+		},
+		"5.0.3.v20151028143139/iphone/Classes/LauncherButton.m": {
+			"hash": "568aaad5e4985155fd9492285a6b3567",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 8554
+		},
+		"5.0.3.v20151028143139/iphone/Classes/LauncherItem.h": {
+			"hash": "dc006755761f760edea8b5d7586a26d2",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1746
+		},
+		"5.0.3.v20151028143139/iphone/Classes/LauncherItem.m": {
+			"hash": "3536e2564dbc6f7535c906d256cd2901",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 2133
+		},
+		"5.0.3.v20151028143139/iphone/Classes/LauncherView.h": {
+			"hash": "b0fbd7637db1e65080157f4f265c2eba",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 3185
+		},
+		"5.0.3.v20151028143139/iphone/Classes/LauncherView.m": {
+			"hash": "11fae3efa563c6953323606976e21668",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 25022
+		},
+		"5.0.3.v20151028143139/iphone/Classes/LayoutConstraint.h": {
+			"hash": "8c8ee7202e0714834e67da064c56c67d",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 2974
+		},
+		"5.0.3.v20151028143139/iphone/Classes/LayoutConstraint.m": {
+			"hash": "249d728ce14640f5671f2a98a0fa1193",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 15104
+		},
+		"5.0.3.v20151028143139/iphone/Classes/ListenerEntry.h": {
+			"hash": "9b641817f1e47deda78f48755d97eca2",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 602
+		},
+		"5.0.3.v20151028143139/iphone/Classes/ListenerEntry.m": {
+			"hash": "59d5f4a0b925c701ee87cc04aed86d1c",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 873
+		},
+		"5.0.3.v20151028143139/iphone/Classes/LocaleModule.h": {
+			"hash": "92438e91ec26c416d937df97f70148de",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 316
+		},
+		"5.0.3.v20151028143139/iphone/Classes/LocaleModule.m": {
+			"hash": "55bf54f77208b6d8db8a62bce011b735",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 2041
+		},
+		"5.0.3.v20151028143139/iphone/Classes/MGSplitView/MGSplitCornersView.h": {
+			"hash": "530c81433bacebf1e860f1148993f005",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1210
+		},
+		"5.0.3.v20151028143139/iphone/Classes/MGSplitView/MGSplitCornersView.m": {
+			"hash": "77349d2802e0602ff7f8096bd048e7db",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 6126
+		},
+		"5.0.3.v20151028143139/iphone/Classes/MGSplitView/MGSplitDividerView.h": {
+			"hash": "bc45b43451c056e2e9cde017aca79434",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 601
+		},
+		"5.0.3.v20151028143139/iphone/Classes/MGSplitView/MGSplitDividerView.m": {
+			"hash": "48c03f921074a8611f9fb502d2525c42",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 5359
+		},
+		"5.0.3.v20151028143139/iphone/Classes/MGSplitView/MGSplitView.h": {
+			"hash": "53b9a631ad89721a8beaf4191a9daac8",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 622
+		},
+		"5.0.3.v20151028143139/iphone/Classes/MGSplitView/MGSplitView.m": {
+			"hash": "13823e59aad7935864f444f171c553a0",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1233
+		},
+		"5.0.3.v20151028143139/iphone/Classes/MGSplitView/MGSplitViewController.h": {
+			"hash": "5f88f689d8f9c4d9f256eb648b640cc5",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 7777
+		},
+		"5.0.3.v20151028143139/iphone/Classes/MGSplitView/MGSplitViewController.m": {
+			"hash": "b3e2be8c1d6bfdbb65284c7c69cb3f1f",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 34632
+		},
+		"5.0.3.v20151028143139/iphone/Classes/MediaModule.h": {
+			"hash": "23d3c9cf79b1d65a58797cb42627ac59",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 11473
+		},
+		"5.0.3.v20151028143139/iphone/Classes/MediaModule.m": {
+			"hash": "8132d0c23313c6c8c032a1fa9ae597f2",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 77051
+		},
+		"5.0.3.v20151028143139/iphone/Classes/Mimetypes.h": {
+			"hash": "c15d46991c22feb74ef01a3a21371089",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 431
+		},
+		"5.0.3.v20151028143139/iphone/Classes/Mimetypes.m": {
+			"hash": "f0181649b4b07f1d456dd9f19f011771",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 2334
+		},
+		"5.0.3.v20151028143139/iphone/Classes/NSData+Additions.h": {
+			"hash": "e5931a55fa7f3b3e82890660d37e0213",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 460
+		},
+		"5.0.3.v20151028143139/iphone/Classes/NSData+Additions.m": {
+			"hash": "41bfd6b46eddd8ae10c8437681d115b8",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 5632
+		},
+		"5.0.3.v20151028143139/iphone/Classes/NetworkModule.h": {
+			"hash": "74601ec275ecd1679df6b7213fc83691",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 2215
+		},
+		"5.0.3.v20151028143139/iphone/Classes/NetworkModule.m": {
+			"hash": "5338d67b77a1b84e418391bad53db507",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 16304
+		},
+		"5.0.3.v20151028143139/iphone/Classes/OperationQueue.h": {
+			"hash": "9235e29bd4a235aeb7ac1f0f1e0c2d8d",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1126
+		},
+		"5.0.3.v20151028143139/iphone/Classes/OperationQueue.m": {
+			"hash": "da909229b8cd9b43dfce460d180fe1ad",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 2525
+		},
+		"5.0.3.v20151028143139/iphone/Classes/PlatformModule.h": {
+			"hash": "5168cba81127139219c1d65b044969cf",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1780
+		},
+		"5.0.3.v20151028143139/iphone/Classes/PlatformModule.m": {
+			"hash": "a5f956adb7c7db2d7a3066037aff70a6",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 10791
+		},
+		"5.0.3.v20151028143139/iphone/Classes/PlausibleDatabase/PLDatabase.h": {
+			"hash": "4c10eba9387993b1ed3d4104e7907985",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 8454
+		},
+		"5.0.3.v20151028143139/iphone/Classes/PlausibleDatabase/PLPreparedStatement.h": {
+			"hash": "17bb95fb5a0938a55dbf583d7330753e",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 5315
+		},
+		"5.0.3.v20151028143139/iphone/Classes/PlausibleDatabase/PLResultSet.h": {
+			"hash": "da773de8eb5883e8762279714cbdcd08",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 7984
+		},
+		"5.0.3.v20151028143139/iphone/Classes/PlausibleDatabase/PLSqliteDatabase.h": {
+			"hash": "e1d1ddf8889ba45b29e72e66977bb60a",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 2432
+		},
+		"5.0.3.v20151028143139/iphone/Classes/PlausibleDatabase/PLSqliteDatabase.m": {
+			"hash": "dc970dbe125242986671930d32d27ae2",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 15491
+		},
+		"5.0.3.v20151028143139/iphone/Classes/PlausibleDatabase/PLSqlitePreparedStatement.h": {
+			"hash": "83913d1efdacea9fb1967e4f4dddd729",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 2534
+		},
+		"5.0.3.v20151028143139/iphone/Classes/PlausibleDatabase/PLSqlitePreparedStatement.m": {
+			"hash": "29306e22d91fd3b73a2e6e37b50c8958",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 15318
+		},
+		"5.0.3.v20151028143139/iphone/Classes/PlausibleDatabase/PLSqliteResultSet.h": {
+			"hash": "c0e6be76eeb116732ff01cde4d398e71",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 2264
+		},
+		"5.0.3.v20151028143139/iphone/Classes/PlausibleDatabase/PLSqliteResultSet.m": {
+			"hash": "6a18bd7426e17a22ec07fdbf5b25763b",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 11165
+		},
+		"5.0.3.v20151028143139/iphone/Classes/PlausibleDatabase/PlausibleDatabase.h": {
+			"hash": "1753f723a158a8347769046cfe5237ec",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 8516
+		},
+		"5.0.3.v20151028143139/iphone/Classes/PlausibleDatabase/PlausibleDatabase.m": {
+			"hash": "34b37e1bd7b3e14da46ecba8bb8070c6",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 4117
+		},
+		"5.0.3.v20151028143139/iphone/Classes/Reachability.h": {
+			"hash": "17f4f8054cd2e992c08708ac807ae163",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 7424
+		},
+		"5.0.3.v20151028143139/iphone/Classes/Reachability.m": {
+			"hash": "044ae1c08e5dde79de6619d2cb3f3f99",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 24137
+		},
+		"5.0.3.v20151028143139/iphone/Classes/SBJSON.h": {
+			"hash": "dbdcfb2e1f1fc21185c1f280be525210",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 5394
+		},
+		"5.0.3.v20151028143139/iphone/Classes/SBJSON.m": {
+			"hash": "55fd35f239b39069231a2dc80e88b9fc",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 30073
+		},
+		"5.0.3.v20151028143139/iphone/Classes/SCListener.h": {
+			"hash": "89ac930ec6d7e5580cad515fe68b426a",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 654
+		},
+		"5.0.3.v20151028143139/iphone/Classes/SCListener.m": {
+			"hash": "331958c8208c2270d3529179932f0776",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 4167
+		},
+		"5.0.3.v20151028143139/iphone/Classes/StreamModule.h": {
+			"hash": "84b62c846b42df9c42c24c7b0439b2ab",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 965
+		},
+		"5.0.3.v20151028143139/iphone/Classes/StreamModule.m": {
+			"hash": "d580b718dc3658c840d8980b91c78313",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 10749
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TIDOMCharacterDataProxy.h": {
+			"hash": "8d6208fcf95ad84b4504390470c6b860",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 670
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TIDOMCharacterDataProxy.m": {
+			"hash": "b715c17257d8f56c7904c0560c604859",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 3503
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TIDOMDOMImplementationProxy.h": {
+			"hash": "1a6b49b3e784209013e1a48b046b5cb2",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 392
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TIDOMDOMImplementationProxy.m": {
+			"hash": "f35fba92472f9184ebb04d6f1e870ada",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 4330
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TIDOMDocumentTypeProxy.h": {
+			"hash": "d3048fa38f002377629cacbc5327f775",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 672
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TIDOMDocumentTypeProxy.m": {
+			"hash": "8e5625379e4aec7cf76b9b73c38adcc7",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1644
+		},
+		"5.0.3.v20151028143139/iphone/Classes/ThirdpartyNS.h": {
+			"hash": "28d39449b5d6b165b371febdd946143d",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 7794
+		},
+		"5.0.3.v20151028143139/iphone/Classes/Ti2DMatrix.h": {
+			"hash": "889e472e186d9673235e6c0e5135c460",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1292
+		},
+		"5.0.3.v20151028143139/iphone/Classes/Ti2DMatrix.m": {
+			"hash": "cacfb864663e63b67399b5de7048a1fe",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 2862
+		},
+		"5.0.3.v20151028143139/iphone/Classes/Ti3DMatrix.h": {
+			"hash": "bed69c179f7f8b2d1ebe3f0a596267a2",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1567
+		},
+		"5.0.3.v20151028143139/iphone/Classes/Ti3DMatrix.m": {
+			"hash": "e06155f8ece5217b209d2eb1b9052ed3",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 3152
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiAction.h": {
+			"hash": "6abbb2e24b9547beb233a0c6079796ec",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1058
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiAction.m": {
+			"hash": "093247d41e78f5c3fbd879537eba880c",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 696
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiAnchorAttachBehavior.h": {
+			"hash": "255b130221b2c75f88fe5199f7516e56",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 969
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiAnchorAttachBehavior.m": {
+			"hash": "8df868dfea17afdb9597797605006a47",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 5219
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiAnimation.h": {
+			"hash": "ca83229d954c9620591918461c08ee5b",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 4685
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiAnimation.m": {
+			"hash": "1a2e8ed97342ef4f40ba7aa71199f701",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 26661
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiAnimatorProxy.h": {
+			"hash": "1e88e161a9e942d9abb983c68bdccb1a",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 993
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiAnimatorProxy.m": {
+			"hash": "23f3e778a333115a45c3d02eee2d6857",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 6178
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiApp.h": {
+			"hash": "dc47982c6e5bf56a9ef8a3d5e2076b5f",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 5711
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiApp.m": {
+			"hash": "cdc9fe75131ffe5df19817fef569630f",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 46180
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiAppPropertiesProxy.h": {
+			"hash": "be6e876abea8fb24ded9e2d5ca02c775",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 746
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiAppPropertiesProxy.m": {
+			"hash": "6805da6cab072f5fb3db6a85150256ce",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 5940
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiAppiOSBackgroundServiceProxy.h": {
+			"hash": "01ac2eca635c65af77c27967ecf0a28f",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 457
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiAppiOSBackgroundServiceProxy.m": {
+			"hash": "e642b214bbd0c225a2d07e6a100a79a4",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1347
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiAppiOSLocalNotificationProxy.h": {
+			"hash": "7e8db4f849b5a180bc9638fa4289f5db",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 488
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiAppiOSLocalNotificationProxy.m": {
+			"hash": "214c3adef7d9d4f594e36b7bdac84b9c",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 827
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiAppiOSNotificationActionProxy.h": {
+			"hash": "311838287349d6f0ab5f13b9fe0369f5",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 592
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiAppiOSNotificationActionProxy.m": {
+			"hash": "0cadbb0f95a675ebd6286faec76aa3fc",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1325
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiAppiOSNotificationCategoryProxy.h": {
+			"hash": "9b5e12d24efe1f5bab92dc9a40b4fffd",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 489
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiAppiOSNotificationCategoryProxy.m": {
+			"hash": "3454c4bd1b6e268b83b65c958e066f31",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 812
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiAppiOSProxy.h": {
+			"hash": "b0d59428d29b30ba87a8d2af56e084bd",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 585
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiAppiOSProxy.m": {
+			"hash": "47fa512dc32ff8377d0bd24315ddc615",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 30304
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiAppiOSSearchableIndexProxy.h": {
+			"hash": "1ff3086c3f0320371794af652c02f86b",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 418
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiAppiOSSearchableIndexProxy.m": {
+			"hash": "0470cbac3cd6168d006a6a15039a4bbb",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 4565
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiAppiOSSearchableItemAttributeSetProxy.h": {
+			"hash": "9e3bfab977c1818d447c27b5b91ae5a0",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 703
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiAppiOSSearchableItemAttributeSetProxy.m": {
+			"hash": "ede1f31826034b2b30b192435582216b",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 32729
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiAppiOSSearchableItemProxy.h": {
+			"hash": "11685ed1f7d0ef29a249fd05c006dce2",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 658
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiAppiOSSearchableItemProxy.m": {
+			"hash": "b8b1ba23c1802821bfd2bb2c40895b6f",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 2517
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiAppiOSUserActivityProxy.h": {
+			"hash": "fbd9fbb3b48f1655ba55b389ddea78d3",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 535
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiAppiOSUserActivityProxy.m": {
+			"hash": "eb1f219db0a46c8258980c9a64c7d01d",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 10994
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiAppiOSUserDefaultsProxy.h": {
+			"hash": "4ca1dff4462b4699b65c9eab1957d71b",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 767
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiAppiOSUserDefaultsProxy.m": {
+			"hash": "10cf11f9dcff065c04b1e9b0ab80bee7",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 5373
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiBase.h": {
+			"hash": "3f54c00eca2ebc341c7bad55888f71b8",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 20232
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiBase.m": {
+			"hash": "3e312a1db286c7f6113a536781706154",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 14426
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiBindingEvent.h": {
+			"hash": "e6c1d80e777dbf588d73014a7e87367a",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1675
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiBindingEvent.m": {
+			"hash": "a83f3c54a5180f8c3a8ad03a1bea1ed4",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 11912
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiBindingRunLoop.h": {
+			"hash": "0426895f6a2fe9540d46f53c2e2cbf77",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1419
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiBindingRunLoop.m": {
+			"hash": "963bf5faebcf7c4f8b099a07adaedfe6",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 2223
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiBindingTiValue.h": {
+			"hash": "b085fdd7dd10a3076c7ba55d1cc4b04f",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 728
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiBindingTiValue.m": {
+			"hash": "5ffd07aed792e43fc90fdd695496e13d",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 11209
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiBlob.h": {
+			"hash": "a3006ce1f35539b659b70571923814d6",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 2852
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiBlob.m": {
+			"hash": "0292ca5c79459f9fa84d06ef336fb550",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 8855
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiBuffer.h": {
+			"hash": "0381a9cd13c47364f7c9523e7c80e9d0",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1519
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiBuffer.m": {
+			"hash": "0d32e4199b1f86195dda8bbe44e74715",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 14375
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiButtonUtil.h": {
+			"hash": "7cebfdb541a42ed9356d726f4b1ed3f0",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 364
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiButtonUtil.m": {
+			"hash": "077733760d69d827f5f5467cbcefc22d",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1251
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiCalendarAlert.h": {
+			"hash": "4ccdc70552853230e1575b1b97c3d9ca",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 619
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiCalendarAlert.m": {
+			"hash": "9baca5b74d9f4d5c701f7ec35daaf009",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1279
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiCalendarCalendar.h": {
+			"hash": "f2145bfd8537619f241aecb37228db6a",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 661
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiCalendarCalendar.m": {
+			"hash": "fdec67bdc11cdb237656abb9771baef5",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 8688
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiCalendarEvent.h": {
+			"hash": "b7617e4376506084f7eb449c0e5a2fd7",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 760
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiCalendarEvent.m": {
+			"hash": "fce9af9630fd88e925cd00526849b0d4",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 19223
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiCalendarRecurrenceRule.h": {
+			"hash": "39490e023148d3710aeace00040a74f2",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 566
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiCalendarRecurrenceRule.m": {
+			"hash": "66375275a2fcba77fdb539a4c209fd70",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 3097
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiCalendarReminder.h": {
+			"hash": "a4078a2c1fb67ee0e71bf14526ba6900",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 339
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiCalendarReminder.m": {
+			"hash": "b4b37efe5fa24fdbc5865d3b7a2c74fa",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 402
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiCollisionBehavior.h": {
+			"hash": "d7fceb815a8c8909994addbfa2e42222",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1164
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiCollisionBehavior.m": {
+			"hash": "33c9c78b99aef6ee3c320c81b0417826",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 11475
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiColor.h": {
+			"hash": "e163ab266f76465c761d0cb5426a52fe",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1174
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiColor.m": {
+			"hash": "2e42e7e02676ef291764cf306eb2c3ed",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1763
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiComplexValue.h": {
+			"hash": "4215650af3e4c1c3020826d207a32161",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 994
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiComplexValue.m": {
+			"hash": "2893bde762d9487db07e44baed5ac136",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 630
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiConsole.h": {
+			"hash": "0e156d496e7541b7a3434e35322c9e49",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 621
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiConsole.m": {
+			"hash": "886226fdb04a1ae6edd20c582d7029da",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 371
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiContactsGroup.h": {
+			"hash": "11cf12c9813681ef95860e752eda6628",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1064
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiContactsGroup.m": {
+			"hash": "30ca5843e9999d3142ca5dcb654ea7c2",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 10379
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiContactsPerson.h": {
+			"hash": "f171124c0423fb1c6423ca63a4687608",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1570
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiContactsPerson.m": {
+			"hash": "008f9b6bf240fd39ac0f7500f493f5a4",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 34756
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiController.h": {
+			"hash": "908ec50c81b2664aa3eaf8247737342e",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 413
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiControllerProtocols.h": {
+			"hash": "58cfd0715991617bf2fb7a2cfa0e1a53",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 3341
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiDOMAttrProxy.h": {
+			"hash": "22ebe990bcec38ce5edaba5556e3e2de",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 805
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiDOMAttrProxy.m": {
+			"hash": "27494ad16f2ece6b98d353dd40992bb6",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 2182
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiDOMCDATANodeProxy.h": {
+			"hash": "b205036f822b6197b6cf56ed37b38c58",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 388
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiDOMCDATANodeProxy.m": {
+			"hash": "39e696500e9db31fcb9750ce863c7393",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 430
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiDOMCommentProxy.h": {
+			"hash": "98d3b3dfc7903078990063d74689b3ae",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 396
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiDOMCommentProxy.m": {
+			"hash": "b36858bf7d1173d0e6d784ef0094ed3d",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 420
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiDOMDocFragProxy.h": {
+			"hash": "2b92b23d61b2916970c17dda6017a7c1",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 435
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiDOMDocFragProxy.m": {
+			"hash": "2016e6076f60e9f866d1a3f4e3416122",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 575
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiDOMDocumentProxy.h": {
+			"hash": "20ecd053312d65fe494dd4dd034f91c8",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 474
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiDOMDocumentProxy.m": {
+			"hash": "88ab75bf039b89b66b0c71b235f7ce52",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 15655
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiDOMElementProxy.h": {
+			"hash": "048bee3c083fa21c0680ffe1884c6490",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 720
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiDOMElementProxy.m": {
+			"hash": "c3141851492165ca3ee8858f0fcd7b81",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 23343
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiDOMEntityProxy.h": {
+			"hash": "5136c3b47856cff830f8613a5dd007c0",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 516
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiDOMEntityProxy.m": {
+			"hash": "f012d32626d1f64808f1c6c3264584d4",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 672
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiDOMEntityRefProxy.h": {
+			"hash": "073862a288c591b9efabe9a27bcabde9",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 379
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiDOMEntityRefProxy.m": {
+			"hash": "390cc2f10e62337174a444949de52324",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 520
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiDOMNamedNodeMapProxy.h": {
+			"hash": "53319221c9544fb57ea7c6468424a481",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 805
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiDOMNamedNodeMapProxy.m": {
+			"hash": "b12efaaaecca9cdf8864c8eb909e3873",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 3375
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiDOMNodeListProxy.h": {
+			"hash": "3532451efa5c6b8022967373e56b2d17",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 656
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiDOMNodeListProxy.m": {
+			"hash": "fe7a65bfb67b047b98348455c5ff455a",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1399
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiDOMNodeProxy.h": {
+			"hash": "a7237f99a10e8b90e2bcabd123e9a61f",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 2659
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiDOMNodeProxy.m": {
+			"hash": "1bce6e66e56b1a36fcbf8ba1d758865b",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 17289
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiDOMNotationProxy.h": {
+			"hash": "e447496803d75533475179c600ea2c6a",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 472
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiDOMNotationProxy.m": {
+			"hash": "52f13dbedea608673b3a79a0c5eaf0f4",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 621
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiDOMPIProxy.h": {
+			"hash": "1a684d2894afe650ae7e6034f7fc7aa3",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 545
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiDOMPIProxy.m": {
+			"hash": "283e565c69c341e5021c4a9c719c70e7",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 768
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiDOMTextNodeProxy.h": {
+			"hash": "55302c8444f22cf47e7f78efd6fcb6c3",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 475
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiDOMTextNodeProxy.m": {
+			"hash": "18f7020376e3977b953ef4244d9bbdd1",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 2374
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiDOMValidator.h": {
+			"hash": "334271bbcae4aba307b897dd4412e63a",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 550
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiDOMValidator.m": {
+			"hash": "cd536224add950160926d764c7b48699",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1238
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiDataStream.h": {
+			"hash": "cb0365b2efc49f5c439a102c71bfcaf6",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 599
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiDataStream.m": {
+			"hash": "d949c97a07c0648ba9680d612dc4d306",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 11618
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiDatabaseProxy.h": {
+			"hash": "7e4421f74679e2e04174ec7d4bb29d02",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 805
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiDatabaseProxy.m": {
+			"hash": "4c05e1adcdf0a3c3b4bfedb781d3b602",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 7781
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiDatabaseResultSetProxy.h": {
+			"hash": "7341382ae8b1002ed39c97a5035177f6",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 725
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiDatabaseResultSetProxy.m": {
+			"hash": "c9a92d9d747b00a9b087b5b02d9cd8e6",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 5989
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiDebugger.h": {
+			"hash": "d6ef736514374d8bfcf6cc5dfd5c7b03",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1009
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiDimension.h": {
+			"hash": "6880992d9bff80a06272c3c4f6bbcecf",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 4085
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiDimension.m": {
+			"hash": "8919498fa46557243d801cae4a68c4ed",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 5592
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiDynamicItemBehavior.h": {
+			"hash": "b9d6d530ce4450668daf475c601e11e4",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1360
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiDynamicItemBehavior.m": {
+			"hash": "380fed52e5f8685c837404dc8626fd40",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 10534
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiErrorController.h": {
+			"hash": "be559c341272c3b3254b76c7284ce256",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 491
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiErrorController.m": {
+			"hash": "a6ba799db751379200c06462b0dba6ea",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 13311
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiEvaluator.h": {
+			"hash": "bbd0253e74424158cd55d87cf495a89a",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1237
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiExceptionHandler.h": {
+			"hash": "6aa32605f7e33b1dd619482c97af7d16",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 2444
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiExceptionHandler.m": {
+			"hash": "a1d619c28b53efd2ec002e1b12ce68bc",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 5396
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiFile.h": {
+			"hash": "ddd34716b7a4b0ee964ce15de56f302a",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1664
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiFile.m": {
+			"hash": "c4fc1704a50aca82a92640dc75092aac",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 2485
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiFilesystemBlobProxy.h": {
+			"hash": "2599b4dea93c78c40cdbaeb5aef91442",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 428
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiFilesystemBlobProxy.m": {
+			"hash": "7939947e31c1fce0b29c56e7830ced77",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 2566
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiFilesystemFileProxy.h": {
+			"hash": "67e8047a2f1cffaf917fc9e26e464d50",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 958
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiFilesystemFileProxy.m": {
+			"hash": "6026440fbb2deb12e7378bea5cedd6fb",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 13656
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiFilesystemFileStreamProxy.h": {
+			"hash": "c88549398df4f3dd4be7ca6d876a8a8c",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 494
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiFilesystemFileStreamProxy.m": {
+			"hash": "1ba6352db4225df858c6f0b0b9ebe196",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 14685
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiGradient.h": {
+			"hash": "cbda374abaed3f3a712c3f6ead75b7e7",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1539
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiGradient.m": {
+			"hash": "1f36e2c30fc2faf007f0c37fa754ff38",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 6409
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiGravityBehavior.h": {
+			"hash": "bbebc839f05a2cc5a7e119d23a61dffc",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 902
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiGravityBehavior.m": {
+			"hash": "f8cb5896b52e2847548cbd0fe86c7410",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 4699
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiHost.h": {
+			"hash": "a31c427cb62e18b784dc2dbbc349e5f7",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1359
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiHost.m": {
+			"hash": "6882b986406aef8267a5783b1571d237",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 4445
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiLayoutQueue.h": {
+			"hash": "f16df2ae22f769e722a7604981676fae",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 661
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiLayoutQueue.m": {
+			"hash": "e3b2ea0f5bd718b6b2fb0da1dff5ee06",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 2977
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiLocale.h": {
+			"hash": "ee7a4d6384691d9971d59c20fc1bc98d",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 964
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiLocale.m": {
+			"hash": "98d1a46073cbf47d87046624741466be",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1457
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiMediaAudioPlayerProxy.h": {
+			"hash": "ab98f777e0e615007676ed6e5a317661",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1634
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiMediaAudioPlayerProxy.m": {
+			"hash": "9703402994b801f81336cda77d26f3ab",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 7886
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiMediaAudioRecorderProxy.h": {
+			"hash": "ce0fc5f71b512a10947b04afcc3d1790",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1048
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiMediaAudioRecorderProxy.mm": {
+			"hash": "387c247f81465ef7a04bd08a6fea8efa",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 8560
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiMediaAudioSession.h": {
+			"hash": "74036e9a22deb26ebbc76c51acd022af",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 984
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiMediaAudioSession.m": {
+			"hash": "c638adfa06a982ccef043edb78d61e21",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 10279
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiMediaItem.h": {
+			"hash": "d52621b8438c6e0965806c4ea1902429",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1823
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiMediaItem.m": {
+			"hash": "a2be9b17b44cf585ea2938ddeecba8d3",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1441
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiMediaMusicPlayer.h": {
+			"hash": "79ce5fe769f569000c98c8e85dbf0ebe",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1173
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiMediaMusicPlayer.m": {
+			"hash": "304c150b75a67f46ea34c120ff9d9680",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 6666
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiMediaSoundProxy.h": {
+			"hash": "2c96cda7b3d44d77e2cbd661e9de3503",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 928
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiMediaSoundProxy.m": {
+			"hash": "431342df34eff4fc5a155e0c69cf79e6",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 8533
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiMediaVideoPlayer.h": {
+			"hash": "37f141ad0d4b26837851b9c7dbb5501b",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 651
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiMediaVideoPlayer.m": {
+			"hash": "055c224aeb6ceb6795cb6bfe96627452",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 3627
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiMediaVideoPlayerProxy.h": {
+			"hash": "d2c218a0e281690f7dafde98b2773146",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1793
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiMediaVideoPlayerProxy.m": {
+			"hash": "3f4d22edaad9475d9843619e76243f63",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 26572
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiModule.h": {
+			"hash": "b30e576ba59de80a5249b52c1c25e821",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1846
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiModule.m": {
+			"hash": "689e47981698155f5fb9180c94e04d28",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 6955
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiNetworkBonjourBrowserProxy.h": {
+			"hash": "2635bca19b6277cea1338adbac88b013",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 974
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiNetworkBonjourBrowserProxy.m": {
+			"hash": "bd002d683d12b61ee37e6574b7de265f",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 5032
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiNetworkBonjourServiceProxy.h": {
+			"hash": "135b4a46be6c56f1287630266c203708",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1523
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiNetworkBonjourServiceProxy.m": {
+			"hash": "64b88b1392e02e82dd5ea37c3a677b22",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 12020
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiNetworkCookieProxy.h": {
+			"hash": "cae9a0976792f1f5258553b24f1f6582",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 498
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiNetworkCookieProxy.m": {
+			"hash": "9bfc6a85a5d06fd98eb9e4b3afc0795e",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 3902
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiNetworkHTTPClientProxy.h": {
+			"hash": "26dd01dfc0d23b144f0f7f9790fd1d56",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 2412
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiNetworkHTTPClientProxy.m": {
+			"hash": "80b93b12080ada103b441594a62142ce",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 18635
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiNetworkSocketProxy.h": {
+			"hash": "a782b28a9060605d880580598c5e6623",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 866
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiNetworkSocketProxy.m": {
+			"hash": "54bf4e585cf16786f466fde25f74dc5d",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 828
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiNetworkSocketTCPProxy.h": {
+			"hash": "2baff1d889c3557789422d53014b3bdc",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 2964
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiNetworkSocketTCPProxy.m": {
+			"hash": "754c5700c73ce7362ee72bbd3abb3378",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 33425
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiNetworkTCPSocketProxy.h": {
+			"hash": "2bc4a0bbf9dfc3532abe9073fa2d8ca4",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1101
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiNetworkTCPSocketProxy.m": {
+			"hash": "4619043917e77bd643e9686a236e96b1",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 23685
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiPlatformDisplayCaps.h": {
+			"hash": "2c26cc8b3a679f27513463d34dae0175",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 614
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiPlatformDisplayCaps.m": {
+			"hash": "f6db3ebe0928b2aded7cf684816f3a15",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1999
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiPoint.h": {
+			"hash": "3eb37a217573d0710d1105c922484b93",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1091
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiPoint.m": {
+			"hash": "ffb35fdbc9454958e790f065448719f6",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1368
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiProfiler/TiProfiler.h": {
+			"hash": "ded4082579ec052d3461928eef799def",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 701
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiProxy.h": {
+			"hash": "3d8060ca79513695eaffc5575243874d",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 11362
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiProxy.m": {
+			"hash": "349952d9779c516409a1fc7d1ee0b639",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 38218
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiPublicAPI.h": {
+			"hash": "89cdf59ba627f63c746cc3698e36e2c5",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 2664
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiPublicAPI.m": {
+			"hash": "d46c2a50bed6243bde6b6dbf8f428469",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 265
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiPushBehavior.h": {
+			"hash": "d8a3e587d8712b41b0e6bb6654861b0b",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1030
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiPushBehavior.m": {
+			"hash": "296146e2dcfe809d4cf5b360f093b0b7",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 5702
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiRect.h": {
+			"hash": "fa6fd93fe94efacc6397781ca806ba32",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1116
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiRect.m": {
+			"hash": "b1fdf646afb0a9cdea738549d71f4d46",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 2751
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiRootViewController.h": {
+			"hash": "cc52b967a1052173146cbd71fba2d592",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 2924
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiRootViewController.m": {
+			"hash": "d262e2a5f4a15627af618a1895c3a425",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 56381
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiSelectedCellbackgroundView.h": {
+			"hash": "a9912eaae561ad83b273929321e411b0",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 817
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiSelectedCellbackgroundView.m": {
+			"hash": "32a29bc18173383ee884d790ecce7d69",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 4276
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiSnapBehavior.h": {
+			"hash": "e40d98884952cf6d0919dc63096f81c8",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 764
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiSnapBehavior.m": {
+			"hash": "59fdf2d54010d616dc941051d0eecddb",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 3481
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiStreamProxy.h": {
+			"hash": "e7d6a0f8f3b0dbddb687b9b1e23364e4",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1895
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiStreamProxy.m": {
+			"hash": "cb0f0163bd80d75e4e14e8dccd5a0cfa",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 5601
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiStylesheet.h": {
+			"hash": "da81d34ddf5ea21e74bacdddf872c557",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 696
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiStylesheet.m": {
+			"hash": "cb6bf0af7b1b347dc2787a5b44f48dde",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 4021
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiTab.h": {
+			"hash": "9505aee51c4b73f2f78a3e50ab8137ca",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 930
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiTabGroup.h": {
+			"hash": "6890de70578d62b1c746ac38a406a415",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 415
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiThreading.h": {
+			"hash": "30047547b302889fc59cbde4c9d6cbe3",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 2287
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiThreading.m": {
+			"hash": "f5393e8fe110ff489ddebceb19c4be34",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 267
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiToJS.h": {
+			"hash": "294835200d0eda61c5b54de0e3257291",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 5582
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiToolbar.h": {
+			"hash": "a3ebbd99c8b269acf89ad0eaa33d43d8",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 469
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiToolbarButton.h": {
+			"hash": "9a33f6ff1e8ba048aace9d5d57b2893d",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 845
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIActivityIndicator.h": {
+			"hash": "09a94ab85d96b83b6c5d5c419e9470c0",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 642
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIActivityIndicator.m": {
+			"hash": "d18c047e9f22d3bb96fc7ae6d0b54883",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 5688
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIActivityIndicatorProxy.h": {
+			"hash": "0669570adfdebd0b92702d89f46ec963",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 391
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIActivityIndicatorProxy.m": {
+			"hash": "6081140bab3e1b8db8f96405b52dbb71",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1231
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIAlertDialogProxy.h": {
+			"hash": "76ee6b6fa69687c43499d57ee8b85815",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 537
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIAlertDialogProxy.m": {
+			"hash": "f8aa35d8c7f30f7582d2680ec61f1688",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 10772
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIAttributedStringProxy.h": {
+			"hash": "ab4a3a646c305ee09e41b77b8fed92f2",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1245
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIAttributedStringProxy.m": {
+			"hash": "a1a5fee16af9d2a7cd289ef91158e5a0",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 7450
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIButton.h": {
+			"hash": "1b2d0a857f71e7360b5949755d0b232c",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 711
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIButton.m": {
+			"hash": "c1840214754509c715ff4807ac1f603c",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 9960
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIButtonBar.h": {
+			"hash": "b56b0aa18f02ea6fbdd5d5193232e1b6",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 501
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIButtonBar.m": {
+			"hash": "eb71fa339e11d70fe74d86cbd7d255fd",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 5593
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIButtonBarProxy.h": {
+			"hash": "5d5c0aaf2083d3f63b1460ffaccd1dfd",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 317
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIButtonBarProxy.m": {
+			"hash": "0b1aeae609bc8e53028a975b33939cfb",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 949
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIButtonProxy.h": {
+			"hash": "73f2586c690da9f38c7cbc93c54c67de",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 536
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIButtonProxy.m": {
+			"hash": "d438038eb50e3132041eeafa0e775f46",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 4047
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUICanvasView.h": {
+			"hash": "10ae9309dea8facee41c3d55648e0937",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 443
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUICanvasView.m": {
+			"hash": "75782f5eb16ad0c43393a0d490deb8ba",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 10003
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUICanvasViewProxy.h": {
+			"hash": "8c592e14439b0090ce58fb7e34ca5e6a",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 351
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUICanvasViewProxy.m": {
+			"hash": "702352ee221dd70c06774c475ef7e145",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 574
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIClipboardProxy.h": {
+			"hash": "4a432843a14721ecbed9678d1135a153",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 583
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIClipboardProxy.m": {
+			"hash": "a826a676e8fce48ef1bb510aacb5166d",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 5993
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIDashboardItem.h": {
+			"hash": "1a6cfa391ad2f62a307a01973261cbba",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 360
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIDashboardItem.m": {
+			"hash": "81338b3ebc94b82a8d48cb9ed1016606",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 815
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIDashboardItemProxy.h": {
+			"hash": "d6e6b1fa952c0fd25cfe71fd34d83789",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 474
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIDashboardItemProxy.m": {
+			"hash": "e5d661894b6c0c41c4c11b0e98ddbe75",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 2250
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIDashboardView.h": {
+			"hash": "717e356b5b8bfa1d61a5af6e79e486e0",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 495
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIDashboardView.m": {
+			"hash": "c8e63a16baecbb8a5ea73076fe8f1fde",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 6872
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIDashboardViewProxy.h": {
+			"hash": "130848a896dad25338ab27ee3a8ced73",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 360
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIDashboardViewProxy.m": {
+			"hash": "4bd4cdc284473c560adf6504e75b95f0",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 2471
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIEmailDialogProxy.h": {
+			"hash": "2ebf1fd3d572ddec100e291d0d8205e1",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 752
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIEmailDialogProxy.m": {
+			"hash": "cce8ddaa967983a420a20a8ad3ed4aee",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 5281
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIImageView.h": {
+			"hash": "f2c1ae571f8f69a0aecb3e78c432e470",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1099
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIImageView.m": {
+			"hash": "8443221efd532ef56ebb84f1dddb1fa0",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 21090
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIImageViewProxy.h": {
+			"hash": "5c1402103c48758110fe667e53037e1d",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 617
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIImageViewProxy.m": {
+			"hash": "1d65303033c220a0ab4ff09f9bc0111c",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 5680
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUILabel.h": {
+			"hash": "b5941fee5b904185b0f5ed7e54c7e911",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 666
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUILabel.m": {
+			"hash": "66d5f8e9922dbd80664248a417cb4445",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 18499
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUILabelProxy.h": {
+			"hash": "5f48053206aff22466a0de2e80deed94",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 344
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUILabelProxy.m": {
+			"hash": "fd6819a0a7c593a05cab602dacd1af1a",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1715
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIListItem.h": {
+			"hash": "3e4ec7ff9bc45e0ba98ad830576fc337",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1212
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIListItem.m": {
+			"hash": "606a421fe11a9e9adb8d11cdd99ced01",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 20191
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIListItemProxy.h": {
+			"hash": "2592008e9dbdeac78e053075c86ed2ce",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 717
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIListItemProxy.m": {
+			"hash": "ece37419182f872fe5c01cf9bf062cba",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 4254
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIListSectionProxy.h": {
+			"hash": "d1b5747ffab0227dc374658b4d595916",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1363
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIListSectionProxy.m": {
+			"hash": "9c081541919e34955bfeeee3c6be1e23",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 14747
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIListView.h": {
+			"hash": "90a3a38d755b2e553d46973ea188bf61",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1006
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIListView.m": {
+			"hash": "7a599ed2ee7e09679b365f5a7d257213",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 74728
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIListViewProxy.h": {
+			"hash": "2133e9992e3feece70e4a34c76c55499",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 739
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIListViewProxy.m": {
+			"hash": "aa226214443c52e31709cec61cd907b2",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 19885
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIMaskedImage.h": {
+			"hash": "837290fd62a57d2c0aa6974aa3f965a7",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 462
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIMaskedImage.m": {
+			"hash": "f2e2c6780dcb58769125f345aec85835",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 2683
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIMaskedImageProxy.h": {
+			"hash": "4833b19fe2b6dec102afadae73adf516",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 367
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIMaskedImageProxy.m": {
+			"hash": "5c738207a91e98021eed2548f90fb0aa",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 641
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUINavBarButton.h": {
+			"hash": "a975faf4db05719ca8204a771054c772",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 532
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUINavBarButton.m": {
+			"hash": "952e20d3e3e2d19857d457a4356922b0",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 6588
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIOptionDialogProxy.h": {
+			"hash": "4fa8a92bcf45660fbaf8c10dbd25c0ca",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 914
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIOptionDialogProxy.m": {
+			"hash": "57c125c3fc94124995ab5bdbd5b16323",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 16285
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIPicker.h": {
+			"hash": "cb60fa313a9ffe60bccb07153c9dbabf",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 875
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIPicker.m": {
+			"hash": "45a163493ee53066b69443214683ef55",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 12027
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIPickerColumnProxy.h": {
+			"hash": "22b440d8ae9ef09a8a2ec3022d079b83",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 634
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIPickerColumnProxy.m": {
+			"hash": "a12625cf4111b2a724d3dc203281c9f2",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1153
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIPickerProxy.h": {
+			"hash": "5d45d549916b1e9bcee69f9f07a728c0",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 445
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIPickerProxy.m": {
+			"hash": "33c3d638c6014e48609343f79f0ec221",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 9348
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIPickerRowProxy.h": {
+			"hash": "c4ff0b11277d7f4ee63b947f1ecf429a",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 454
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIPickerRowProxy.m": {
+			"hash": "bebc84c926fdd09c81cc19d13682cc3f",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 3530
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIProgressBar.h": {
+			"hash": "9771979d5b419b60e1ef9532cec2c354",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 528
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIProgressBar.m": {
+			"hash": "5d77e917e14ff1f7eb40b5b442495c34",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 3773
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIProgressBarProxy.h": {
+			"hash": "a297067732746d2a4bed6cf95c5ce905",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 356
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIProgressBarProxy.m": {
+			"hash": "98d9b6c052bb9c60ff22cc2667dcbab5",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 915
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIRefreshControlProxy.h": {
+			"hash": "81a621be1be066dcc53f2e6bedcc95c0",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 524
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIRefreshControlProxy.m": {
+			"hash": "bbdf916f07124a22120ef682625277ba",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 2574
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIScrollView.h": {
+			"hash": "1cb3ae8c5c74567c129366b596be3dae",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1167
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIScrollView.m": {
+			"hash": "719a3c7dd9b63d55df78170ce6361c7f",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 13142
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIScrollViewProxy.h": {
+			"hash": "3636dab20d934a25f27507d04e2d0364",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 520
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIScrollViewProxy.m": {
+			"hash": "da8bfa19d5a8bb0f134b50ce4e1fc5fe",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 14229
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIScrollableView.h": {
+			"hash": "b6815656109c690b18158b8a7577bd67",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1332
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIScrollableView.m": {
+			"hash": "04bcc592bd87b97fac179ae4249ad6f2",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 19825
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIScrollableViewProxy.h": {
+			"hash": "5712bf1bb80fc0f778af3a6888cdc0d5",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 631
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIScrollableViewProxy.m": {
+			"hash": "c9b9be5cc9ea504dfc2d490801921e12",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 7908
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUISearchBar.h": {
+			"hash": "a76264bbe8f1d386d8cf64506f1b2d79",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 673
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUISearchBar.m": {
+			"hash": "868746213ebfab5d7ae1badded861f6c",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 7971
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUISearchBarProxy.h": {
+			"hash": "6004de0675b668d988973f1ae2604577",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 848
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUISearchBarProxy.m": {
+			"hash": "45569ae138bf3ebdcbace9b537b3cec9",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 2525
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUISlider.h": {
+			"hash": "1df63e18141a9fd068ee390da7860751",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 727
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUISlider.m": {
+			"hash": "ec39d5e9b72a89e37233495dc695eafd",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 9854
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUISliderProxy.h": {
+			"hash": "d6839e17624a3fa473e297a6064e581e",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 347
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUISliderProxy.m": {
+			"hash": "a4846cdfe7635fa3f23ce8125f71d3f1",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1692
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUISwitch.h": {
+			"hash": "2063423df3aee303d26f1a7c50340f3c",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 393
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUISwitch.m": {
+			"hash": "705eefa3e1b0c035a2b92fc4ad430bbb",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 4070
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUISwitchProxy.h": {
+			"hash": "c7220035ab74db9c562a9a1c3a1efad0",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 314
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUISwitchProxy.m": {
+			"hash": "3f1f76f2efc16ddcd186ddeb34e8a019",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 970
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUITabGroup.h": {
+			"hash": "9fa18b529e831f7dfae626aeff395af6",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1119
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUITabGroup.m": {
+			"hash": "43c6101dae3746c8a7af4dfe34b1a143",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 20639
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUITabGroupProxy.h": {
+			"hash": "7dc2212d1132335268e31c9306a53584",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 563
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUITabGroupProxy.m": {
+			"hash": "a6c2d214f8fa2cf4185a4723472e251b",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 8077
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUITabProxy.h": {
+			"hash": "98dc43397a788e7f775c879ecc7a2430",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1551
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUITabProxy.m": {
+			"hash": "668634ec188efe5c10fd47b2d22a782d",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 23784
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUITableView.h": {
+			"hash": "f750903cae8e28bd545d134ba534bef1",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 3546
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUITableView.m": {
+			"hash": "4273817218145d033e459647293e2b6d",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 89503
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUITableViewAction.h": {
+			"hash": "d8ead7a24401205fd4bae863ead1ec2c",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1232
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUITableViewAction.m": {
+			"hash": "b4c17b0e6866377ad25ed04507b4299c",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1191
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUITableViewProxy.h": {
+			"hash": "793872ffd28f9cfd08e37bcaf95f75d4",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1387
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUITableViewProxy.m": {
+			"hash": "900d6d28418fdbb42871a7cd6eaddc62",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 34518
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUITableViewRowProxy.h": {
+			"hash": "0e473c26a7d2cf6370bbc91658b3defe",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1870
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUITableViewRowProxy.m": {
+			"hash": "c2c7ec1d0bbe6a74e378166bf1f10295",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 28188
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUITableViewSectionProxy.h": {
+			"hash": "4720283a65460443ce3b57e991eca92d",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1040
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUITableViewSectionProxy.m": {
+			"hash": "7fc8e3632bffd4d29f2f50e2eba1976d",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 3453
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUITextArea.h": {
+			"hash": "32a6630429820bc2c11351b086316318",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 766
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUITextArea.m": {
+			"hash": "d6f20788754c09056c053c1cc2c912e3",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 10931
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUITextAreaProxy.h": {
+			"hash": "4365e8a67899b87c90870bce5fe826dd",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 368
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUITextAreaProxy.m": {
+			"hash": "8c2866d51bc6a064a90658e7d654d98d",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 570
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUITextField.h": {
+			"hash": "54c0a1bb62b9bfd205cc9a1a340d4ecb",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1132
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUITextField.m": {
+			"hash": "482beab5b494bbea120c53dcbe7c3a3a",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 14888
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUITextFieldProxy.h": {
+			"hash": "acfa3637f085aca6ccf709c305754861",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 371
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUITextFieldProxy.m": {
+			"hash": "3bef30244794279f112e0ddc43358b7b",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1736
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUITextWidget.h": {
+			"hash": "d95742f08ae275beba0f1fb7493bdbb5",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1075
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUITextWidget.m": {
+			"hash": "508c4b0d618176f4af9b59d563e45840",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 7429
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUITextWidgetProxy.h": {
+			"hash": "536b85ea8f2bd5644053a77198cf6519",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1023
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUITextWidgetProxy.m": {
+			"hash": "ebd5d127192cb1c118ce276af4589aff",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 8984
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIView.h": {
+			"hash": "af95ac7dbb7eeae0c913ae5c6f918ef5",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 8570
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIView.m": {
+			"hash": "f587ec3095e7ccd1b54252b5f0b8f2ef",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 44764
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIViewProxy.h": {
+			"hash": "24d5a30d9d682684aa425156244883ef",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 314
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIViewProxy.m": {
+			"hash": "0cffe8bd23c96e018ed224d7e241a382",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 354
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIWebView.h": {
+			"hash": "b0c1ce1b4c4fc5cd46f69dec2d5fc5fa",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1284
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIWebView.m": {
+			"hash": "67b5901b1f6bf1a0287b9df16c776596",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 29883
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIWebViewProxy.h": {
+			"hash": "f24c9f79a2a56c71ccdc2df17ce96ae5",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 594
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIWebViewProxy.m": {
+			"hash": "970bd68fe30c2133d006c0ee4e62b564",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 6755
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIWindow.h": {
+			"hash": "809fd7e9abe220c29ddb46d54e286a88",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 304
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIWindow.m": {
+			"hash": "05ddb6661a55f16f13d3e33cf45ad369",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 999
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIWindowProxy.h": {
+			"hash": "097fae52c85abda748789cd64a357d40",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 751
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIWindowProxy.m": {
+			"hash": "3edfcb8643c5d10d4861f6cb4379c3c5",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 31017
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiOSAdView.h": {
+			"hash": "89fb55bb1e5e27d2292033125043518f",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 635
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiOSAdView.m": {
+			"hash": "4938715588a514febabb1e68cd86c46d",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 4743
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiOSAdViewProxy.h": {
+			"hash": "d80043a46d023422b90aeb572215bed1",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 571
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiOSAdViewProxy.m": {
+			"hash": "d5355111a080804968cb1c984723955a",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 2691
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiOSCoverFlowView.h": {
+			"hash": "f80758757aa989b8cc594a86ae97f18c",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 726
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiOSCoverFlowView.m": {
+			"hash": "4acf19299f01d9c8f0e8ce3d3c08a201",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 7863
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiOSCoverFlowViewProxy.h": {
+			"hash": "3cc4b6fd85c054d7bbcd7e15aa6429c5",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 410
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiOSCoverFlowViewProxy.m": {
+			"hash": "31584bcb6ec30c9899eb0ad2e296d06c",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1015
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiOSDocumentViewerProxy.h": {
+			"hash": "c335104c99a14dacadad22ab420a43c3",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 630
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiOSDocumentViewerProxy.m": {
+			"hash": "c64209e497505cc5e86786f320418f66",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 4244
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiOSNavWindow.h": {
+			"hash": "e6269bfbee53e003919e468b3b55e98c",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 347
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiOSNavWindow.m": {
+			"hash": "0991141f0f888cdd50ee31a50ec648d0",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 553
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiOSNavWindowProxy.h": {
+			"hash": "6537606e498c2b788d0487a671fee271",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 646
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiOSNavWindowProxy.m": {
+			"hash": "929a2b626d338708382b8054bf07e964",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 14286
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiOSProxy.h": {
+			"hash": "703714eaf9849c4fe9e93b8abaffe30b",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 5179
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiOSProxy.m": {
+			"hash": "135d11d6ed768a45f14184c76e06efb4",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 18790
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiOSSplitWindow.h": {
+			"hash": "e42d434ab4313d7c302b0c4978a74d9a",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 846
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiOSSplitWindow.m": {
+			"hash": "14ec015dca99af75bd5b970398816899",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 11485
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiOSSplitWindowProxy.h": {
+			"hash": "6ec29fcb2e9027b3f92552dc9cfb5aa8",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 358
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiOSSplitWindowProxy.m": {
+			"hash": "309effae2871b53ebc3893fc4587a827",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 7539
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiOSTabbedBarProxy.h": {
+			"hash": "9f84fd18576516705097c62500e1bf7e",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 392
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiOSTabbedBarProxy.m": {
+			"hash": "1e3ed53f14761c2aafb7f6869a216daf",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1047
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiOSToolbar.h": {
+			"hash": "d57b77f533cb51d47d96a1ecc0a99864",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 616
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiOSToolbar.m": {
+			"hash": "0d16c631fa486b33798441eac7bcdbbc",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 4671
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiOSToolbarProxy.h": {
+			"hash": "438cfe0713169bb8c49c7c740ce94dea",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 423
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiOSToolbarProxy.m": {
+			"hash": "aec2ff2abed03a5a7042132c6df4bdf5",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 2070
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiOSTransitionAnimationProxy.h": {
+			"hash": "12747cf605302a1b961d3f746437d644",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 644
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiOSTransitionAnimationProxy.m": {
+			"hash": "5652efc53dd0bfcd3cfbeed6e5fd94b3",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 5992
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiPadPopoverProxy.h": {
+			"hash": "05f9e150314d0820700af16861d1d118",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1249
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiPadPopoverProxy.m": {
+			"hash": "6698e7c5a1dfd41afeb04d75e8ecf05e",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 18781
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiPadProxy.h": {
+			"hash": "16553388f5ed2c184ecb300e30697d6d",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1386
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiPadProxy.m": {
+			"hash": "4b331b76cf2e0916be81f60190ed17ce",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 2143
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiPadSplitWindow.h": {
+			"hash": "e4c30365fb4570ffc138a53cc8c05b6b",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 822
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiPadSplitWindow.m": {
+			"hash": "dc46f7514543497119ac62c8e07a8def",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 6035
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiPadSplitWindowButtonProxy.h": {
+			"hash": "34be23686c8f24a50fb0af57b295861b",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 494
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiPadSplitWindowButtonProxy.m": {
+			"hash": "3bd666f05e0f4a0c82fe478774ead91c",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 958
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiPadSplitWindowProxy.h": {
+			"hash": "1425f4315e257072ba1684832a00727b",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 472
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiPadSplitWindowProxy.m": {
+			"hash": "d801fc6328a3f3e13edfa35a4b2d0a07",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 7117
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiPhoneActivityIndicatorStyleProxy.h": {
+			"hash": "94d4e7bd12fd6a6c6353c4c1ccc57dd1",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 522
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiPhoneActivityIndicatorStyleProxy.m": {
+			"hash": "6c6f0413f0fd36c41b679ca474399123",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 676
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiPhoneAlertDialogStyleProxy.h": {
+			"hash": "281bf5b1e65df3c8890ff05677c3cd05",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 608
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiPhoneAlertDialogStyleProxy.m": {
+			"hash": "a55a3f1e1ca93297b3ec6e263fa6cd86",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 783
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiPhoneAnimationStyleProxy.h": {
+			"hash": "d06f3cb3cd38ec928ce7dbed9c6414d6",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 629
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiPhoneAnimationStyleProxy.m": {
+			"hash": "e6c0c6c7f3748ef2db228da11c4818fd",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 818
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiPhoneProgressBarStyleProxy.h": {
+			"hash": "d2061cb585a2b9d40cf6481ddc7de28c",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 513
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiPhoneProgressBarStyleProxy.m": {
+			"hash": "f4a12b3d009b047eba6b165078b0e6af",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 626
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiPhoneProxy.h": {
+			"hash": "f020e87361f79a5f6f93194a418b0f7e",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 4529
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiPhoneProxy.m": {
+			"hash": "a7c7091587efa14199890314c0434fb0",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 10332
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiPhoneRowAnimationStyleProxy.h": {
+			"hash": "0bea45dacd6863ef19856ec469ca5f75",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 797
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiPhoneRowAnimationStyleProxy.m": {
+			"hash": "d106e143528c850497c03fbb0347df23",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 923
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiPhoneScrollIndicatorStyleProxy.h": {
+			"hash": "52ec4f6bbaae0ffbb215df58ebd0f939",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 533
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiPhoneScrollIndicatorStyleProxy.m": {
+			"hash": "bf672bc673d2bdc22d86272b4edb289f",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 667
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiPhoneStatusBarProxy.h": {
+			"hash": "5ae495a94e7414da9d3339065ad16a60",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 856
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiPhoneStatusBarProxy.m": {
+			"hash": "c00477bbf825ce696768888317166881",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1219
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiPhoneSystemButtonProxy.h": {
+			"hash": "6c7235bb0d11ddaf295d5c9eac40f994",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1710
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiPhoneSystemButtonProxy.m": {
+			"hash": "56cb9dfe456ed015c483aac2b2bf0c2e",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1963
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiPhoneSystemButtonStyleProxy.h": {
+			"hash": "3bc24fe63a12a8e642a57a5647ea1065",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 583
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiPhoneSystemButtonStyleProxy.m": {
+			"hash": "c2891ce9bbc75637ca4ee358812a2ab5",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 733
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiPhoneSystemIconProxy.h": {
+			"hash": "55989de212127e9222e026b63216e08d",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 962
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiPhoneSystemIconProxy.m": {
+			"hash": "19b678027a60bbb6a1b41d3c77184aeb",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1112
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiPhoneTableViewCellSelectionStyleProxy.h": {
+			"hash": "c2cc7222e07ea224fb70c071d86ca957",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 602
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiPhoneTableViewCellSelectionStyleProxy.m": {
+			"hash": "a5f2195febf76e6c7e4f7d16241292e3",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 754
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiPhoneTableViewScrollPositionProxy.h": {
+			"hash": "28bed05915c375b6d927df51453ddb35",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 639
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiPhoneTableViewScrollPositionProxy.m": {
+			"hash": "99bdaaf143c4c5113c2e6587ef0dde64",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 782
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiPhoneTableViewSeparatorStyleProxy.h": {
+			"hash": "2456b2d29ca30adb088116e6bff6f49c",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 541
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiPhoneTableViewSeparatorStyleProxy.m": {
+			"hash": "d8911aabeed05bc55d2b22135f989d9e",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 688
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiPhoneTableViewStyleProxy.h": {
+			"hash": "6e0194d5d22bee3fb59fe821580a05e9",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 510
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUIiPhoneTableViewStyleProxy.m": {
+			"hash": "69bb0e7746ed9efa70a7993bb6b74c09",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 610
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUtils.h": {
+			"hash": "8d76dac6ec35610a660c89e26beac7bd",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 22187
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiUtils.m": {
+			"hash": "cf0cde6483ead35315e17912058609ee",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 55892
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiViewAttachBehavior.h": {
+			"hash": "6c3b246d843a72ddbccc0061dbd78698",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1083
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiViewAttachBehavior.m": {
+			"hash": "78622a27f8d16a28b14c9e46e168c7f9",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 6397
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiViewController.h": {
+			"hash": "74039dcf70f75e5905b5adff67a302a9",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 497
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiViewController.m": {
+			"hash": "499e804b93c00e07df3d6f8e305a9be6",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 6344
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiViewProxy.h": {
+			"hash": "93e51af5b11ceb62339410806c7c3fb6",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 16112
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiViewProxy.m": {
+			"hash": "fe67a1f090a6a571e6dcadc8154a3a28",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 88173
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiViewTemplate.h": {
+			"hash": "63c39a035c6d9450b45d2c6915b6da17",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 653
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiViewTemplate.m": {
+			"hash": "6f3c461687d89c944bf2a4855a371107",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 3695
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiWindowProxy.h": {
+			"hash": "edb209676a23acd392d16aaeea712c0b",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1225
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TiWindowProxy.m": {
+			"hash": "4da2311d59032181e02921973885a806",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 22127
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TopTiModule.h": {
+			"hash": "120c56df0c1a64756460608e29c6fe89",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 306
+		},
+		"5.0.3.v20151028143139/iphone/Classes/TopTiModule.m": {
+			"hash": "09ce2463718c6c5948704a7a971fae33",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 6226
+		},
+		"5.0.3.v20151028143139/iphone/Classes/UIImage+Alpha.h": {
+			"hash": "a967af1a413cd1225cb17669602b3a41",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 590
+		},
+		"5.0.3.v20151028143139/iphone/Classes/UIImage+Alpha.m": {
+			"hash": "23468a44f66f08477c82d27979a86dd9",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 5886
+		},
+		"5.0.3.v20151028143139/iphone/Classes/UIImage+Resize.h": {
+			"hash": "f027f5ba168d85ae829b8fa9e5a46ead",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1072
+		},
+		"5.0.3.v20151028143139/iphone/Classes/UIImage+Resize.m": {
+			"hash": "bbee609707bb650d8eb739ee2a8a92b9",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 9172
+		},
+		"5.0.3.v20151028143139/iphone/Classes/UIImage+RoundedCorner.h": {
+			"hash": "189564548aa9be94fa6971f9aba81b7e",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 497
+		},
+		"5.0.3.v20151028143139/iphone/Classes/UIImage+RoundedCorner.m": {
+			"hash": "46932bf1e348316af6136d53f3ddb9ff",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 3367
+		},
+		"5.0.3.v20151028143139/iphone/Classes/UIModule.h": {
+			"hash": "b0a45ab06f4adf0bd9eb9e435f57fe01",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 13060
+		},
+		"5.0.3.v20151028143139/iphone/Classes/UIModule.m": {
+			"hash": "7e0ab99c897f4ebb4d7c98e74aef89ad",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 24000
+		},
+		"5.0.3.v20151028143139/iphone/Classes/UtilsModule.h": {
+			"hash": "8ac3901bae9817b35b82f75987ba2a21",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 345
+		},
+		"5.0.3.v20151028143139/iphone/Classes/UtilsModule.m": {
+			"hash": "eabe44d05e4bc5bbea26dfbe2069a3ae",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 3376
+		},
+		"5.0.3.v20151028143139/iphone/Classes/WatchSessionModule.h": {
+			"hash": "546d2e10c2afb910dcfbc1376991bdbb",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 432
+		},
+		"5.0.3.v20151028143139/iphone/Classes/WatchSessionModule.m": {
+			"hash": "ab94751d9ef472cced6a8feaf352a4e2",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 12872
+		},
+		"5.0.3.v20151028143139/iphone/Classes/WebFont.h": {
+			"hash": "7b1f96da007f263fb19ce0ec2058eb7e",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 2597
+		},
+		"5.0.3.v20151028143139/iphone/Classes/WebFont.m": {
+			"hash": "226584c7c66b7ef9a18fab5eea557770",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 13462
+		},
+		"5.0.3.v20151028143139/iphone/Classes/Webcolor.h": {
+			"hash": "8949bbdccfc46c5e007a79e28905b430",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1383
+		},
+		"5.0.3.v20151028143139/iphone/Classes/Webcolor.m": {
+			"hash": "47eb23e226d0a558e10e185af2fb2740",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 7126
+		},
+		"5.0.3.v20151028143139/iphone/Classes/XHRBridge.h": {
+			"hash": "07891461ff5685be108f84cc9b9faf37",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 475
+		},
+		"5.0.3.v20151028143139/iphone/Classes/XHRBridge.m": {
+			"hash": "7dbb099936c439b7500703bdcf2cc291",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 5789
+		},
+		"5.0.3.v20151028143139/iphone/Classes/XMLModule.h": {
+			"hash": "d0b67d7846b295b62e3e3c50870ef496",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 331
+		},
+		"5.0.3.v20151028143139/iphone/Classes/XMLModule.m": {
+			"hash": "d0a32a108a02bf11d427a80c8936c8bd",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 3652
+		},
+		"5.0.3.v20151028143139/iphone/Classes/YahooModule.h": {
+			"hash": "a15cc69fdfbfabd3b3e40b0ff33d52dd",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 598
+		},
+		"5.0.3.v20151028143139/iphone/Classes/YahooModule.m": {
+			"hash": "50f666b217a1288053324bba63324f0a",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 6162
+		},
+		"5.0.3.v20151028143139/iphone/headers/JavaScriptCore/Ti.h": {
+			"hash": "9c75639db60c4db02fbe16dbd65ce343",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1865
+		},
+		"5.0.3.v20151028143139/iphone/headers/JavaScriptCore/TiBase.h": {
+			"hash": "9a39e6c14997d51ee7c19592117db148",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 7264
+		},
+		"5.0.3.v20151028143139/iphone/headers/JavaScriptCore/TiContext.h": {
+			"hash": "95dfbfb3baf17ed4a85ebf0c1f66212d",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 8165
+		},
+		"5.0.3.v20151028143139/iphone/headers/JavaScriptCore/TiContextRef.h": {
+			"hash": "004a93e80cc5e9366b68fe8cd274ff2b",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 6323
+		},
+		"5.0.3.v20151028143139/iphone/headers/JavaScriptCore/TiCore.h": {
+			"hash": "b8b870c2793e4f03c073a7f424351817",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 1887
+		},
+		"5.0.3.v20151028143139/iphone/headers/JavaScriptCore/TiExport.h": {
+			"hash": "6c9e1c333510e952571ce60284495555",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 6965
+		},
+		"5.0.3.v20151028143139/iphone/headers/JavaScriptCore/TiManagedValue.h": {
+			"hash": "1d4ffef2e2b94496c496b222e71dc0eb",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 3224
+		},
+		"5.0.3.v20151028143139/iphone/headers/JavaScriptCore/TiObjectRef.h": {
+			"hash": "8fce6a9c34cb602dbe430ef35c28186a",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 38174
+		},
+		"5.0.3.v20151028143139/iphone/headers/JavaScriptCore/TiStringRef.h": {
+			"hash": "49c85b5184347ef2f858e3fbb4e117c4",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 5927
+		},
+		"5.0.3.v20151028143139/iphone/headers/JavaScriptCore/TiStringRefCF.h": {
+			"hash": "1ada11bb90c323f60d9cadd814df1111",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 2660
+		},
+		"5.0.3.v20151028143139/iphone/headers/JavaScriptCore/TiValue.h": {
+			"hash": "c92c639efb821a4ef449184e7c2199f9",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 22902
+		},
+		"5.0.3.v20151028143139/iphone/headers/JavaScriptCore/TiValueRef.h": {
+			"hash": "66f80f5738ed013e6ccd5de9307a9aef",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 13063
+		},
+		"5.0.3.v20151028143139/iphone/headers/JavaScriptCore/TiVirtualMachine.h": {
+			"hash": "e8c7210a4763d94cf441038a0846ee49",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 3461
+		},
+		"5.0.3.v20151028143139/iphone/headers/JavaScriptCore/WebKitAvailability.h": {
+			"hash": "f75025d17d081e4e279859684e074106",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 33468
+		},
+		"5.0.3.v20151028143139/iphone/iphone/Titanium_Prefix.pch": {
+			"hash": "4e76f9a4b31e5c154f5db92e1ab6402e",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 350
+		},
+		"5.0.3.v20151028143139/iphone/iphone/Titanium.xcodeproj/xcshareddata/xcschemes/Titanium.xcscheme": {
+			"hash": "f650b1aff4ca0ccbda3bb44e53288be8",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 3284
+		},
+		"KS_nav_ui.png": {
+			"hash": "18ec851acf18b0938369efd0df278260",
+			"mtime": "2016-05-11T12:27:08.000Z",
+			"size": 748
+		},
+		"KS_nav_views.png": {
+			"hash": "e147144461124f92c5407adec0572f45",
+			"mtime": "2016-05-11T12:27:08.000Z",
+			"size": 683
+		},
+		"html/alterar.html": {
+			"hash": "4cef01daa27ea9aed8f8d41920b24ebf",
+			"mtime": "2016-06-08T12:22:42.000Z",
+			"size": 1671
+		},
+		"html/bootstrap/css/bootstrap-theme.css.map": {
+			"hash": "df8f768631ffabe74f29f5f3d720d3ad",
+			"mtime": "2015-11-24T22:34:20.000Z",
+			"size": 47706
+		},
+		"html/bootstrap/css/bootstrap-theme.min.css.map": {
+			"hash": "8b83e7cb9575adf626ca150b8c11b16c",
+			"mtime": "2015-11-24T22:34:20.000Z",
+			"size": 5532
+		},
+		"html/bootstrap/css/bootstrap.css.map": {
+			"hash": "63462f9b350fde2af07c0da2545a01ee",
+			"mtime": "2015-11-24T22:34:20.000Z",
+			"size": 389227
+		},
+		"html/bootstrap/css/bootstrap.min.css.map": {
+			"hash": "a2e87599b1de7c92dbb699007a77150b",
+			"mtime": "2015-11-24T22:34:20.000Z",
+			"size": 54416
+		},
+		"html/bootstrap/fonts/glyphicons-halflings-regular.eot": {
+			"hash": "f4769f9bdb7466be65088239c12046d1",
+			"mtime": "2015-11-24T21:59:06.000Z",
+			"size": 20127
+		},
+		"html/bootstrap/fonts/glyphicons-halflings-regular.svg": {
+			"hash": "89889688147bd7575d6327160d64e760",
+			"mtime": "2015-11-24T21:59:06.000Z",
+			"size": 108738
+		},
+		"html/bootstrap/fonts/glyphicons-halflings-regular.ttf": {
+			"hash": "e18bbf611f2a2e43afc071aa2f4e1512",
+			"mtime": "2015-11-24T21:59:06.000Z",
+			"size": 45404
+		},
+		"html/bootstrap/fonts/glyphicons-halflings-regular.woff": {
+			"hash": "fa2772327f55d8198301fdb8bcfc8158",
+			"mtime": "2015-11-24T21:59:06.000Z",
+			"size": 23424
+		},
+		"html/bootstrap/fonts/glyphicons-halflings-regular.woff2": {
+			"hash": "448c34a56d699c29117adc64c43affeb",
+			"mtime": "2015-11-24T21:59:06.000Z",
+			"size": 18028
+		},
+		"html/index.html": {
+			"hash": "a39b7101eb40c109a2a6b8aeb0c0097d",
+			"mtime": "2016-06-15T11:45:48.000Z",
+			"size": 2070
+		},
+		"html/javascripts/jquery-1.12.0.js": {
+			"hash": "cd0095b52c4242a8aea3ae91aba35ea8",
+			"mtime": "2016-04-12T20:47:33.000Z",
+			"size": 294161
+		},
+		"html/javascripts/validacao.js": {
+			"hash": "abcb10171b401fbefb9a546c5c2bb220",
+			"mtime": "2016-04-12T20:47:33.000Z",
+			"size": 421
+		},
+		"html/javascripts/ajax.js": {
+			"hash": "10b19c720afb95141d811fb541546f36",
+			"mtime": "2016-04-27T12:51:34.000Z",
+			"size": 813
+		},
+		"html/javascripts/index.js": {
+			"hash": "fa69d1863758a89a62ac01a5bafb0503",
+			"mtime": "2016-06-08T12:22:10.000Z",
+			"size": 4381
+		},
+		"Default-568h@2x.png": {
+			"hash": "39604172bca979c1482b8526b4b8b207",
+			"mtime": "2016-05-11T12:27:08.000Z",
+			"size": 525880
+		},
+		"Default-667h@2x.png": {
+			"hash": "cd720a317ac99489153461875e284c48",
+			"mtime": "2016-05-11T12:27:08.000Z",
+			"size": 513122
+		},
+		"Default-Landscape-736h@3x.png": {
+			"hash": "d169ee386c84d555e7d20bacf62a10ef",
+			"mtime": "2016-05-11T12:27:08.000Z",
+			"size": 1754751
+		},
+		"Default-Landscape.png": {
+			"hash": "de8542049812d8a4f802b2b8e9080570",
+			"mtime": "2016-05-11T12:27:08.000Z",
+			"size": 762755
+		},
+		"Default-Landscape@2x.png": {
+			"hash": "0a0292fb2d3807fba384be3e20bca8a7",
+			"mtime": "2016-05-11T12:27:08.000Z",
+			"size": 2197000
+		},
+		"Default-Portrait-736h@3x.png": {
+			"hash": "2f066e1e962c31135a251b38f6393225",
+			"mtime": "2016-05-11T12:27:08.000Z",
+			"size": 1039854
+		},
+		"Default-Portrait.png": {
+			"hash": "5c80a5231f93deb221521fa1c46de984",
+			"mtime": "2016-05-11T12:27:08.000Z",
+			"size": 798136
+		},
+		"Default-Portrait@2x.png": {
+			"hash": "1b7ff9c56988f3d396295e1dfb21ede9",
+			"mtime": "2016-05-11T12:27:08.000Z",
+			"size": 2228874
+		},
+		"Default@2x.png": {
+			"hash": "b62574a4fbe0f8216a44aff34bd62e05",
+			"mtime": "2016-05-11T12:27:08.000Z",
+			"size": 306760
+		},
+		"Classes/ApplicationRouting.m": {
+			"hash": "fb26d965d8eea14f381c9abf3a02d19d",
+			"mtime": "2015-10-28T16:36:32.000Z",
+			"size": 493
+		},
+		"modules/ui/images/badge.png": {
+			"hash": "4c5e51e328d337a135f513bc1e958c82",
+			"mtime": "2015-10-28T16:31:02.000Z",
+			"size": 1130
+		},
+		"modules/ui/images/closeButton.png": {
+			"hash": "42c0b164d75b1e55247eac49060147df",
+			"mtime": "2015-10-28T16:31:02.000Z",
+			"size": 361
+		},
+		"modules/ui/images/photoDefault.png": {
+			"hash": "31576aa458a06e3d95621cc924bc5725",
+			"mtime": "2015-10-28T16:31:02.000Z",
+			"size": 3126
+		}
+	},
+	"target": "simulator",
+	"deployType": "development",
+	"sdkVersion": "5.0.3.v20151028143139",
+	"iosSdkVersion": "8.1",
+	"deviceFamily": "universal",
+	"iosSdkPath": "/Users/didox/Library/Application Support/Titanium/mobilesdk/osx/5.0.3.v20151028143139/iphone",
+	"tiCoreHash": "5710cda7b179a3c8391cc94011e308de",
+	"modulesHash": "d41d8cd98f00b204e9800998ecf8427e",
+	"modulesNativeHash": "d41d8cd98f00b204e9800998ecf8427e",
+	"gitHash": "1ac4be4",
+	"forceCopy": false,
+	"forceCopyAll": false,
+	"name": "minha_primeira_aplicacao",
+	"id": "com.didox.MinhaPrimeiraAplicacao",
+	"analytics": true,
+	"publisher": "not specified",
+	"url": "http://www.didox.com.br",
+	"version": "1.0",
+	"description": "",
+	"copyright": "not specified",
+	"guid": "56c0ef3d-fda6-4cd4-843a-40f817847e0b",
+	"skipJSMinification": false,
+	"encryptJS": false
+}

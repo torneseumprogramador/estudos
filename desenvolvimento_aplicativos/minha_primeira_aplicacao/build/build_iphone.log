@@ -1,0 +1,216 @@
+
+Wed Jun 22 2016 09:23:06 GMT-0300 (BRT)
+
+Operating System
+  Name                        = Mac OS X
+  Version                     = 10.10.3
+  Architecture                = 64bit
+  # CPUs                      = 8
+  Memory                      = 8589934592
+
+Node.js
+  Node.js Version             = 0.12.0
+  npm Version                 = 2.5.1
+
+Titanium CLI
+  CLI Version                 = 4.1.5
+
+Titanium SDK
+  SDK Version                 = 5.0.3.v20151028143139
+  SDK Path                    = /Users/didox/Library/Application Support/Titanium/mobilesdk/osx/5.0.3.v20151028143139
+  Target Platform             = iphone
+
+Command
+  /usr/local/Cellar/node/0.12.0/bin/node /usr/local/bin/titanium build -p
+
+[TRACE]  [ioslib] No iOS Simulator UDID specified, searching for best match
+[TRACE]  [ioslib] Scanning Xcodes: 6.1:6A1052c
+[TRACE]  [ioslib] No app being installed, so picking first simulator
+[TRACE]  [ioslib] Autoselected iOS Simulator: iPhone 6
+[TRACE]  [ioslib]   UDID    = AFADB166-F738-482C-AD7A-E163D2059969
+[TRACE]  [ioslib]   iOS     = 8.1
+[TRACE]  [ioslib] Autoselected Xcode: 6.1
+[DEBUG]  Detecting modules in /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/modules
+[DEBUG]  Detecting modules in /Users/didox/Library/Application Support/Titanium/modules
+[DEBUG]  Detected android module: com.appcelerator.apm 1.1.1 @ /Users/didox/Library/Application Support/Titanium/modules/android/com.appcelerator.apm/1.1.1
+[DEBUG]  Detected android module: com.appcelerator.apm 1.1.5 @ /Users/didox/Library/Application Support/Titanium/modules/android/com.appcelerator.apm/1.1.5
+[DEBUG]  Detected android module: facebook 3.0.3 @ /Users/didox/Library/Application Support/Titanium/modules/android/facebook/3.0.3
+[DEBUG]  Detected android module: facebook 4.0.1 @ /Users/didox/Library/Application Support/Titanium/modules/android/facebook/4.0.1
+[DEBUG]  Detected android module: facebook 4.0.5 @ /Users/didox/Library/Application Support/Titanium/modules/android/facebook/4.0.5
+[DEBUG]  Detected android module: ti.admob 2.1.6 @ /Users/didox/Library/Application Support/Titanium/modules/android/ti.admob/2.1.6
+[DEBUG]  Detected android module: ti.cloudpush 3.3.4 @ /Users/didox/Library/Application Support/Titanium/modules/android/ti.cloudpush/3.3.4
+[DEBUG]  Detected android module: ti.cloudpush 3.3.7 @ /Users/didox/Library/Application Support/Titanium/modules/android/ti.cloudpush/3.3.7
+[DEBUG]  Detected android module: ti.cloudpush 3.3.8 @ /Users/didox/Library/Application Support/Titanium/modules/android/ti.cloudpush/3.3.8
+[DEBUG]  Detected android module: ti.cloudpush 3.4.0 @ /Users/didox/Library/Application Support/Titanium/modules/android/ti.cloudpush/3.4.0
+[DEBUG]  Detected android module: ti.map 2.2.2 @ /Users/didox/Library/Application Support/Titanium/modules/android/ti.map/2.2.2
+[DEBUG]  Detected android module: ti.map 2.2.3 @ /Users/didox/Library/Application Support/Titanium/modules/android/ti.map/2.2.3
+[DEBUG]  Detected android module: ti.map 2.3.1 @ /Users/didox/Library/Application Support/Titanium/modules/android/ti.map/2.3.1
+[DEBUG]  Detected android module: ti.map 2.3.3 @ /Users/didox/Library/Application Support/Titanium/modules/android/ti.map/2.3.3
+[DEBUG]  Detected android module: ti.newrelic 4.0 @ /Users/didox/Library/Application Support/Titanium/modules/android/ti.newrelic/4.0
+[DEBUG]  Detected commonjs module: ti.cloud 3.2.7 @ /Users/didox/Library/Application Support/Titanium/modules/commonjs/ti.cloud/3.2.7
+[DEBUG]  Detected commonjs module: ti.cloud 3.2.9 @ /Users/didox/Library/Application Support/Titanium/modules/commonjs/ti.cloud/3.2.9
+[DEBUG]  Detected iphone module: com.appcelerator.apm 1.1.1 @ /Users/didox/Library/Application Support/Titanium/modules/iphone/com.appcelerator.apm/1.1.1
+[DEBUG]  Detected iphone module: com.appcelerator.apm 1.1.5 @ /Users/didox/Library/Application Support/Titanium/modules/iphone/com.appcelerator.apm/1.1.5
+[DEBUG]  Detected iphone module: com.appcelerator.urlSession 1.0.1 @ /Users/didox/Library/Application Support/Titanium/modules/iphone/com.appcelerator.urlSession/1.0.1
+[DEBUG]  Detected iphone module: com.appcelerator.urlSession 1.1.0 @ /Users/didox/Library/Application Support/Titanium/modules/iphone/com.appcelerator.urlSession/1.1.0
+[DEBUG]  Detected iphone module: com.appcelerator.urlSession 1.1.1 @ /Users/didox/Library/Application Support/Titanium/modules/iphone/com.appcelerator.urlSession/1.1.1
+[DEBUG]  Detected iphone module: facebook 3.1.1 @ /Users/didox/Library/Application Support/Titanium/modules/iphone/facebook/3.1.1
+[DEBUG]  Detected iphone module: facebook 3.2.0 @ /Users/didox/Library/Application Support/Titanium/modules/iphone/facebook/3.2.0
+[DEBUG]  Detected iphone module: facebook 4.0.0 @ /Users/didox/Library/Application Support/Titanium/modules/iphone/facebook/4.0.0
+[DEBUG]  Detected iphone module: facebook 4.0.5 @ /Users/didox/Library/Application Support/Titanium/modules/iphone/facebook/4.0.5
+[DEBUG]  Detected iphone module: ti.coremotion 1.0.1 @ /Users/didox/Library/Application Support/Titanium/modules/iphone/ti.coremotion/1.0.1
+[DEBUG]  Detected iphone module: ti.coremotion 1.1.0 @ /Users/didox/Library/Application Support/Titanium/modules/iphone/ti.coremotion/1.1.0
+[DEBUG]  Detected iphone module: ti.map 2.0.4 @ /Users/didox/Library/Application Support/Titanium/modules/iphone/ti.map/2.0.4
+[DEBUG]  Detected iphone module: ti.map 2.2.0 @ /Users/didox/Library/Application Support/Titanium/modules/iphone/ti.map/2.2.0
+[DEBUG]  Detected iphone module: ti.map 2.3.1 @ /Users/didox/Library/Application Support/Titanium/modules/iphone/ti.map/2.3.1
+[DEBUG]  Detected iphone module: ti.map 2.3.3 @ /Users/didox/Library/Application Support/Titanium/modules/iphone/ti.map/2.3.3
+[DEBUG]  Detected iphone module: ti.map 2.4.0 @ /Users/didox/Library/Application Support/Titanium/modules/iphone/ti.map/2.4.0
+[DEBUG]  Detected iphone module: ti.map 2.4.1 @ /Users/didox/Library/Application Support/Titanium/modules/iphone/ti.map/2.4.1
+[DEBUG]  Detected iphone module: ti.newrelic 4.0 @ /Users/didox/Library/Application Support/Titanium/modules/iphone/ti.newrelic/4.0
+[DEBUG]  Detected iphone module: ti.touchid 1.0 @ /Users/didox/Library/Application Support/Titanium/modules/iphone/ti.touchid/1.0
+[DEBUG]  Detected iphone module: ti.touchid 1.1.0 @ /Users/didox/Library/Application Support/Titanium/modules/iphone/ti.touchid/1.1.0
+[DEBUG]  Detected iphone module: ti.touchid 1.2.0 @ /Users/didox/Library/Application Support/Titanium/modules/iphone/ti.touchid/1.2.0
+[DEBUG]  No project level plugins to load
+[TRACE]  Snapshotting build directory
+[DEBUG]  Titanium SDK iOS directory: /Users/didox/Library/Application Support/Titanium/mobilesdk/osx/5.0.3.v20151028143139/iphone
+[INFO]   Deploy type: development
+[INFO]   Building for target: simulator
+[INFO]   Building using iOS SDK: 8.1
+[INFO]   Building for iOS Simulator: iPhone 6
+[DEBUG]  UDID: AFADB166-F738-482C-AD7A-E163D2059969
+[DEBUG]  Simulator type: iphone
+[DEBUG]  Simulator version: 8.1
+[INFO]   Building for device family: universal
+[DEBUG]  Setting Xcode target to Debug
+[DEBUG]  Setting Xcode build OS to iphonesimulator
+[DEBUG]  Xcode installation: /Applications/Xcode.app/Contents/Developer
+[DEBUG]  iOS WWDR certificate: not found
+[INFO]   Minimum iOS version: 7.1
+[INFO]   Debugging disabled
+[INFO]   Profiler disabled
+[INFO]   Set to symlink files instead of copying
+[INFO]   Initializing the build directory
+[INFO]   Creating Xcode project
+[TRACE]  Removing pre-compile phase
+[TRACE]  No native module libraries to add
+[TRACE]  No extensions to add
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/minha_primeira_aplicacao.xcodeproj/project.pbxproj
+[INFO]   Creating Entitlements.plist
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/minha_primeira_aplicacao.entitlements
+[INFO]   Creating Info.plist
+[INFO]   Disabling ATS
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/Info.plist
+[INFO]   Creating main.m
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/main.m
+[INFO]   Creating Xcode config files
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/project.xcconfig
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/module.xcconfig
+[INFO]   Copying Titanium libraries
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/lib/libTiCore.a
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/lib/libtiverify.a
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/lib/libti_ios_debugger.a
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/lib/libti_ios_profiler.a
+[INFO]   Copying Titanium iOS files
+[TRACE]  Skipping Classes/ApplicationRouting.m, it'll be processed later
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/minha_primeira_aplicacao_Prefix.pch
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/minha_primeira_aplicacao.xcodeproj/xcshareddata/xcschemes/minha_primeira_aplicacao.xcscheme
+[INFO]   Creating debugger and profiler plists
+[DEBUG]  Skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/build/Products/Debug-iphonesimulator/minha_primeira_aplicacao.app/debugger.plist
+[DEBUG]  Skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/build/Products/Debug-iphonesimulator/minha_primeira_aplicacao.app/profiler.plist
+[INFO]   Analyzing Resources directory
+[INFO]   Analyzing platform files
+[INFO]   Analyzing module files
+[INFO]   Analyzing localized launch images
+[INFO]   Analyzing CommonJS modules
+[INFO]   Creating asset catalog
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/Assets.xcassets/Contents.json
+[INFO]   Creating app icon set
+[TRACE]  Found generated 29x29 app icon: /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/Assets.xcassets/AppIcon.appiconset/appicon-Small.png
+[TRACE]  Found generated 58x58 app icon: /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/Assets.xcassets/AppIcon.appiconset/appicon-Small@2x.png
+[TRACE]  Found generated 87x87 app icon: /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/Assets.xcassets/AppIcon.appiconset/appicon-Small@3x.png
+[TRACE]  Found generated 40x40 app icon: /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/Assets.xcassets/AppIcon.appiconset/appicon-Small-40.png
+[TRACE]  Found generated 80x80 app icon: /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/Assets.xcassets/AppIcon.appiconset/appicon-Small-40@2x.png
+[TRACE]  Found generated 120x120 app icon: /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/Assets.xcassets/AppIcon.appiconset/appicon-Small-40@3x.png
+[TRACE]  Found generated 120x120 app icon: /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/Assets.xcassets/AppIcon.appiconset/appicon-60@2x.png
+[TRACE]  Found generated 180x180 app icon: /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/Assets.xcassets/AppIcon.appiconset/appicon-60@3x.png
+[TRACE]  Found generated 76x76 app icon: /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/Assets.xcassets/AppIcon.appiconset/appicon-76.png
+[TRACE]  Found generated 152x152 app icon: /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/Assets.xcassets/AppIcon.appiconset/appicon-76@2x.png
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/Assets.xcassets/AppIcon.appiconset/Contents.json
+[INFO]   Creating launch image set
+[DEBUG]  Unsupported launch image Resources/iphone/Default.png, skipping
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/Assets.xcassets/LaunchImage.launchimage/Contents.json
+[DEBUG]  Copying resources
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/build/Products/Debug-iphonesimulator/minha_primeira_aplicacao.app/KS_nav_ui.png
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/build/Products/Debug-iphonesimulator/minha_primeira_aplicacao.app/KS_nav_views.png
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/build/Products/Debug-iphonesimulator/minha_primeira_aplicacao.app/html/alterar.html
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/build/Products/Debug-iphonesimulator/minha_primeira_aplicacao.app/html/bootstrap/css/bootstrap-theme.css.map
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/build/Products/Debug-iphonesimulator/minha_primeira_aplicacao.app/html/bootstrap/css/bootstrap-theme.min.css.map
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/build/Products/Debug-iphonesimulator/minha_primeira_aplicacao.app/html/bootstrap/css/bootstrap.css.map
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/build/Products/Debug-iphonesimulator/minha_primeira_aplicacao.app/html/bootstrap/css/bootstrap.min.css.map
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/build/Products/Debug-iphonesimulator/minha_primeira_aplicacao.app/html/bootstrap/fonts/glyphicons-halflings-regular.eot
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/build/Products/Debug-iphonesimulator/minha_primeira_aplicacao.app/html/bootstrap/fonts/glyphicons-halflings-regular.svg
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/build/Products/Debug-iphonesimulator/minha_primeira_aplicacao.app/html/bootstrap/fonts/glyphicons-halflings-regular.ttf
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/build/Products/Debug-iphonesimulator/minha_primeira_aplicacao.app/html/bootstrap/fonts/glyphicons-halflings-regular.woff
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/build/Products/Debug-iphonesimulator/minha_primeira_aplicacao.app/html/bootstrap/fonts/glyphicons-halflings-regular.woff2
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/build/Products/Debug-iphonesimulator/minha_primeira_aplicacao.app/html/index.html
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/build/Products/Debug-iphonesimulator/minha_primeira_aplicacao.app/html/javascripts/jquery-1.12.0.js
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/build/Products/Debug-iphonesimulator/minha_primeira_aplicacao.app/html/javascripts/validacao.js
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/build/Products/Debug-iphonesimulator/minha_primeira_aplicacao.app/html/javascripts/ajax.js
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/build/Products/Debug-iphonesimulator/minha_primeira_aplicacao.app/html/javascripts/index.js
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/Assets.xcassets/LaunchImage.launchimage/Default-568h@2x.png
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/Assets.xcassets/LaunchImage.launchimage/Default-667h@2x.png
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/Assets.xcassets/LaunchImage.launchimage/Default-Landscape-736h@3x.png
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/Assets.xcassets/LaunchImage.launchimage/Default-Landscape.png
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/Assets.xcassets/LaunchImage.launchimage/Default-Landscape@2x.png
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/Assets.xcassets/LaunchImage.launchimage/Default-Portrait-736h@3x.png
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/Assets.xcassets/LaunchImage.launchimage/Default-Portrait.png
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/Assets.xcassets/LaunchImage.launchimage/Default-Portrait@2x.png
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/Assets.xcassets/LaunchImage.launchimage/Default@2x.png
+[DEBUG]  Copying CSS files
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/build/Products/Debug-iphonesimulator/minha_primeira_aplicacao.app/html/bootstrap/css/bootstrap-theme.css
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/build/Products/Debug-iphonesimulator/minha_primeira_aplicacao.app/html/bootstrap/css/bootstrap-theme.min.css
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/build/Products/Debug-iphonesimulator/minha_primeira_aplicacao.app/html/bootstrap/css/bootstrap.css
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/build/Products/Debug-iphonesimulator/minha_primeira_aplicacao.app/html/bootstrap/css/bootstrap.min.css
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/build/Products/Debug-iphonesimulator/minha_primeira_aplicacao.app/html/stylesheets/style.css
+[INFO]   Processing JavaScript files
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/build/Products/Debug-iphonesimulator/minha_primeira_aplicacao.app/app.js
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/build/Products/Debug-iphonesimulator/minha_primeira_aplicacao.app/html/bootstrap/js/bootstrap.js
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/build/Products/Debug-iphonesimulator/minha_primeira_aplicacao.app/html/bootstrap/js/bootstrap.min.js
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/build/Products/Debug-iphonesimulator/minha_primeira_aplicacao.app/html/bootstrap/js/npm.js
+[INFO]   Writing app properties
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/build/Products/Debug-iphonesimulator/minha_primeira_aplicacao.app/_app_props_.json
+[DEBUG]  Using default application routing
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/Classes/ApplicationRouting.m
+[INFO]   Writing i18n files
+[DEBUG]  No i18n files to process
+[INFO]   Processing Titanium symbols
+[DEBUG]  Processing Titanium namespace resources
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/build/Products/Debug-iphonesimulator/minha_primeira_aplicacao.app/modules/ui/images/badge.png
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/build/Products/Debug-iphonesimulator/minha_primeira_aplicacao.app/modules/ui/images/closeButton.png
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/build/Products/Debug-iphonesimulator/minha_primeira_aplicacao.app/modules/ui/images/photoDefault.png
+[TRACE]  No change, skipping /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/Classes/defines.h
+[INFO]   Removing files
+[DEBUG]  Removing empty directories
+[INFO]   Skipping xcodebuild
+[INFO]   Finished building the application in 1s 812ms
+[INFO]   Launching iOS Simulator
+[TRACE]  [ioslib] Selected iOS Simulator: iPhone 6
+[TRACE]  [ioslib]   UDID    = AFADB166-F738-482C-AD7A-E163D2059969
+[TRACE]  [ioslib]   iOS     = 8.1
+[TRACE]  [ioslib] Autoselected Xcode: 6.1
+[TRACE]  [ioslib] Removing old log file: /Users/didox/Library/Developer/CoreSimulator/Devices/AFADB166-F738-482C-AD7A-E163D2059969/data/Containers/Data/Application/0E794CD4-4875-4028-B1AF-881902B44120/Documents/56c0ef3d-fda6-4cd4-843a-40f817847e0b.log
+[TRACE]  [ioslib] Tailing iPhone 6 Simulator system log: /Users/didox/Library/Logs/CoreSimulator/AFADB166-F738-482C-AD7A-E163D2059969/system.log
+[TRACE]  [ioslib] Running: /Applications/Xcode.app/Contents/Developer/usr/bin/simctl shutdown AFADB166-F738-482C-AD7A-E163D2059969
+[TRACE]  [ioslib] iPhone 6 Simulator was already shutdown
+[TRACE]  [ioslib] Running: /Applications/Xcode.app/Contents/Developer/Applications/iOS Simulator.app/Contents/MacOS/iOS Simulator -CurrentDeviceUDID AFADB166-F738-482C-AD7A-E163D2059969
+[TRACE]  [ioslib] iPhone 6 Simulator started
+[TRACE]  [ioslib] Running: osascript "/Users/didox/Library/Application Support/Titanium/mobilesdk/osx/5.0.3.v20151028143139/node_modules/ioslib/lib/sim_focus.scpt" "iOS Simulator" "Disabled"
+[TRACE]  [ioslib] iPhone 6 Simulator successfully focused
+[TRACE]  [ioslib] Running: /Applications/Xcode.app/Contents/Developer/usr/bin/simctl install AFADB166-F738-482C-AD7A-E163D2059969 /Users/didox/projects/torne-se-programador/desenvolvimento_aplicativos/minha_primeira_aplicacao/build/iphone/build/Products/Debug-iphonesimulator/minha_primeira_aplicacao.app
+[TRACE]  [ioslib] App installed
+[TRACE]  [ioslib] Running: /Applications/Xcode.app/Contents/Developer/usr/bin/simctl launch AFADB166-F738-482C-AD7A-E163D2059969 com.didox.MinhaPrimeiraAplicacao
+[TRACE]  [ioslib] App launched
+[TRACE]  [ioslib] Found application log file: /Users/didox/Library/Developer/CoreSimulator/Devices/AFADB166-F738-482C-AD7A-E163D2059969/data/Containers/Data/Application/2C4CA7E8-289E-466A-ABF5-F845AAECA36E/Documents/56c0ef3d-fda6-4cd4-843a-40f817847e0b.log
+[TRACE]  [minha_primeira_aplicacao] assertion failed: 14D87p 12B411: libxpc.dylib + 59417 [464E62EA-4CF2-3FEF-9C17-692AD8D66AA8]: 0x7d
+[TRACE]  [minha_primeira_aplicacao] You've implemented -[<UIApplicationDelegate> application:performFetchWithCompletionHandler:], but you still need to add "fetch" to the list of your supported UIBackgroundModes in your Info.plist.
+[TRACE]  [minha_primeira_aplicacao] You've implemented -[<UIApplicationDelegate> application:didReceiveRemoteNotification:fetchCompletionHandler:], but you still need to add "remote-notification" to the list of your supported UIBackgroundModes in your Info.plist.
