@@ -79,7 +79,6 @@ Pessoa.buscarPorNome = function(nome, callback){
 }
 
 Pessoa.todos = function(callback){
-  console.log(" ============== model ============");
   var query = "SELECT * FROM teste.pessoas ";
   App.db.cnn.exec(query, function(dadosRetornadosDaTabela, erro) {
     if(erro){
