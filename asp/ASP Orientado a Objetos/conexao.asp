@@ -8,7 +8,7 @@ conexao.open "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=E:\home\bigsolutions-
 
 set conn= server.createobject("adodb.connection")
 'conn.Open "Driver={SQL SERVER};Server=bigapp01;Database=imobiliaria_plena;Uid=sa;PWD="
-conn.Open "Driver={SQL SERVER};Server=200.170.214.123;Database=imobiliaria_plena;Uid=sa;PWD=bigbig"
+conn.Open "Driver={SQL SERVER};Server=localhost;Database=imobiliaria_plena;Uid=sa;PWD=123"
 
 
 Function f_email(byVal msg)
@@ -24,17 +24,17 @@ function iif(condicao, iifTrue, iifFalse)
 End function
 
 
-'FunÁ„o para mostrar o caminho da p·gina onde o internauta est·
+'Fun√ß√£o para mostrar o caminho da p√°gina onde o internauta est√°
 Function mostracaminho(cod_pagina)
 
 Set rsT = server.createobject("ADODB.Recordset")
 rsT.open "select site_caminho from tab_geral", conexao, 3, 3
 
 If rsT("site_caminho")="S" then
-'verificar se o administrador selecionou em Gerenciamento / ConfiguraÁıes da Pagina, a opÁ„o
-'de mostrar o caminho onde o usu·rio est·
+'verificar se o administrador selecionou em Gerenciamento / Configura√ß√µes da Pagina, a op√ß√£o
+'de mostrar o caminho onde o usu√°rio est√°
 
-msg_retorno = "<font face=Verdana size=1>VocÍ est· em: "
+msg_retorno = "<font face=Verdana size=1>Voc√™ est√° em: "
 	Set rsPag = server.createobject("ADODB.Recordset")
 	rsPag.open "select cod_pai,cod_pagina,titulo_item,item_menu from menu_site where cod_pagina = " & cod_pagina, conexao, 3, 3
 		If not rsPag.eof then
@@ -63,7 +63,7 @@ End If
 
 mostracaminho = msg_retorno
 
-End If 'verificaÁ„o se deve exibir o caminho...
+End If 'verifica√ß√£o se deve exibir o caminho...
 rsT.Close
 Set rsT=nothing
 
@@ -71,7 +71,7 @@ End Function
 
 
 '-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-'FunÁ„o que joga na lixeira os itens deletados.
+'Fun√ß√£o que joga na lixeira os itens deletados.
 '-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 Sub SetDelete( Byval TABELA, ByVal CAMPO, ByVal COD, ByVal NOME, ByVal codUser )
 	
@@ -103,7 +103,7 @@ Sub SetDelete( Byval TABELA, ByVal CAMPO, ByVal COD, ByVal NOME, ByVal codUser )
 End Sub
 
 '-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-' FunÁ„o para restaurar o Objeto	
+' Fun√ß√£o para restaurar o Objeto	
 '-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
 Sub SetRestaurar( ByVal codLixo )	
@@ -112,14 +112,14 @@ Sub SetRestaurar( ByVal codLixo )
 			sql1 = "Update "&rsL("Tabela")&" SET flg_del = 'N' where "&rsL("campo")&" = "& rsL("cod")&""
 			
 			
-			If trim(rsL("Tabela"))="menu_site" then 'colocar a pagina na ultima posiÁ„o
+			If trim(rsL("Tabela"))="menu_site" then 'colocar a pagina na ultima posi√ß√£o
 			
 					Set rsMSite = server.createobject("ADODB.Recordset")
 					rsMSite.open "select item_menu,cod_pai from menu_site where cod_pagina = " & rsL("cod"), conexao, 3, 3
 					
 			
 					
-					If rsMSite("item_menu")="S" and rsMSite("cod_pai")="0" then 'pagina na raiz, mexer na posiÁ„o
+					If rsMSite("item_menu")="S" and rsMSite("cod_pai")="0" then 'pagina na raiz, mexer na posi√ß√£o
 						Set rsTot = conexao.execute("Select max(menu_pos) as tot_menu from menu_site ")
 						If rsTot.eof then
 					 		menu_pos = 1
@@ -130,7 +130,7 @@ Sub SetRestaurar( ByVal codLixo )
 					End If
 					
 
-					If rsMSite("cod_pai")<>"0" then 'subsecao, mexer na posiÁ„o
+					If rsMSite("cod_pai")<>"0" then 'subsecao, mexer na posi√ß√£o
 					
 						Set rsTot = conexao.execute("Select max(sub_menu_pos) as tot_menu from menu_site where cod_pai="&rsMSite("cod_pai"))
 						If rsTot.eof then
@@ -153,7 +153,7 @@ Sub SetRestaurar( ByVal codLixo )
 End sub
 
 '-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-' FunÁ„o para excluir o objeto da lixeira
+' Fun√ß√£o para excluir o objeto da lixeira
 '-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 Sub SetDelLixo( ByVal codLixo )
 	
@@ -161,10 +161,10 @@ Sub SetDelLixo( ByVal codLixo )
 		vTitulo = rsL("nome")
 		If not rsL.EOF then
 
-			If Ucase(rsL("tabela")) = "MENU_SITE" then 'verificaÁıes
+			If Ucase(rsL("tabela")) = "MENU_SITE" then 'verifica√ß√µes
 				Set rsF = server.createobject("ADODB.Recordset")
 				rsF.open "select cod_pagina from menu_site where cod_pagina="&rsL("cod")&" or cod_pai="&rsL("cod")&" ", conexao, 3, 3
-					'Remove o redirecionamento, caso necess·rio
+					'Remove o redirecionamento, caso necess√°rio
 					Call RemRedir(rsL("cod"))
 					
 					'deletar as paginas filho
@@ -185,7 +185,7 @@ Sub SetDelLixo( ByVal codLixo )
 			
 			
 			'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-			'Apaga as tabelas auxiliares da tabela TAB_PROPRIEDADES, s„o elas.: TAB_REGISTROS, TAB_TITULOS
+			'Apaga as tabelas auxiliares da tabela TAB_PROPRIEDADES, s√£o elas.: TAB_REGISTROS, TAB_TITULOS
 			'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 			If Ucase(rsL("tabela")) = "TBL_PROPRIEDADES" then
 						conexao.execute("drop table [TBL_"&vTitulo&"]")
@@ -193,7 +193,7 @@ Sub SetDelLixo( ByVal codLixo )
 			End if
 			
 			'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-			'Apaga as tabelas auxiliares da tabela TAB_FORM_CONFIGURACAO s„o elas.: tab_form_registros, tab_form_campos, 
+			'Apaga as tabelas auxiliares da tabela TAB_FORM_CONFIGURACAO s√£o elas.: tab_form_registros, tab_form_campos, 
 			' tab_form_campos_nome, tab_form_combo e ainda apaga a tabela criada para o form.
 			'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 			If Ucase(rsL("tabela")) = "TAB_FORM_CONFIGURACAO" then			
@@ -233,7 +233,7 @@ End Sub
 Sub DelPagForever(int_cod_pag)
 
 			'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-			' Apaga os registrso das tabelas auxiliares da tabela MENU_SITE s„o elas.: institucional_textos, forum_configuracao,
+			' Apaga os registrso das tabelas auxiliares da tabela MENU_SITE s√£o elas.: institucional_textos, forum_configuracao,
 			' forum_msg, modelo2_faq, modelo1_links, modelo1_links_SubCat, MODELO_LINK_CONFIG.
 			'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=			
 
@@ -270,7 +270,7 @@ Sub DelPagForever(int_cod_pag)
 				'Deletando as Categorias 
  				conexao.execute("delete from modelo1_links_cat where cod_pagina="&int_cod_pag&"")
  				
- 				'Deletando confuguraÁıes avanÁadas
+ 				'Deletando confugura√ß√µes avan√ßadas
  				conexao.execute("delete from MODELO_LINK_CONFIG where cod_pagina="&int_cod_pag&"")
  				
  				'M9
@@ -299,18 +299,18 @@ Sub DelPagForever(int_cod_pag)
 End Sub
 
 '-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-' FunÁ„o para dizer o tipo de objeto que esta na lixeira
+' Fun√ß√£o para dizer o tipo de objeto que esta na lixeira
 ' Pega o nome da tabela e atravez dela eu retorno o nome do objeto
 '-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 Function vTipoObj( byVal TABELA )
 
 	Select case Ucase(TABELA)
 		case "MENU_SITE"		
-			vTipoObj = "P·ginas"
+			vTipoObj = "P√°ginas"
 		case "TBL_PROPRIEDADES"
 			vTipoObj = "Tabelas"
 		case "TAB_FORM_CONFIGURACAO"	
-			vTipoObj = "Formul·rios"	
+			vTipoObj = "Formul√°rios"	
 	End Select
 End function
 
@@ -471,7 +471,7 @@ Class CapturaCep
 				End If
 				
 				if prNome_bairro = "" then
-					retCep = "<script language='javascript'>alert('N˙mero de cep n„o encontrado')</script>"
+					retCep = "<script language='javascript'>alert('N√∫mero de cep n√£o encontrado')</script>"
 				end if
 				
 					
@@ -481,11 +481,11 @@ Class CapturaCep
 				Set objRS_localidade = Nothing
 					
 			Else  
-				retCep = "<script language='javascript'>alert('N˙mero de cep inv·lido')</script>"
+				retCep = "<script language='javascript'>alert('N√∫mero de cep inv√°lido')</script>"
 			End If
 		 
 	   If Err.Number Then
-		  retCep = "<script language='javascript'>alert('Erro ao executar evento retCep n∞ " & Err.Number & " descricao : " & replace( Err.Description,"'","" )	 & "')< /script>"
+		  retCep = "<script language='javascript'>alert('Erro ao executar evento retCep n¬∞ " & Err.Number & " descricao : " & replace( Err.Description,"'","" )	 & "')< /script>"
 	   End If	
     End Function
 
