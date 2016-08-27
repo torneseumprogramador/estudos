@@ -1,0 +1,41 @@
+<head>
+<meta charset="UTF-8">
+</head>
+
+<script>
+
+debugger
+alunos = []
+for(i=0;i<1;i++){
+	nome = prompt("Digite o nome do aluno");
+	notas = [];
+	for(x=1;x<=2;x++){
+		nota = prompt("Digite a nota de numero " + x + " do aluno " + nome);
+		nota = parseInt(nota);
+		notas.push(nota);
+	}
+
+	aluno = {}
+	aluno.nome = nome
+	aluno.notas = notas
+	alunos.push(aluno);
+}
+
+for(i=0;i<alunos.length;i++){
+	aluno = alunos[i]
+	mostrarNaTela("O aluno " + aluno.nome + " teve as notas:");
+	somaDasNotas = 0;
+	for(x=0; x<aluno.notas.length;x++){
+		nota = aluno.notas[x];
+		somaDasNotas = somaDasNotas + nota
+		mostrarNaTela("Nota " + (x+1) + ": " + nota);
+	}
+	media = somaDasNotas/aluno.notas.length;
+	mostrarNaTela("A média dele foi: " + media);
+	mostrarNaTela("=================================");
+}
+
+function mostrarNaTela(mensagem){
+	document.write(mensagem + "<br>");
+}
+</script>
