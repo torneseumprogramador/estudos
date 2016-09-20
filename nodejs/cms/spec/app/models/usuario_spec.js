@@ -29,8 +29,72 @@ describe("O modelo de usuário", function() {
     it("email precisa ser válido", function() {
       var usuario = new Usuario();
       expect(usuario.email).toBe("");
-
     });
-
   });
+
+  describe("com o método salvar", function() {
+    it("deve incluir no banco de dados", function(done){
+      var usuario = new Usuario();
+      usuario.nome = "Danilo com teste";
+      usuario.login = "didox";
+      usuario.senha = "123";
+      usuario.email = "danilo@beminfinito.com.br";
+      usuario.salvar(function(retorno){
+        expect(retorno.erro).toBe(false);
+        done();
+      });
+    });
+  });
+
+  describe("com o método excluir todos", function() {
+    it("deve excluir todos os usuarios", function(done){
+      Usuario.excluirTodos(function(retorno){
+        expect(retorno.erro).toBe(false);
+        done();
+      });
+    });
+  });
+
+  describe("com o método todos", function() {
+    it("deve retornar todos os usuarios", function(done){
+      Usuario.excluirTodos(function(retorno1){
+        var usuario = new Usuario();
+        usuario.nome = "Danilo com teste";
+        usuario.login = "didox";
+        usuario.senha = "123";
+        usuario.email = "danilo@beminfinito.com.br";
+        usuario.salvar(function(retorno2){
+          Usuario.todos(function(retorno3){
+            expect(retorno3.erro).toBe(false);
+            expect(retorno3.usuarios.length).toBe(1);
+            done();
+          });
+        });
+      });
+    });
+  });
+
+  describe("com o método savar para atualizar", function() {
+    it("deve atualizar o usuário criado", function(done){
+      Usuario.excluirTodos(function(retorno1){
+        var usuario = new Usuario();
+        usuario.nome = "Danilo com teste";
+        usuario.login = "didox";
+        usuario.senha = "123";
+        usuario.email = "danilo@beminfinito.com.br";
+        usuario.salvar(function(retorno2){
+          Usuario.todos(function(retorno3){
+            var usuario = retorno3.usuarios[0];
+            var uUpdate = new Usuario(usuario);
+            uUpdate.nome = "Danilo atualizado pelo teste";
+            uUpdate.salvar(function(retorno4){
+              expect(retorno4.erro).toBe(false);
+              done();
+            });
+          });
+        });
+      });
+    });
+  });
+
 });

@@ -1,13 +1,22 @@
 var db = require('../../config/db.js');
 
-var Usuario = function(){
-  this.id = 0;
-  this.nome = "";
-  this.login = "";
-  this.senha = "";
-  this.email = "";
+var Usuario = function(usuario){
+  if(usuario !== undefined){
+    this.id = usuario.id;
+    this.nome = usuario.nome;
+    this.login = usuario.login;
+    this.senha = usuario.senha;
+    this.email = usuario.email;
+  }
+  else{
+    this.id = 0;
+    this.nome = "";
+    this.login = "";
+    this.senha = "";
+    this.email = "";
+  }
 
-  this.salvar = function(){
+  this.salvar = function(callback){
     if(this.nome === ""){
       console.log("[Modelo:Usuario] Nome de usuário obrigatório");
       return;
@@ -23,29 +32,61 @@ var Usuario = function(){
       return;
     }
 
+    var query = "";
     if(this.id === 0 || this.id === "" || this.id === undefined){
-      var query = "INSERT INTO usuarios (nome, login, senha, email) VALUES ('" + this.nome + "', '" + this.login + "', '" + this.senha + "', '" + this.email + "');";
+      query = "INSERT INTO usuarios (nome, login, senha, email) VALUES ('" + this.nome + "', '" + this.login + "', '" + this.senha + "', '" + this.email + "');";
       db.cnn.exec(query, function(rows, err){
-        if(err !== undefined){
-          console.log("Erro ao incluir dados de Usuario");
+        if(err !== undefined && err !== null){
+          callback.call(null, {erro:true, mensagem: err.message});
         }
         else{
-          console.log("Usuario incluido com sucesso");
+          callback.call(null, {erro:false});
         }
       });
     }
     else{
-      var query = "UPDATE usuarios SET nome='" + this.nome + "', login='" + this.login + "', senha='" + this.senha + "', email='" + this.email + "' WHERE id='" + this.id + "';"
+      query = "UPDATE usuarios SET nome='" + this.nome + "', login='" + this.login + "', senha='" + this.senha + "', email='" + this.email + "' WHERE id='" + this.id + "';";
       db.cnn.exec(query, function(rows, err){
-        if(err !== undefined){
-          console.log("Erro ao atualizar dados de Usuario");
+        if(err !== undefined && err !== null){
+          callback.call(null, {erro:true, mensagem: err.message});
         }
         else{
-          console.log("Usuario atualizado com sucesso");
+          callback.call(null, {erro:false});
         }
       });
     }
   };
+};
+
+Usuario.excluirTodos = function(callback){
+  query = "delete from usuarios;";
+  db.cnn.exec(query, function(rows, err){
+    if(err !== undefined && err !== null){
+      callback.call(null, {erro:true, mensagem: err.message});
+    }
+    else{
+      callback.call(null, {erro:false});
+    }
+  });
+};
+
+Usuario.todos = function(callback){
+  query = "select * from usuarios;";
+  db.cnn.exec(query, function(rows, err){
+    if(err !== undefined && err !== null){
+      callback.call(null, {
+        erro:true,
+        mensagem: err.message,
+        usuarios: []
+      });
+    }
+    else{
+      callback.call(null, {
+        erro:false,
+        usuarios:rows
+      });
+    }
+  });
 };
 
 

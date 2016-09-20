@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "jshint": "./node_modules/jshint/bin/jshint app/models/usuario.js",
+    "jshint": "./node_modules/jshint/bin/jshint app/*/*.js spec/app/*/*.js",
     "test": "./node_modules/jasmine/bin/jasmine.js"
   },
   "dependencies": {
