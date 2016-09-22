@@ -1,0 +1,47 @@
+<head>
+<meta charset="UTF-8">
+</head>
+
+<div id="resultado"></div>
+
+<script src="file:///Users/didox/projects/torne-se-programador/1l%20-%20Orientacao%20a%20objetos/aula-22-09-2016/cliente.js"></script>
+<script>
+
+/*
+var c = new Cliente();
+c.nome = "Danilo";
+c.telefone = "sdsdsds";
+c.cpf = "sdsdds";
+c.GravarEmMomoria()
+*/
+var c = new Cliente({nome:"Danilo"});
+c.GravarEmMomoria();
+
+// document.write("<hr>");
+
+/*
+var c2 = new Cliente();
+c2.nome = "Sheila";
+c2.telefone = "434433443";
+c2.cpf = "32323233";
+c2.GravarEmMomoria()
+*/
+// c2.Mostrar();
+
+var c2 = new Cliente({nome:"Geraldo"});
+c2.GravarEmMomoria();
+
+
+var c2 = new Cliente({nome:"Sheila"});
+c2.GravarEmMomoria();
+
+
+var c2 = new Cliente({nome:"Sheila Santos", telefone:"434433443", cpf:"32323233"});
+c2.GravarEmMomoria();
+
+//Cliente.clientes
+Cliente.todos()
+
+</script>
+
+<h1>Programa em JS para fazer códigos em Orientação a Objetos<h1>
