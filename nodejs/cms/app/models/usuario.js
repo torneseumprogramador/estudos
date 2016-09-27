@@ -70,6 +70,18 @@ Usuario.excluirTodos = function(callback){
   });
 };
 
+Usuario.truncateTable = function(callback){
+  query = "TRUNCATE usuarios;";
+  db.cnn.exec(query, function(rows, err){
+    if(err !== undefined && err !== null){
+      callback.call(null, {erro:true, mensagem: err.message});
+    }
+    else{
+      callback.call(null, {erro:false});
+    }
+  });
+};
+
 Usuario.todos = function(callback){
   query = "select * from usuarios;";
   db.cnn.exec(query, function(rows, err){
@@ -85,6 +97,33 @@ Usuario.todos = function(callback){
         erro:false,
         usuarios:rows
       });
+    }
+  });
+};
+
+Usuario.buscarPorID = function(id, callback){
+  query = "select * from usuarios where id=" + id + ";";
+  db.cnn.exec(query, function(rows, err){
+    if(err !== undefined && err !== null){
+      callback.call(null, {
+        erro:true,
+        mensagem: err.message,
+        usuario: {}
+      });
+    }
+    else{
+      if(rows.length > 0){
+        callback.call(null, {
+          erro:false,
+          usuario:rows[0]
+        });
+      }
+      else{
+        callback.call(null, {
+          erro:false,
+          usuario:{}
+        });
+      }
     }
   });
 };

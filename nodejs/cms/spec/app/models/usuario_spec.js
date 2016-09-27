@@ -55,6 +55,25 @@ describe("O modelo de usuário", function() {
     });
   });
 
+  describe("com o método buscarPorID", function() {
+    it("deve retornar o usuario pelo seu ID", function(done){
+      Usuario.truncateTable(function(retorno1){
+        var usuario = new Usuario();
+        usuario.nome = "Danilo com teste";
+        usuario.login = "didox";
+        usuario.senha = "123";
+        usuario.email = "danilo@beminfinito.com.br";
+        usuario.salvar(function(retorno2){
+          Usuario.buscarPorID(1, function(retorno3){
+            expect(retorno3.erro).toBe(false);
+            expect(retorno3.usuario.id).toBe(1);
+            done();
+          });
+        });
+      });
+    });
+  });
+
   describe("com o método todos", function() {
     it("deve retornar todos os usuarios", function(done){
       Usuario.excluirTodos(function(retorno1){
