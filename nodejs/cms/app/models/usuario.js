@@ -128,5 +128,31 @@ Usuario.buscarPorID = function(id, callback){
   });
 };
 
+Usuario.buscarPorNome = function(nome, callback){
+  query = "select * from usuarios where nome like '%" + nome + "%';";
+  db.cnn.exec(query, function(rows, err){
+    if(err !== undefined && err !== null){
+      callback.call(null, {
+        erro:true,
+        mensagem: err.message,
+        usuarios: []
+      });
+    }
+    else{
+      if(rows.length > 0){
+        callback.call(null, {
+          erro:false,
+          usuarios:rows
+        });
+      }
+      else{
+        callback.call(null, {
+          erro:false,
+          usuarios:[]
+        });
+      }
+    }
+  });
+};
 
 module.exports = Usuario;

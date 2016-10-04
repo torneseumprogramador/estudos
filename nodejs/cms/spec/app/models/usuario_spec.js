@@ -116,4 +116,24 @@ describe("O modelo de usuário", function() {
     });
   });
 
+  describe("com o método buscarPorNome", function() {
+    it("deve retornar todos os usuarios", function(done){
+      Usuario.excluirTodos(function(retorno1){
+        nome = "Danilo com teste"
+        var usuario = new Usuario({nome:nome, login:"didox", senha:"123", email:"danilo@beminfinito.com.br"});
+        usuario.salvar(function(retorno2){
+          var usuario2 = new Usuario({nome:"Denilson", login:"denilson", senha:"d123", email:"denilson@beminfinito.com.br"});
+          usuario2.salvar(function(retorno3){
+            Usuario.buscarPorNome("danilo", function(retorno4){
+              expect(retorno4.erro).toBe(false);
+              expect(retorno4.usuarios.length).toBe(1);
+              expect(retorno4.usuarios[0].nome).toBe(nome);
+              done();
+            });
+          });
+        });
+      });
+    });
+  });
+
 });
