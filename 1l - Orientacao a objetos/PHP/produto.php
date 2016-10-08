@@ -1,7 +1,7 @@
 <?php
 include dirname(__DIR__).'/db/cnn.php';
 
-class Produto{
+class Produto {
   public function __construct($id = 0, $nome = "", $preco = "")
   {
     $this->id = $id;
