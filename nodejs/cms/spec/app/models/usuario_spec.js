@@ -119,7 +119,7 @@ describe("O modelo de usuário", function() {
   describe("com o método buscarPorNome", function() {
     it("deve retornar todos os usuarios", function(done){
       Usuario.excluirTodos(function(retorno1){
-        nome = "Danilo com teste"
+        nome = "Danilo com teste";
         var usuario = new Usuario({nome:nome, login:"didox", senha:"123", email:"danilo@beminfinito.com.br"});
         usuario.salvar(function(retorno2){
           var usuario2 = new Usuario({nome:"Denilson", login:"denilson", senha:"d123", email:"denilson@beminfinito.com.br"});
