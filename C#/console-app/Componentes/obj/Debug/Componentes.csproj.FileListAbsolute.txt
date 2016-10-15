@@ -1,0 +1,5 @@
+C:\projetos\estudos\C#\console-app\Componentes\obj\Debug\Componentes.csprojResolveAssemblyReference.cache
+C:\projetos\estudos\C#\console-app\Componentes\bin\Debug\Componentes.dll
+C:\projetos\estudos\C#\console-app\Componentes\bin\Debug\Componentes.pdb
+C:\projetos\estudos\C#\console-app\Componentes\obj\Debug\Componentes.dll
+C:\projetos\estudos\C#\console-app\Componentes\obj\Debug\Componentes.pdb
