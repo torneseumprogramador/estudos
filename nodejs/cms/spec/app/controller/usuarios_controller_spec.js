@@ -62,4 +62,24 @@ describe("O controller de usuarios", function() {
       });
     });
   });
+
+
+  describe("POST /usuarios.json - deve criar um usuário", function() {
+    it("deve retornar o status code de 201 e retornar o novo usuário criado", function(done) {
+
+      request.post({url: host + "/usuarios.json", form: {nome:'Joao 123', login:'joao', senha:'123', email:'joao@teste.com.br'}}, function(error, response, body) {
+        if(response === undefined){
+          console.log("Não consegui localizar o servidor");
+          expect(503).toBe(200);
+        }
+        else{
+          expect(response.statusCode).toBe(201);
+          var json = JSON.parse(response.body);
+          expect(json.mensagem).toBe("Usuário criado com sucesso");
+        }
+        done();
+      });
+    });
+  });
+
 });
