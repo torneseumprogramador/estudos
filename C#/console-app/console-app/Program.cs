@@ -15,6 +15,8 @@ namespace console_app
     {
         static void Main(string[] args)
         {
+            var cachorro = new Classes.Cachorro();
+            cachorro.Latir();
             //Menu.Criar();
 
             Console.WriteLine("===========Cadastro de cliente=====================");
