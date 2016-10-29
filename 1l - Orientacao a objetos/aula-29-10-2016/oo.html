@@ -1,0 +1,26 @@
+<head>
+<meta charset="UTF-8">
+</head>
+
+<div id="resultado"></div>
+
+<script src="file:///Users/didox/projects/torne-se-programador/1l%20-%20Orientacao%20a%20objetos/aula-29-10-2016/classe_singleton.js"></script>
+<script>
+
+console.log(Singleton);
+console.log("====== Sem instancia iniciada =========");
+console.log(Singleton.instancia);
+Singleton.iniciar();
+console.log("====== Com instancia iniciada =========");
+console.log(Singleton.instancia);
+
+console.log("====== Alterando o atributo nome =========");
+Singleton.instancia.nome = "Danilo"
+console.log(Singleton.instancia.nome);
+
+console.log("====== Dando alerta do método unitário da minha classe singleton =========");
+Singleton.instancia.MostrarNaTela();
+
+</script>
+
+<h1>Exemplo classe singleton<h1>
