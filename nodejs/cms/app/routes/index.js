@@ -11,6 +11,7 @@ router.get('/usuarios.json', UsuariosController.todos);
 router.post('/usuarios.json', UsuariosController.criar);
 router.put('/usuarios.json', UsuariosController.atualizar);
 router.get('/usuarios/:id.json', UsuariosController.porId);
+router.patch('/usuarios/:id.json', UsuariosController.atualizarPorPatch);
 
 
 module.exports = router;

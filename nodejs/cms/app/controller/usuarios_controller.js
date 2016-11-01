@@ -82,6 +82,45 @@ var UsuariosController = {
         });
       }
     });
+  },
+  atualizarPorPatch: function(request, response, next){
+    Usuario.buscarPorID(request.params.id, function(retorno){
+      if(retorno.usuario.id === undefined){
+        response.status(400).send({
+          erro:'Erro ao atualizar, id de usuario não encontrado'
+        });
+      }
+      else{
+        var usuario = new Usuario(retorno.usuario);
+
+        if(request.body.nome !== undefined && request.body.nome !== ""){
+          usuario.nome = request.body.nome;
+        }
+
+        if(request.body.login !== undefined && request.body.login !== ""){
+          usuario.login = request.body.login;
+        }
+
+        if(request.body.senha !== undefined && request.body.senha !== ""){
+          usuario.senha = request.body.senha;
+        }
+
+        if(request.body.email !== undefined && request.body.email !== ""){
+          usuario.email = request.body.email;
+        }
+
+        usuario.salvar(function(retorno){
+          if(retorno.erro){
+            response.status(500).send({
+              erro:'Erro ao atualizar usuario (' + retorno.mensagem + ')'
+            });
+          }
+          else{
+            response.status(200).send({mensagem: "Usuário atualizado com sucesso"});
+          }
+        });
+      }
+    });
   }
 };
 

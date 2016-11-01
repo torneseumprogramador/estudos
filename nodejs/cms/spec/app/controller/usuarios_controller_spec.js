@@ -156,4 +156,48 @@ describe("O controller de usuarios", function() {
     });
   });
 
+  describe("PATCH /usuarios.json - deve atualizar um usuário", function() {
+    var usuarioCadastrado; 
+
+    beforeEach(function(done) {
+      Usuario.excluirTodos(function(retorno1){
+        var usuario = new Usuario();
+        usuario.nome = "usuário novo";
+        usuario.login = "didox";
+        usuario.senha = "123";
+        usuario.email = "danilo@beminfinito.com.br";
+        usuario.salvar(function(retorno2){
+          Usuario.todos(function(retorno3){
+            if(!retorno3.erro){
+              usuarioCadastrado = retorno3.usuarios[0];
+            }
+            done();
+          });
+        });
+      });
+    });
+
+    it("deve retornar o status code de 200", function(done) {
+      request.patch({url: host + "/usuarios/" + usuarioCadastrado.id + ".json", form: {
+        nome: "Nome atualizado por patch",
+      }}, function(error, response, body) {
+        if(response === undefined){
+          console.log("Não consegui localizar o servidor");
+          expect(503).toBe(200);
+        }
+        else{
+          expect(response.statusCode).toBe(200);
+          var json = JSON.parse(response.body);
+          expect(json.mensagem).toBe("Usuário atualizado com sucesso");
+
+          Usuario.buscarPorID(usuarioCadastrado.id, function(retorno){
+            expect(retorno.usuario.nome).toBe("Nome atualizado por patch");
+            done();
+          });
+        }
+        done();
+      });
+    });
+  });
+
 });
