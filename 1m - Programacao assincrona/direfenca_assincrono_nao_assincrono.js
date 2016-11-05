@@ -2,20 +2,53 @@
 
 // exemplo programação funcional
 function resolveProblema(){
-  
+  return "sync";
 }
 
 function resolveProblema2(){
-  
+  return "sync2";
 }
 
 function resolveProblema3(){
-  
+  return "sync3";
 }
 
 var retorno = resolveProblema();
+alert(retorno);
+
 var retorno2 = resolveProblema2();
+alert(retorno2);
+
 var retorno3 = resolveProblema3();
+alert(retorno3);
+
+////////// código assincronos //////////////
+
+function resolveProblema(callback){
+  callback.call(null, "async");
+}
+
+function resolveProblema2(callback){
+  callback.call(null, "async2")
+}
+
+function resolveProblema3(callback){
+  callback.call(null, "async3")
+}
+
+resolveProblema(function(retorno){ 
+  setTimeout(function(){
+    alert(retorno)
+  }, 1000);
+});
+
+resolveProblema2(function(retorno2){ 
+  alert(retorno2)
+});
+
+resolveProblema3(function(retorno3){ 
+  alert(retorno3)
+});
 
 
 // exemplo programação orientado a objetos
