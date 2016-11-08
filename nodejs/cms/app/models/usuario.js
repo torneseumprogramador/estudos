@@ -128,6 +128,23 @@ Usuario.buscarPorID = function(id, callback){
   });
 };
 
+Usuario.excluirPorID = function(id, callback){
+  query = "delete from usuarios where id=" + id + ";";
+  db.cnn.exec(query, function(rows, err){
+    if(err !== undefined && err !== null){
+      callback.call(null, {
+        erro:true,
+        mensagem: err.message
+      });
+    }
+    else{
+      callback.call(null, {
+        erro:false
+      });
+    }
+  });
+};
+
 Usuario.buscarPorNome = function(nome, callback){
   query = "select * from usuarios where nome like '%" + nome + "%';";
   db.cnn.exec(query, function(rows, err){

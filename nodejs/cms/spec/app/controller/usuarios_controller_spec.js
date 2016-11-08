@@ -79,8 +79,22 @@ describe("O controller de usuarios", function() {
         });
       });
     });
-  });
 
+    it("deve retornar o status code de 404 para usuario não cadastrado", function(done) {
+      Usuario.truncateTable(function(retorno1){
+        request.get(host + "/usuarios/9999.json", function(error, response, body) {
+          if(response === undefined){
+            console.log("Não consegui localizar o servidor");
+            expect(503).toBe(200);
+          }
+          else{
+            expect(response.statusCode).toBe(404);
+          }
+          done();
+        });
+      });
+    });
+  });
 
   describe("POST /usuarios.json - deve criar um usuário", function() {
     it("deve retornar o status code de 201", function(done) {
@@ -156,7 +170,7 @@ describe("O controller de usuarios", function() {
     });
   });
 
-  describe("PATCH /usuarios.json - deve atualizar um usuário", function() {
+  describe("PATCH /usuarios/{id}.json - deve atualizar um usuário", function() {
     var usuarioCadastrado; 
 
     beforeEach(function(done) {
@@ -194,6 +208,42 @@ describe("O controller de usuarios", function() {
             expect(retorno.usuario.nome).toBe("Nome atualizado por patch");
             done();
           });
+        }
+        done();
+      });
+    });
+  });
+
+
+  describe("DELETE /usuarios/{id}.json - deve excluir um usuário", function() {
+    var usuarioCadastrado; 
+
+    beforeEach(function(done) {
+      Usuario.excluirTodos(function(retorno1){
+        var usuario = new Usuario();
+        usuario.nome = "usuáro para excluir";
+        usuario.login = "didox";
+        usuario.senha = "123";
+        usuario.email = "danilo@beminfinito.com.br";
+        usuario.salvar(function(retorno2){
+          Usuario.todos(function(retorno3){
+            if(!retorno3.erro){
+              usuarioCadastrado = retorno3.usuarios[0];
+            }
+            done();
+          });
+        });
+      });
+    });
+
+    it("deve retornar o status code de 204", function(done) {
+      request.delete({url: host + "/usuarios/" + usuarioCadastrado.id + ".json"}, function(error, response, body) {
+        if(response === undefined){
+          console.log("Não consegui localizar o servidor");
+          expect(503).toBe(200);
+        }
+        else{
+          expect(response.statusCode).toBe(204);
         }
         done();
       });

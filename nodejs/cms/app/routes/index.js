@@ -12,6 +12,7 @@ router.post('/usuarios.json', UsuariosController.criar);
 router.put('/usuarios.json', UsuariosController.atualizar);
 router.get('/usuarios/:id.json', UsuariosController.porId);
 router.patch('/usuarios/:id.json', UsuariosController.atualizarPorPatch);
+router.delete('/usuarios/:id.json', UsuariosController.excluirUsuario);
 
 
 module.exports = router;

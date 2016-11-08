@@ -35,7 +35,12 @@ var UsuariosController = {
         });
       }
       else{
-        response.status(200).send(retorno.usuario);
+        if(retorno.usuario.nome !== undefined){
+          response.status(200).send(retorno.usuario);
+        }
+        else{
+          response.status(404).send({mensagem: "Usuario não encontrado"});
+        }
       }
     });
   },
@@ -119,6 +124,18 @@ var UsuariosController = {
             response.status(200).send({mensagem: "Usuário atualizado com sucesso"});
           }
         });
+      }
+    });
+  },
+  excluirUsuario: function(request, response, next){
+    Usuario.excluirPorID(request.params.id, function(retorno){
+      if(retorno.erro){
+        response.status(500).send({
+          erro:'Erro ao excluir usuario (' + retorno.mensagem + ')'
+        });
+      }
+      else{
+        response.status(204).send("");
       }
     });
   }
