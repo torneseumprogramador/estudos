@@ -214,7 +214,6 @@ describe("O controller de usuarios", function() {
     });
   });
 
-
   describe("DELETE /usuarios/{id}.json - deve excluir um usuário", function() {
     var usuarioCadastrado; 
 

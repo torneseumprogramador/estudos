@@ -89,6 +89,10 @@ var UsuariosController = {
     });
   },
   atualizarPorPatch: function(request, response, next){
+    response.header('Access-Control-Allow-Origin', '*');
+    response.header('Access-Control-Allow-Methods', 'PUT, GET, POST, DELETE, OPTIONS, PATCH');
+    response.header('Access-Control-Allow-Headers', 'Content-Type');
+
     Usuario.buscarPorID(request.params.id, function(retorno){
       if(retorno.usuario.id === undefined){
         response.status(400).send({
@@ -138,6 +142,12 @@ var UsuariosController = {
         response.status(204).send("");
       }
     });
+  },
+  options: function(request, response, next){
+    response.header('Access-Control-Allow-Origin', '*');
+    response.header('Access-Control-Allow-Methods', 'PUT, GET, POST, DELETE, OPTIONS, PATCH');
+    response.header('Access-Control-Allow-Headers', 'Content-Type');
+    response.status(204).send("");
   }
 };
 
