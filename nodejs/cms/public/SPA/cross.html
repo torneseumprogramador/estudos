@@ -1,0 +1,26 @@
+<html>
+<head>
+  <title>Cross domain</title>
+  <script src="/javascripts/jquery-3.1.1.min.js"></script>
+  <script>
+    function salvar(){
+      $.ajax({
+        method: "PATCH",
+        url: "http://local.com.br:3000/usuarios/7.json",
+        data: { 
+          nome  : "Teste cross domain",
+          login : "cross",
+          senha : "123",
+          email : "cross@beminfinito.com.br"
+        }
+      }).done(function( msg ) {
+        alert( "Usuário incluido por ajax");
+      });
+    }
+  </script>
+</head>
+<body>
+  <h1>Teste de cross domain<h1>
+  <button type="button" onclick="salvar();">Salvar usuário</button>
+</body>
+</html>

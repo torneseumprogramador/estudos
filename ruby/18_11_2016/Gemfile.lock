@@ -1,0 +1,13 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    byebug (9.0.6)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  byebug
+
+BUNDLED WITH
+   1.13.6
