@@ -16,10 +16,19 @@ namespace WindowsFormsApplication
         {
             InitializeComponent();
         }
-
+        
         private void button1_Click(object sender, EventArgs e)
         {
             txtResultado.Text = "Olá danilo este é o seu primeiro programa";
+
+            
+        }
+
+        private void btnAbrir_Click(object sender, EventArgs e)
+        {
+            var form = new FrmShow();
+            form.lblMensagem.Text = txtResultado.Text;
+            form.Show();
         }
     }
 }
