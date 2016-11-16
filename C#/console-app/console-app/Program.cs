@@ -20,65 +20,70 @@ namespace console_app
     }
 }
 
-#region "Códigos antigos para teste"
+#region Códigos de teste das aulas de Orientação a Objetos
 
 /*class Animal
-    {
-        public string teste;
+{
+    public string teste;
 
-        public virtual string teste2()
-        {
-            return "";
-        }
-    }
-
-    class Macaco : Animal
+    public virtual string teste2()
     {
-        public override string teste2()
-        {
-            return "sss";
-        }
+        return "";
     }
+}
+
+class Macaco : Animal
+{
+    public override string teste2()
+    {
+        return "sss";
+    }
+}
+
+partial class Animal
+{
+    public string teste;
+    partial void tt();
+}
+
+partial class Animal
+{
+    public string teste2;
+    partial void tt()
+    {
+        Console.Write("teste");
+    }
+}
+
+
     
-    partial class Animal
-    {
-        public string teste;
-        partial void tt();
-    }
+            /*Email.Instancia.Corpo = "bal bla bla";
+            Email.Instancia.Titulo = "Titulo do email";
+            Email.Instancia.Origin = "danilo@beminfinito.com.br";
+            Email.Instancia.Destino = "danilo@beminfinito.com.br";
 
-    partial class Animal
-    {
-        public string teste2;
-        partial void tt()
-        {
-            Console.Write("teste");
-        }
-    }
-    */
+            Email.Instancia.EnviarEmail();
 
 
-/*Email.Instancia.Corpo = "bal bla bla";
-Email.Instancia.Titulo = "Titulo do email";
-Email.Instancia.Origin = "danilo@beminfinito.com.br";
-Email.Instancia.Destino = "danilo@beminfinito.com.br";
 
-Email.Instancia.EnviarEmail();
 
-var a = new Animal();
 
-a.teste = "";
 
-var c = new Cachorro();
-c.Idade = 1;
-Console.WriteLine(c.Idade);
+            var a = new Animal();
 
-c.Idade2 = 1;
+            a.teste = "";
 
-Console.WriteLine(c.Idade2);
+            var c = new Cachorro();
+            c.Idade = 1;
+            Console.WriteLine(c.Idade);
 
-c.SetIdade2(2);
-c.GetIdade2();
-*/
+            c.Idade2 = 1;
+
+            Console.WriteLine(c.Idade2);
+
+            c.SetIdade2(2);
+            c.GetIdade2();
+            */
 
 /*
 var cachorro = new Classes.Cachorro();

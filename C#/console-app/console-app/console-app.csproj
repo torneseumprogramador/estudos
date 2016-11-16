@@ -61,7 +61,7 @@
     <Compile Include="Funcoes\Generias.cs" />
     <Compile Include="Funcoes\Tabuada.cs" />
     <Compile Include="Funcoes\TelaFornecedor.cs" />
-    <Compile Include="Funcoes\TelaUsuarios.cs" />
+    <Compile Include="Funcoes\TelaUsuario.cs" />
     <Compile Include="Funcoes\TelaCliente.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

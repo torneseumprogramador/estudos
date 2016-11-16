@@ -11,7 +11,6 @@ namespace Classes
     public class Fornecedor : Base
     {
         public string CNPJ;
-
         public Fornecedor(string nome, string telefone, string cpf, string cnpj)
         {
             this.Nome = nome;
@@ -31,7 +30,7 @@ namespace Classes
             r.WriteLine("nome;telefone;cpf;cnpj;");
             foreach (Fornecedor b in dados)
             {
-                var linha = b.Nome + ";" + b.Telefone + ";" + b.CPF + ";" + b.CNPJ;
+                var linha = b.Nome + ";" + b.Telefone + ";" + b.CPF + ";" + b.CNPJ + ";";
                 r.WriteLine(linha);
             }
             r.Close();

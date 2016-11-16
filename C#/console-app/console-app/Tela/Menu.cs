@@ -16,7 +16,7 @@ namespace Tela
         public const int TABUADA = 2;
         public const int CALCULO_MEDIA = 3;
         public const int CADASTRAR_CLIENTES = 4;
-        public const int CADASTRAR_USUARIOS = 5;
+        public const int CADASTRAR_USUARIO = 5;
         public const int CADASTRAR_FORNECEDOR = 6;
 
         public static void Criar()
@@ -24,16 +24,16 @@ namespace Tela
             while (true)
             {
                 string mensagem = "Olá usuário, bem vindo ao programa\n" +
-                    "\n  Uilizando programação funcional" +
+                    "\n  Aplicação Console final" +
                     "\n\n" +
                     "\n    Digite uma das opções abaixo:" +
                     "\n      0 - Sair do programa" +
                     "\n      1 - Para Ler arquivos" +
                     "\n      2 - Para executar a tabuada" +
                     "\n      3 - Calcular média de alunos" +
-                    "\n      4 - Cadastrar clientes" +
-                    "\n      5 - Cadastrar usuários" +
-                    "\n      6 - Cadastrar fornecedor";
+                    "\n      4 - Cadastrar clientes"+
+                    "\n      5 - Cadastrar usuarios" + 
+                    "\n      6 - Cadastrar fonecedores";
 
                 Console.WriteLine(mensagem);
 
@@ -67,7 +67,7 @@ namespace Tela
                     TelaCliente.Chamar();
                     Console.WriteLine("\n=====================================================\n");
                 }
-                else if (valor == CADASTRAR_USUARIOS)
+                else if (valor == CADASTRAR_USUARIO)
                 {
                     TelaUsuario.Chamar();
                     Console.WriteLine("\n=====================================================\n");

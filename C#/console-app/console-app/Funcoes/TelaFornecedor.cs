@@ -32,7 +32,7 @@ namespace Funcoes
                 {
                     var fornecedor = new Fornecedor();
 
-                    Console.WriteLine("Digite o CNPJ do Fornecedor");
+                    Console.WriteLine("Digite o CNPJ");
                     fornecedor.CNPJ = Console.ReadLine();
 
                     Console.WriteLine("Digite o nome do Fornecedor");
@@ -48,13 +48,14 @@ namespace Funcoes
                 }
                 else
                 {
-                    var Fornecedors = new Fornecedor().Ler();
-                    foreach (Fornecedor c in Fornecedors)
+                    var fornecedores = new Fornecedor().Ler();
+                    foreach (Fornecedor c in fornecedores)
                     {
+                        Console.WriteLine("===========================");
                         Console.WriteLine("CNPJ: " + c.CNPJ);
                         Console.WriteLine("Nome: " + c.Nome);
                         Console.WriteLine("Telefone: " + c.Telefone);
-                        Console.WriteLine("CPF: " + c.CPF);
+                        Console.WriteLine("CPF do gerente: " + c.CPF);
                         Console.WriteLine("===========================");
                     }
                 }
