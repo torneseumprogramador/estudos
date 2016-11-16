@@ -9,43 +9,30 @@ var UsuariosController = {
     });
   },
   todos: function(request, response, next) {
-    var token = request.headers.auth_token
-    Token.verificaToken(token, function(retorno){
-      if(retorno.tokenValidado){
-
-        Token.apagarToken(token);
-
-        if(request.query.nome !== undefined){
-          Usuario.buscarPorNome(request.query.nome, function(retorno){
-            if(retorno.erro){
-              response.status(500).send({
-                erro:'Erro ao buscar usuarios por nome (' + request.query.nome + ') - (' + retorno.mensagem + ')'
-              });
-            }
-            else{
-              response.status(200).send(retorno.usuarios);
-            }
+    if(request.query.nome !== undefined){
+      Usuario.buscarPorNome(request.query.nome, function(retorno){
+        if(retorno.erro){
+          response.status(500).send({
+            erro:'Erro ao buscar usuarios por nome (' + request.query.nome + ') - (' + retorno.mensagem + ')'
           });
         }
         else{
-          Usuario.todos(function(retorno){
-            if(retorno.erro){
-              response.status(500).send({
-                erro:'Erro ao buscar usuarios (' + retorno.mensagem + ')'
-              });
-            }
-            else{
-              response.status(200).send(retorno.usuarios);
-            }
+          response.status(200).send(retorno.usuarios);
+        }
+      });
+    }
+    else{
+      Usuario.todos(function(retorno){
+        if(retorno.erro){
+          response.status(500).send({
+            erro:'Erro ao buscar usuarios (' + retorno.mensagem + ')'
           });
         }
-      }
-      else{
-        response.status(401).send({
-          erro:'Token inválido, você não tem autorização de acessar esta API'
-        });
-      }
-    });
+        else{
+          response.status(200).send(retorno.usuarios);
+        }
+      });
+    }
   },
   porId: function(request, response, next){
     Usuario.buscarPorID(request.params.id, function(retorno){
@@ -65,32 +52,20 @@ var UsuariosController = {
     });
   },
   criar: function(request, response, next){
-    var usuario = new Usuario();
-    usuario.nome = request.body.nome;
-    usuario.login = request.body.login;
-    usuario.senha = request.body.senha;
-    usuario.email = request.body.email;
-    usuario.salvar(function(retorno){
-      if(retorno.erro){
-        response.status(500).send({
-          erro:'Erro ao cadastrar usuario (' + retorno.mensagem + ')'
-        });
-      }
-      else{
-        response.status(201).send({mensagem: "Usuário criado com sucesso"});
-      }
-    });
-  },
-  atualizar: function(request, response, next){
-    Usuario.buscarPorID(request.body.id, function(retorno){
-      if(retorno.usuario.id === undefined){
-        response.status(400).send({
-          erro:'Erro ao atualizar, id de usuario não encontrado'
-        });
-      }
-      else{
+    var token = request.headers.auth_token;
+    Token.verificaToken(token, function(retorno){
+      if(retorno.tokenValidado){
+
+        Token.apagarToken(token);
+
+        if(request.body.nome === undefined){
+          response.status(400).send({
+            erro:'Erro ao cadastrar usuario o nome precisa estar preenchido.'
+          });
+          return;
+        }
+
         var usuario = new Usuario();
-        usuario.id = request.body.id;
         usuario.nome = request.body.nome;
         usuario.login = request.body.login;
         usuario.senha = request.body.senha;
@@ -98,12 +73,57 @@ var UsuariosController = {
         usuario.salvar(function(retorno){
           if(retorno.erro){
             response.status(500).send({
-              erro:'Erro ao atualizar usuario (' + retorno.mensagem + ')'
+              erro:'Erro ao cadastrar usuario (' + retorno.mensagem + ')'
             });
           }
           else{
-            response.status(200).send({mensagem: "Usuário atualizado com sucesso"});
+            response.status(201).send({mensagem: "Usuário criado com sucesso"});
           }
+        });
+      }
+      else{
+        response.status(401).send({
+          erro:'Token inválido, você não tem autorização de acessar esta API'
+        });
+      }
+    });
+  },
+  atualizar: function(request, response, next){
+    var token = request.headers.auth_token;
+    Token.verificaToken(token, function(retorno){
+      if(retorno.tokenValidado){
+
+        Token.apagarToken(token);
+
+        Usuario.buscarPorID(request.body.id, function(retorno){
+          if(retorno.usuario.id === undefined){
+            response.status(400).send({
+              erro:'Erro ao atualizar, id de usuario não encontrado'
+            });
+          }
+          else{
+            var usuario = new Usuario();
+            usuario.id = request.body.id;
+            usuario.nome = request.body.nome;
+            usuario.login = request.body.login;
+            usuario.senha = request.body.senha;
+            usuario.email = request.body.email;
+            usuario.salvar(function(retorno){
+              if(retorno.erro){
+                response.status(500).send({
+                  erro:'Erro ao atualizar usuario (' + retorno.mensagem + ')'
+                });
+              }
+              else{
+                response.status(200).send({mensagem: "Usuário atualizado com sucesso"});
+              }
+            });
+          }
+        });
+      }
+      else{
+        response.status(401).send({
+          erro:'Token inválido, você não tem autorização de acessar esta API'
         });
       }
     });
@@ -113,53 +133,79 @@ var UsuariosController = {
     response.header('Access-Control-Allow-Methods', 'PUT, GET, POST, DELETE, OPTIONS, PATCH');
     response.header('Access-Control-Allow-Headers', 'Content-Type');
 
-    Usuario.buscarPorID(request.params.id, function(retorno){
-      if(retorno.usuario.id === undefined){
-        response.status(400).send({
-          erro:'Erro ao atualizar, id de usuario não encontrado'
-        });
-      }
-      else{
-        var usuario = new Usuario(retorno.usuario);
+    var token = request.headers.auth_token;
+    Token.verificaToken(token, function(retorno){
+      if(retorno.tokenValidado){
 
-        if(request.body.nome !== undefined && request.body.nome !== ""){
-          usuario.nome = request.body.nome;
-        }
+        Token.apagarToken(token);
 
-        if(request.body.login !== undefined && request.body.login !== ""){
-          usuario.login = request.body.login;
-        }
-
-        if(request.body.senha !== undefined && request.body.senha !== ""){
-          usuario.senha = request.body.senha;
-        }
-
-        if(request.body.email !== undefined && request.body.email !== ""){
-          usuario.email = request.body.email;
-        }
-
-        usuario.salvar(function(retorno){
-          if(retorno.erro){
-            response.status(500).send({
-              erro:'Erro ao atualizar usuario (' + retorno.mensagem + ')'
+        Usuario.buscarPorID(request.params.id, function(retorno){
+          if(retorno.usuario.id === undefined){
+            response.status(400).send({
+              erro:'Erro ao atualizar, id de usuario não encontrado'
             });
           }
           else{
-            response.status(200).send({mensagem: "Usuário atualizado com sucesso"});
+            var usuario = new Usuario(retorno.usuario);
+
+            if(request.body.nome !== undefined && request.body.nome !== ""){
+              usuario.nome = request.body.nome;
+            }
+
+            if(request.body.login !== undefined && request.body.login !== ""){
+              usuario.login = request.body.login;
+            }
+
+            if(request.body.senha !== undefined && request.body.senha !== ""){
+              usuario.senha = request.body.senha;
+            }
+
+            if(request.body.email !== undefined && request.body.email !== ""){
+              usuario.email = request.body.email;
+            }
+
+            usuario.salvar(function(retorno){
+              if(retorno.erro){
+                response.status(500).send({
+                  erro:'Erro ao atualizar usuario (' + retorno.mensagem + ')'
+                });
+              }
+              else{
+                response.status(200).send({mensagem: "Usuário atualizado com sucesso"});
+              }
+            });
           }
+        });
+      }
+      else{
+        response.status(401).send({
+          erro:'Token inválido, você não tem autorização de acessar esta API'
         });
       }
     });
   },
   excluirUsuario: function(request, response, next){
-    Usuario.excluirPorID(request.params.id, function(retorno){
-      if(retorno.erro){
-        response.status(500).send({
-          erro:'Erro ao excluir usuario (' + retorno.mensagem + ')'
+    var token = request.headers.auth_token;
+    Token.verificaToken(token, function(retorno){
+      if(retorno.tokenValidado){
+
+        Token.apagarToken(token);
+
+        Usuario.excluirPorID(request.params.id, function(retorno){
+          if(retorno.erro){
+            response.status(500).send({
+              erro:'Erro ao excluir usuario (' + retorno.mensagem + ')'
+            });
+          }
+          else{
+            response.status(204).send("");
+          }
         });
       }
       else{
-        response.status(204).send("");
+        response.status(401).send({
+          erro:'Token inválido, você não tem autorização de acessar esta API'
+        });
       }
     });
   },

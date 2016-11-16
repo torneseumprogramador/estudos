@@ -39,7 +39,7 @@ Token.verificaToken = function(token, callback){
       });
     }
   });
-}
+};
 
 Token.apagarToken = function(token, callback){
   var query = "delete from token where token = '" + token + "'";
@@ -55,6 +55,6 @@ Token.apagarToken = function(token, callback){
       }
     }
   });
-}
+};
 
 module.exports = Token;
