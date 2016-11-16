@@ -52,12 +52,16 @@
     <Compile Include="Classes\Animal.cs" />
     <Compile Include="Classes\Cachorro.cs" />
     <Compile Include="Classes\Cliente.cs" />
+    <Compile Include="Classes\Email.cs" />
     <Compile Include="Classes\IPessoa.cs" />
+    <Compile Include="Classes\Fornecedor.cs" />
     <Compile Include="Classes\Usuario.cs" />
     <Compile Include="Diretorio\Arquivo.cs" />
     <Compile Include="Calculo\Media.cs" />
     <Compile Include="Funcoes\Generias.cs" />
     <Compile Include="Funcoes\Tabuada.cs" />
+    <Compile Include="Funcoes\TelaFornecedor.cs" />
+    <Compile Include="Funcoes\TelaUsuarios.cs" />
     <Compile Include="Funcoes\TelaCliente.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
