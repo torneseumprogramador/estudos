@@ -32,6 +32,8 @@
             this.txtResultado = new System.Windows.Forms.TextBox();
             this.btnOk = new System.Windows.Forms.Button();
             this.btnAbrir = new System.Windows.Forms.Button();
+            this.cboEstados = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -53,7 +55,7 @@
             // 
             // btnOk
             // 
-            this.btnOk.Location = new System.Drawing.Point(30, 112);
+            this.btnOk.Location = new System.Drawing.Point(30, 286);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(390, 90);
             this.btnOk.TabIndex = 2;
@@ -63,7 +65,7 @@
             // 
             // btnAbrir
             // 
-            this.btnAbrir.Location = new System.Drawing.Point(30, 268);
+            this.btnAbrir.Location = new System.Drawing.Point(30, 542);
             this.btnAbrir.Name = "btnAbrir";
             this.btnAbrir.Size = new System.Drawing.Size(185, 42);
             this.btnAbrir.TabIndex = 3;
@@ -71,11 +73,37 @@
             this.btnAbrir.UseVisualStyleBackColor = true;
             this.btnAbrir.Click += new System.EventHandler(this.btnAbrir_Click);
             // 
+            // cboEstados
+            // 
+            this.cboEstados.FormattingEnabled = true;
+            this.cboEstados.Items.AddRange(new object[] {
+            "SP",
+            "RJ",
+            "MG",
+            "GO"});
+            this.cboEstados.Location = new System.Drawing.Point(30, 152);
+            this.cboEstados.Name = "cboEstados";
+            this.cboEstados.Size = new System.Drawing.Size(390, 21);
+            this.cboEstados.TabIndex = 4;
+            this.cboEstados.Text = "[Selecione]";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(26, 125);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(82, 24);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Estados:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(863, 607);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.cboEstados);
             this.Controls.Add(this.btnAbrir);
             this.Controls.Add(this.btnOk);
             this.Controls.Add(this.txtResultado);
@@ -94,6 +122,8 @@
         private System.Windows.Forms.TextBox txtResultado;
         private System.Windows.Forms.Button btnOk;
         private System.Windows.Forms.Button btnAbrir;
+        private System.Windows.Forms.ComboBox cboEstados;
+        private System.Windows.Forms.Label label2;
     }
 }
 
