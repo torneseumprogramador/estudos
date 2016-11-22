@@ -1,31 +1,51 @@
 var Usuario = require("../models/usuario");
+var Token = require("../models/token");
 
 var UsuariosController = {
+  head: function(request, response, next){
+    new Token().criar(function(retorno){
+      response.header('auth_token', retorno.token);
+      response.status(204).send("");
+    });
+  },
   todos: function(request, response, next) {
-    if(request.query.nome !== undefined){
-      Usuario.buscarPorNome(request.query.nome, function(retorno){
-        if(retorno.erro){
-          response.status(500).send({
-            erro:'Erro ao buscar usuarios por nome (' + request.query.nome + ') - (' + retorno.mensagem + ')'
+    var token = request.headers.auth_token
+    Token.verificaToken(token, function(retorno){
+      if(retorno.tokenValidado){
+
+        Token.apagarToken(token);
+
+        if(request.query.nome !== undefined){
+          Usuario.buscarPorNome(request.query.nome, function(retorno){
+            if(retorno.erro){
+              response.status(500).send({
+                erro:'Erro ao buscar usuarios por nome (' + request.query.nome + ') - (' + retorno.mensagem + ')'
+              });
+            }
+            else{
+              response.status(200).send(retorno.usuarios);
+            }
           });
         }
         else{
-          response.status(200).send(retorno.usuarios);
-        }
-      });
-    }
-    else{
-      Usuario.todos(function(retorno){
-        if(retorno.erro){
-          response.status(500).send({
-            erro:'Erro ao buscar usuarios (' + retorno.mensagem + ')'
+          Usuario.todos(function(retorno){
+            if(retorno.erro){
+              response.status(500).send({
+                erro:'Erro ao buscar usuarios (' + retorno.mensagem + ')'
+              });
+            }
+            else{
+              response.status(200).send(retorno.usuarios);
+            }
           });
         }
-        else{
-          response.status(200).send(retorno.usuarios);
-        }
-      });
-    }
+      }
+      else{
+        response.status(401).send({
+          erro:'Token inválido, você não tem autorização de acessar esta API'
+        });
+      }
+    });
   },
   porId: function(request, response, next){
     Usuario.buscarPorID(request.params.id, function(retorno){

@@ -18,6 +18,7 @@
     "mysql": "*",
     "jshint": "*",
     "jasmine": "*",
-    "request": "*"
+    "request": "*",
+    "guid": "*"
   }
 }

@@ -7,6 +7,7 @@ var router = express.Router();
 router.get('/', HomeController.index);
 router.get('/usuario', HomeController.usuario);
 
+router.head('/usuarios.json', UsuariosController.head);
 router.get('/usuarios.json', UsuariosController.todos);
 router.post('/usuarios.json', UsuariosController.criar);
 router.put('/usuarios.json', UsuariosController.atualizar);
