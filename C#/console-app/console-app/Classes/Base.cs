@@ -44,7 +44,7 @@ namespace Classes
             r.Close();
         }
 
-        public List<IPessoa> Ler()
+        public virtual List<IPessoa> Ler()
         {
             var dados = new List<IPessoa>();
             if (File.Exists(diretorioComArquivo()))
@@ -70,7 +70,7 @@ namespace Classes
             return dados;
         }
 
-        private string diretorioComArquivo()
+        internal string diretorioComArquivo()
         {
             return ConfigurationManager.AppSettings["CaminhoArquivos"] + this.GetType().Name + ".txt";
         }
