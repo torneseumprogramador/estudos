@@ -1,0 +1,22 @@
+{
+  "name": "cms-interface",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "jshint": "./node_modules/jshint/bin/jshint app/*/*.js spec/app/*/*.js",
+    "test": "./node_modules/jasmine/bin/jasmine.js"
+  },
+  "dependencies": {
+    "body-parser": "~1.13.2",
+    "cookie-parser": "~1.3.5",
+    "debug": "~2.2.0",
+    "express": "~4.13.1",
+    "ejs": "*",
+    "morgan": "~1.6.1",
+    "serve-favicon": "~2.3.0",
+    "jshint": "*",
+    "jasmine": "*",
+    "request": "*"
+  }
+}
