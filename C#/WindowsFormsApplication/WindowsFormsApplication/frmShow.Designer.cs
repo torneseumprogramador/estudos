@@ -41,13 +41,13 @@
             this.lblMensagem.TabIndex = 0;
             this.lblMensagem.Text = "Escrever em run time";
             // 
-            // frmShow
+            // FrmShow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(856, 537);
             this.Controls.Add(this.lblMensagem);
-            this.Name = "frmShow";
+            this.Name = "FrmShow";
             this.Text = "FrmShow";
             this.Load += new System.EventHandler(this.frmShow_Load);
             this.ResumeLayout(false);

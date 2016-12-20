@@ -16,7 +16,7 @@ namespace WindowsFormsApplication
         {
             InitializeComponent();
         }
-        
+
         private void button1_Click(object sender, EventArgs e)
         {
             txtResultado.Text = "Olá danilo este é o seu primeiro programa";
@@ -29,6 +29,10 @@ namespace WindowsFormsApplication
             var form = new FrmShow();
             form.lblMensagem.Text = txtResultado.Text;
             form.Show();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
         }
     }
 }

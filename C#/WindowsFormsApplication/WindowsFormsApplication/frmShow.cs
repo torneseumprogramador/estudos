@@ -19,6 +19,7 @@ namespace WindowsFormsApplication
 
         private void frmShow_Load(object sender, EventArgs e)
         {
+            MessageBox.Show("Inicializado o formulário");
         }
     }
 }
