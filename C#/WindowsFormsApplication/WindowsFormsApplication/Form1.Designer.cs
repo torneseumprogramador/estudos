@@ -34,6 +34,9 @@
             this.btnAbrir = new System.Windows.Forms.Button();
             this.cboEstados = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.dataGridView = new System.Windows.Forms.DataGridView();
+            this.lblNomeGrid = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -97,11 +100,30 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Estados:";
             // 
+            // dataGridView
+            // 
+            this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView.Location = new System.Drawing.Point(454, 352);
+            this.dataGridView.Name = "dataGridView";
+            this.dataGridView.Size = new System.Drawing.Size(387, 150);
+            this.dataGridView.TabIndex = 6;
+            // 
+            // lblNomeGrid
+            // 
+            this.lblNomeGrid.AutoSize = true;
+            this.lblNomeGrid.Location = new System.Drawing.Point(565, 336);
+            this.lblNomeGrid.Name = "lblNomeGrid";
+            this.lblNomeGrid.Size = new System.Drawing.Size(149, 13);
+            this.lblNomeGrid.TabIndex = 7;
+            this.lblNomeGrid.Text = "Dados da coleção de estados";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(863, 607);
+            this.Controls.Add(this.lblNomeGrid);
+            this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cboEstados);
             this.Controls.Add(this.btnAbrir);
@@ -111,6 +133,7 @@
             this.Name = "Form1";
             this.Text = "Aplicação 1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -124,6 +147,8 @@
         private System.Windows.Forms.Button btnAbrir;
         private System.Windows.Forms.ComboBox cboEstados;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridView dataGridView;
+        private System.Windows.Forms.Label lblNomeGrid;
     }
 }
 
