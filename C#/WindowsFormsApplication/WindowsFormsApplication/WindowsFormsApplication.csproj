@@ -53,19 +53,55 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmDoacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDoacao.Designer.cs">
+      <DependentUpon>FrmDoacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLicenca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLicenca.Designer.cs">
+      <DependentUpon>FrmLicenca.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmShow.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmShow.Designer.cs">
       <DependentUpon>FrmShow.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmSobre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSobre.Designer.cs">
+      <DependentUpon>FrmSobre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTexto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTexto.Designer.cs">
+      <DependentUpon>FrmTexto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmDoacao.resx">
+      <DependentUpon>FrmDoacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLicenca.resx">
+      <DependentUpon>FrmLicenca.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmShow.resx">
       <DependentUpon>FrmShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSobre.resx">
+      <DependentUpon>FrmSobre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTexto.resx">
+      <DependentUpon>FrmTexto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
