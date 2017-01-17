@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <style>
+      table tr td{
+        border: 1px solid #ccc;
+        padding: 5px;
+      }
+      table tr:nth-child(1){
+        background-color: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1>Usuarios</h1>
+    <p>Dados do usuário na API</p>
+
+    <input type="button" value="Novo"/>
+
+    <table>
+      <tr>
+          <td>Nome</td>
+          <td>Login</td>
+          <td>Senha</td>
+          <td>Email</td>
+          <td>Alterar</td>
+          <td>Excluir</td>
+      </tr>
+      <% for(var i=0; i<usuarios.length; i++){ 
+        var usuario = usuarios[i];
+        %>
+      <tr>
+          <td><%= usuario.nome %></td>
+          <td><%= usuario.login %></td>
+          <td><%= usuario.senha %></td>
+          <td><%= usuario.email %></td>
+          <td><input type="button" value="Alterar"/></td>
+          <td><input type="button" value="Excluir"/></td>
+      </tr>
+      <% } %>
+    </table>
+
+  </body>
+</html>
