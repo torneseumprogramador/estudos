@@ -31,6 +31,8 @@ namespace WindowsFormsApplication
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            atualizaHora();
+
             /***************************************/
             cboEstados.DataSource = Estado.Lista();
             cboEstados.Text = "[Selecione]";
@@ -83,6 +85,11 @@ namespace WindowsFormsApplication
             
         }
 
+        private void atualizaHora()
+        {
+            lblHoraAtual.Text = "Dia e Hora atual: " + DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
+        }
+
         private void novoTextoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new FrmTexto().Show();
@@ -106,6 +113,16 @@ namespace WindowsFormsApplication
         private void doaçãoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new FrmDoacao().Show();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            atualizaHora();
+        }
+
+        private void cadastroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new FrmCadastro().Show();
         }
     }
 }
