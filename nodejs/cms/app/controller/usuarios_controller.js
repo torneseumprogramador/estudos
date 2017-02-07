@@ -72,7 +72,7 @@ var UsuariosController = {
         usuario.email = request.body.email;
         usuario.salvar(function(retorno){
           if(retorno.erro){
-            response.status(500).send({
+            response.status(400).send({
               erro:'Erro ao cadastrar usuario (' + retorno.mensagem + ')'
             });
           }
