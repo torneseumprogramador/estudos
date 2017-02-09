@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.txtResultado = new System.Windows.Forms.TextBox();
             this.btnOk = new System.Windows.Forms.Button();
@@ -45,9 +46,11 @@
             this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.licençaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.doaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblHoraAtual = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.notifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
+            this.btnNotificacao = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -178,23 +181,30 @@
             // sobreToolStripMenuItem
             // 
             this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
-            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.sobreToolStripMenuItem.Text = "Sobre";
             this.sobreToolStripMenuItem.Click += new System.EventHandler(this.sobreToolStripMenuItem_Click);
             // 
             // licençaToolStripMenuItem
             // 
             this.licençaToolStripMenuItem.Name = "licençaToolStripMenuItem";
-            this.licençaToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.licençaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.licençaToolStripMenuItem.Text = "Licença";
             this.licençaToolStripMenuItem.Click += new System.EventHandler(this.licençaToolStripMenuItem_Click);
             // 
             // doaçãoToolStripMenuItem
             // 
             this.doaçãoToolStripMenuItem.Name = "doaçãoToolStripMenuItem";
-            this.doaçãoToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.doaçãoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.doaçãoToolStripMenuItem.Text = "Doação";
             this.doaçãoToolStripMenuItem.Click += new System.EventHandler(this.doaçãoToolStripMenuItem_Click);
+            // 
+            // cadastroToolStripMenuItem
+            // 
+            this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
+            this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(195, 20);
+            this.cadastroToolStripMenuItem.Text = "Cadastro com tratamento de erro";
+            this.cadastroToolStripMenuItem.Click += new System.EventHandler(this.cadastroToolStripMenuItem_Click);
             // 
             // lblHoraAtual
             // 
@@ -212,18 +222,31 @@
             this.timer1.Interval = 60000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // cadastroToolStripMenuItem
+            // notifyIcon
             // 
-            this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
-            this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(195, 20);
-            this.cadastroToolStripMenuItem.Text = "Cadastro com tratamento de erro";
-            this.cadastroToolStripMenuItem.Click += new System.EventHandler(this.cadastroToolStripMenuItem_Click);
+            this.notifyIcon.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon.Icon")));
+            this.notifyIcon.Text = "Meu programa \r\nLaboratório";
+            this.notifyIcon.Visible = true;
+            this.notifyIcon.Click += new System.EventHandler(this.notifyIcon_Click);
+            this.notifyIcon.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon_MouseDoubleClick);
+            // 
+            // btnNotificacao
+            // 
+            this.btnNotificacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNotificacao.Location = new System.Drawing.Point(546, 141);
+            this.btnNotificacao.Name = "btnNotificacao";
+            this.btnNotificacao.Size = new System.Drawing.Size(157, 68);
+            this.btnNotificacao.TabIndex = 10;
+            this.btnNotificacao.Text = "Dar Notificação";
+            this.btnNotificacao.UseVisualStyleBackColor = true;
+            this.btnNotificacao.Click += new System.EventHandler(this.btnNotificacao_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(863, 607);
+            this.Controls.Add(this.btnNotificacao);
             this.Controls.Add(this.lblHoraAtual);
             this.Controls.Add(this.lblNomeGrid);
             this.Controls.Add(this.dataGridView);
@@ -234,6 +257,7 @@
             this.Controls.Add(this.txtResultado);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Aplicação 1";
@@ -267,6 +291,8 @@
         private System.Windows.Forms.Label lblHoraAtual;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.ToolStripMenuItem cadastroToolStripMenuItem;
+        private System.Windows.Forms.NotifyIcon notifyIcon;
+        private System.Windows.Forms.Button btnNotificacao;
     }
 }
 

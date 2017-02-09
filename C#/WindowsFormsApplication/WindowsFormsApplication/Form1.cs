@@ -22,6 +22,21 @@ namespace WindowsFormsApplication
             txtResultado.Text = "Olá danilo este é o seu primeiro programa - " + ((Estado)cboEstados.SelectedItem).Id;
         }
 
+        private void fechar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void abrirCadastro_Click(object sender, EventArgs e)
+        {
+            new FrmCadastro().Show();
+        }
+
+        private void abrirLerArquivo_Click(object sender, EventArgs e)
+        {
+            new FrmTexto().Show();
+        }
+
         private void btnAbrir_Click(object sender, EventArgs e)
         {
             var form = new FrmShow();
@@ -31,6 +46,14 @@ namespace WindowsFormsApplication
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            var contextMenu = new ContextMenu();
+            contextMenu.MenuItems.Add(new MenuItem("Abrir Ler Arquivo", abrirLerArquivo_Click));
+            contextMenu.MenuItems.Add(new MenuItem("Abrir Cadastro", abrirCadastro_Click));
+            contextMenu.MenuItems.Add(new MenuItem("Fechar", fechar_Click));
+            notifyIcon.ContextMenu = contextMenu;
+
+            //notifyIcon1.ShowBalloonTip(1000, "TESTE", "MAIS UM TESTE", ToolTipIcon.Warning);
+
             atualizaHora();
 
             /***************************************/
@@ -123,6 +146,21 @@ namespace WindowsFormsApplication
         private void cadastroToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new FrmCadastro().Show();
+        }
+
+        private void notifyIcon_Click(object sender, EventArgs e)
+        {
+            //MessageBox.Show("Cliquei no icone");
+        }
+
+        private void notifyIcon_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            MessageBox.Show("dois cliques no icone");
+        }
+
+        private void btnNotificacao_Click(object sender, EventArgs e)
+        {
+            notifyIcon.ShowBalloonTip(10, "Notificação", "Valide os campo\nNome, Telefone", ToolTipIcon.None);
         }
     }
 }
