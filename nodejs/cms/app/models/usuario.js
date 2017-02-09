@@ -19,16 +19,19 @@ var Usuario = function(usuario){
   this.salvar = function(callback){
     if(this.nome === ""){
       console.log("[Modelo:Usuario] Nome de usuário obrigatório");
+      callback.call(null, {erro:true, mensagem: "[Modelo:Usuario] Nome de usuário obrigatório"});
       return;
     }
 
     if(this.login === ""){
       console.log("[Modelo:Usuario] Nome de login obrigatório");
+      callback.call(null, {erro:true, mensagem: "[Modelo:Usuario] Nome de login obrigatório"});
       return;
     }
 
     if(this.senha === ""){
       console.log("[Modelo:Usuario] Nome de senha obrigatório");
+      callback.call(null, {erro:true, mensagem: "[Modelo:Usuario] Nome de senha obrigatório"});
       return;
     }
 

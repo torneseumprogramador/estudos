@@ -8,6 +8,28 @@ var UsuariosController = {
         usuarios: usuarios
       });
     });
+  },
+  novo: function(request, response, next) {
+    var erro = request.query.erro;
+    if(erro === undefined){
+      erro = "";
+    }
+    response.render('usuarios/novo', {erro: erro});
+  },
+  cadastrar: function(request, response, next) {
+    var usuario = new Usuario();
+    usuario.nome = request.body.nome;
+    usuario.login = request.body.login;
+    usuario.senha = request.body.senha;
+    usuario.email = request.body.email;
+    usuario.salvar(function(retorno){
+      if(retorno.erro){
+        response.redirect('/usuarios/novo?erro=' + retorno.mensagem);
+      }
+      else{
+        response.redirect('/usuarios');
+      }
+    });
   }
 };
 
