@@ -51,6 +51,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.notifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.btnNotificacao = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -74,7 +75,7 @@
             // 
             // btnOk
             // 
-            this.btnOk.Location = new System.Drawing.Point(30, 286);
+            this.btnOk.Location = new System.Drawing.Point(30, 189);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(390, 90);
             this.btnOk.TabIndex = 2;
@@ -119,7 +120,7 @@
             // dataGridView
             // 
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView.Location = new System.Drawing.Point(454, 352);
+            this.dataGridView.Location = new System.Drawing.Point(453, 177);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.Size = new System.Drawing.Size(387, 150);
             this.dataGridView.TabIndex = 6;
@@ -127,7 +128,7 @@
             // lblNomeGrid
             // 
             this.lblNomeGrid.AutoSize = true;
-            this.lblNomeGrid.Location = new System.Drawing.Point(565, 336);
+            this.lblNomeGrid.Location = new System.Drawing.Point(564, 161);
             this.lblNomeGrid.Name = "lblNomeGrid";
             this.lblNomeGrid.Size = new System.Drawing.Size(149, 13);
             this.lblNomeGrid.TabIndex = 7;
@@ -157,14 +158,14 @@
             // novoTextoToolStripMenuItem
             // 
             this.novoTextoToolStripMenuItem.Name = "novoTextoToolStripMenuItem";
-            this.novoTextoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.novoTextoToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.novoTextoToolStripMenuItem.Text = "Novo texto";
             this.novoTextoToolStripMenuItem.Click += new System.EventHandler(this.novoTextoToolStripMenuItem_Click);
             // 
             // sairToolStripMenuItem
             // 
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.sairToolStripMenuItem.Text = "Sair";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
@@ -181,21 +182,21 @@
             // sobreToolStripMenuItem
             // 
             this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
-            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.sobreToolStripMenuItem.Text = "Sobre";
             this.sobreToolStripMenuItem.Click += new System.EventHandler(this.sobreToolStripMenuItem_Click);
             // 
             // licençaToolStripMenuItem
             // 
             this.licençaToolStripMenuItem.Name = "licençaToolStripMenuItem";
-            this.licençaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.licençaToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.licençaToolStripMenuItem.Text = "Licença";
             this.licençaToolStripMenuItem.Click += new System.EventHandler(this.licençaToolStripMenuItem_Click);
             // 
             // doaçãoToolStripMenuItem
             // 
             this.doaçãoToolStripMenuItem.Name = "doaçãoToolStripMenuItem";
-            this.doaçãoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.doaçãoToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.doaçãoToolStripMenuItem.Text = "Doação";
             this.doaçãoToolStripMenuItem.Click += new System.EventHandler(this.doaçãoToolStripMenuItem_Click);
             // 
@@ -233,7 +234,7 @@
             // btnNotificacao
             // 
             this.btnNotificacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNotificacao.Location = new System.Drawing.Point(546, 141);
+            this.btnNotificacao.Location = new System.Drawing.Point(556, 81);
             this.btnNotificacao.Name = "btnNotificacao";
             this.btnNotificacao.Size = new System.Drawing.Size(157, 68);
             this.btnNotificacao.TabIndex = 10;
@@ -241,11 +242,22 @@
             this.btnNotificacao.UseVisualStyleBackColor = true;
             this.btnNotificacao.Click += new System.EventHandler(this.btnNotificacao_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(453, 436);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(863, 607);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnNotificacao);
             this.Controls.Add(this.lblHoraAtual);
             this.Controls.Add(this.lblNomeGrid);
@@ -293,6 +305,7 @@
         private System.Windows.Forms.ToolStripMenuItem cadastroToolStripMenuItem;
         private System.Windows.Forms.NotifyIcon notifyIcon;
         private System.Windows.Forms.Button btnNotificacao;
+        private System.Windows.Forms.Button button1;
     }
 }
 

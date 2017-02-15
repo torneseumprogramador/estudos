@@ -115,7 +115,9 @@ namespace WindowsFormsApplication
 
         private void novoTextoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new FrmTexto().Show();
+            var frmTexto = new FrmTexto();
+            frmTexto.MdiParent = MDISingleton.InstanciaMDI();
+            frmTexto.Show();
         }
 
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
@@ -161,6 +163,11 @@ namespace WindowsFormsApplication
         private void btnNotificacao_Click(object sender, EventArgs e)
         {
             notifyIcon.ShowBalloonTip(10, "Notificação", "Valide os campo\nNome, Telefone", ToolTipIcon.None);
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            new MDIParentPrincipal().Show();
         }
     }
 }
