@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Alteracao do usuário: <%= usuario.nome %></title>
+  </head>
+  <body>
+    <h1>Usuarios</h1>
+    <input type="button" value="Voltar" onclick="window.location = '/usuarios'" >
+    <form action="/usuarios/<%= usuario.id %>/atualizar" method="post">
+      <fieldset>
+        <legend>Alteração do usuário: <%= usuario.nome %></legend>
+        <%- include('../partials/campos_do_cadastro', {usuario: usuario}) %>
+        <input type="submit" value="Atualizar">
+      </fieldset>
+    </form>
+  </body>
+</html>

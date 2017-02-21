@@ -32,6 +32,18 @@ describe("O modelo de usuário", function() {
     });
   });
 
+  describe("com o método buscar", function() {
+    it("deve buscar na API por ID", function(done){
+      var usuario = new Usuario();
+      usuario.id = 6;
+      usuario.buscar(function(usuario){
+        expect(usuario.erro).toBe(undefined);
+        expect(usuario.nome).toBe("Danilo criado pela interface CMS");
+        done();
+      });
+    });
+  });
+
   describe("com o método salvar", function() {
     it("deve incluir na API", function(done){
       var usuario = new Usuario();

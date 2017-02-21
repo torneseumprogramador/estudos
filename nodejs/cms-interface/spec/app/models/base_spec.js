@@ -9,6 +9,14 @@ describe("O modelo de usuário", function() {
     });
   });
 
+  describe("com o método buscar", function() {
+    it("deve buscar pelo ID", function(done){
+      var base = new Base();
+      expect(base.buscar !== undefined).toBe(true);
+      done();
+    });
+  });
+
   describe("com o método todos", function() {
     it("deve retornar todos os Bases pela API", function(done){
       var base = new Base();

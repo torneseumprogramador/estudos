@@ -36,7 +36,7 @@
           <td><%= usuario.login %></td>
           <td><%= usuario.senha %></td>
           <td><%= usuario.email %></td>
-          <td><input type="button" value="Alterar"/></td>
+          <td><input type="button" value="Alterar" onclick="window.location = '/usuarios/<%= usuario.id %>/editar'" /></td>
           <td><input type="button" value="Excluir"/></td>
       </tr>
       <% } %>

@@ -9,5 +9,7 @@ router.get('/', HomeController.index);
 router.get('/usuarios', UsuariosController.index);
 router.get('/usuarios/novo', UsuariosController.novo);
 router.post('/usuarios/cadastrar', UsuariosController.cadastrar);
+router.get('/usuarios/:id/editar', UsuariosController.editar);
+router.post('/usuarios/:id/atualizar', UsuariosController.atualizar);
 
 module.exports = router;
