@@ -54,6 +54,36 @@ namespace WindowsFormsApplication
                 MessageBox.Show("Todoas as minhas exceções tratadas");
             }
         }
+
+        private void maskedTextBox2_Leave(object sender, EventArgs e)
+        {
+            if (maskedTextBox2.MaskCompleted)
+            {
+                MessageBox.Show("valido");
+            }
+            else
+            {
+                MessageBox.Show("invalido");
+            }
+        }
+
+        private void maskedTextBox6_Leave(object sender, EventArgs e)
+        {
+            if (!maskedTextBox6.MaskCompleted)
+            {
+                MessageBox.Show("invalido");
+            }
+        }
+
+        private void maskedTextBox1_Leave(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(maskedTextBox1.Text);
+        }
     }
 
     public class ErroDeProposito : Exception
