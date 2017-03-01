@@ -68,6 +68,12 @@
     <Compile Include="FrmDoacao.Designer.cs">
       <DependentUpon>FrmDoacao.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmImportador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmImportador.Designer.cs">
+      <DependentUpon>FrmImportador.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmLicenca.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +115,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDoacao.resx">
       <DependentUpon>FrmDoacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmImportador.resx">
+      <DependentUpon>FrmImportador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLicenca.resx">
       <DependentUpon>FrmLicenca.cs</DependentUpon>
