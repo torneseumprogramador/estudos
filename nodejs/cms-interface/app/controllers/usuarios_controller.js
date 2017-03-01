@@ -39,6 +39,18 @@ var UsuariosController = {
       }
     });
   },
+  excluir: function(request, response, next) {
+    var usuario = new Usuario();
+    usuario.id = request.params.id;
+    usuario.excluir(function(retorno){
+      if(retorno.erro){
+        response.redirect('/usuarios/novo?erro=' + retorno.mensagem);
+      }
+      else{
+        response.redirect('/usuarios');
+      }
+    });
+  },
   novo: function(request, response, next) {
     var erro = request.query.erro;
     if(erro === undefined){

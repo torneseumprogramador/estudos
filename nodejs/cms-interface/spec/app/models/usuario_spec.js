@@ -35,10 +35,21 @@ describe("O modelo de usuário", function() {
   describe("com o método buscar", function() {
     it("deve buscar na API por ID", function(done){
       var usuario = new Usuario();
-      usuario.id = 6;
+      usuario.id = 5;
       usuario.buscar(function(usuario){
         expect(usuario.erro).toBe(undefined);
         expect(usuario.nome).toBe("Danilo criado pela interface CMS");
+        done();
+      });
+    });
+  });
+
+  describe("com o método excluir", function() {
+    it("deve excluir na API por ID", function(done){
+      var usuario = new Usuario();
+      usuario.id = 10;
+      usuario.excluir(function(retorno){
+        expect(retorno.erro).toBe(false);
         done();
       });
     });

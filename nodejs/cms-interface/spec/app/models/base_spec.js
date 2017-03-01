@@ -24,4 +24,23 @@ describe("O modelo de usuário", function() {
       done();
     });
   });
+
+  describe("com o método excluir", function() {
+    it("deve apagar o dado pela API", function(done){
+      var base = new Base();
+      base.id = 1;
+      expect(base.excluir !== undefined).toBe(true);
+      done();
+    });
+
+    it("deve validar o id para exclusão", function(done){
+      var base = new Base();
+      base.excluir(function(retorno){
+        if(retorno.erro){
+          expect(retorno.mensagem).toBe("Id para exclusão obrigatório");
+          done();
+        }
+      });
+    });
+  });
 });

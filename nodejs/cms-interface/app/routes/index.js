@@ -11,5 +11,6 @@ router.get('/usuarios/novo', UsuariosController.novo);
 router.post('/usuarios/cadastrar', UsuariosController.cadastrar);
 router.get('/usuarios/:id/editar', UsuariosController.editar);
 router.post('/usuarios/:id/atualizar', UsuariosController.atualizar);
+router.get('/usuarios/:id/excluir', UsuariosController.excluir);
 
 module.exports = router;

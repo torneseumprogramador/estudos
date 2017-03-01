@@ -11,6 +11,13 @@
         background-color: #ccc;
       }
     </style>
+    <script type="text/javascript">
+      var excluir = function(id){
+        if(confirm("Deseja realmente excluir ?")){
+          window.location = '/usuarios/' + id + '/excluir'
+        }
+      }
+    </script>
   </head>
   <body>
 
@@ -21,6 +28,7 @@
 
     <table>
       <tr>
+          <td>ID</td>
           <td>Nome</td>
           <td>Login</td>
           <td>Senha</td>
@@ -32,12 +40,13 @@
         var usuario = usuarios[i];
         %>
       <tr>
+          <td><%= usuario.id %></td>
           <td><%= usuario.nome %></td>
           <td><%= usuario.login %></td>
           <td><%= usuario.senha %></td>
           <td><%= usuario.email %></td>
           <td><input type="button" value="Alterar" onclick="window.location = '/usuarios/<%= usuario.id %>/editar'" /></td>
-          <td><input type="button" value="Excluir"/></td>
+          <td><input type="button" onclick="excluir(<%= usuario.id %>)" value="Excluir"/></td>
       </tr>
       <% } %>
     </table>
