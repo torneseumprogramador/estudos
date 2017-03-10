@@ -46,6 +46,7 @@ namespace WindowsFormsApplication
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            dadosDaEmpresa1.Busca = "jquery";
             var contextMenu = new ContextMenu();
             contextMenu.MenuItems.Add(new MenuItem("Abrir Ler Arquivo", abrirLerArquivo_Click));
             contextMenu.MenuItems.Add(new MenuItem("Abrir Cadastro", abrirCadastro_Click));
@@ -167,7 +168,8 @@ namespace WindowsFormsApplication
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            new MDIParentPrincipal().Show();
+            System.Diagnostics.Process.Start("chrome", "http://www.torneseumprogramador.com.br");
+            //new MDIParentPrincipal().Show();
         }
     }
 }

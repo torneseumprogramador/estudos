@@ -22,5 +22,10 @@ namespace WindowsFormsApplication
         {
             Process.Start("http://www.torneseumprogramador.com.br");
         }
+
+        private void FrmDoacao_Load(object sender, EventArgs e)
+        {
+            dadosDaEmpresa1.Busca = "orientacao a objetos";
+        }
     }
 }

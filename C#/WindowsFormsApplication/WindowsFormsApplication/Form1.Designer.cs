@@ -52,6 +52,7 @@
             this.notifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.btnNotificacao = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.dadosDaEmpresa1 = new WindowsFormsApplication.DadosDaEmpresa();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -244,7 +245,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(453, 436);
+            this.button1.Location = new System.Drawing.Point(470, 365);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 11;
@@ -252,11 +253,19 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
+            // dadosDaEmpresa1
+            // 
+            this.dadosDaEmpresa1.Location = new System.Drawing.Point(456, 499);
+            this.dadosDaEmpresa1.Name = "dadosDaEmpresa1";
+            this.dadosDaEmpresa1.Size = new System.Drawing.Size(395, 96);
+            this.dadosDaEmpresa1.TabIndex = 12;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(863, 607);
+            this.Controls.Add(this.dadosDaEmpresa1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnNotificacao);
             this.Controls.Add(this.lblHoraAtual);
@@ -306,6 +315,7 @@
         private System.Windows.Forms.NotifyIcon notifyIcon;
         private System.Windows.Forms.Button btnNotificacao;
         private System.Windows.Forms.Button button1;
+        private DadosDaEmpresa dadosDaEmpresa1;
     }
 }
 
