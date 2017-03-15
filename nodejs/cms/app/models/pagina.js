@@ -15,11 +15,13 @@ var Pagina = function(pagina){
   this.salvar = function(callback){
     if(this.nome === ""){
       console.log("[Modelo:Pagina] Nome da página obrigatório");
+      callback.call(null, {erro:true, mensagem: "[Modelo:pagina] Nome de pagina obrigatório"});
       return;
     }
 
     if(this.conteudo === ""){
       console.log("[Modelo:Pagina] Conteúdo da página obrigatório");
+      callback.call(null, {erro:true, mensagem: "[Modelo:pagina] Conteudo de pagina obrigatório"});
       return;
     }
 

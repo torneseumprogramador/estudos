@@ -9,7 +9,7 @@
     <form action="/usuarios/<%= usuario.id %>/atualizar" method="post">
       <fieldset>
         <legend>Alteração do usuário: <%= usuario.nome %></legend>
-        <%- include('../partials/campos_do_cadastro', {usuario: usuario}) %>
+        <%- include('partials/form', {usuario: usuario}) %>
         <input type="submit" value="Atualizar">
       </fieldset>
     </form>
