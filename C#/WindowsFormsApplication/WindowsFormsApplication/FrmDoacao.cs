@@ -27,5 +27,10 @@ namespace WindowsFormsApplication
         {
             dadosDaEmpresa1.Busca = "orientacao a objetos";
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab("tabPage1");
+        }
     }
 }

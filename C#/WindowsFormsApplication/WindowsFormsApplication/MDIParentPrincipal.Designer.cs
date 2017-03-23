@@ -34,16 +34,20 @@
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.progressBarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.form1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.progressBarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panelTabControlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabControlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip
             // 
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileMenu});
+            this.fileMenu,
+            this.panelTabControlToolStripMenuItem,
+            this.tabControlToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Size = new System.Drawing.Size(986, 24);
@@ -89,6 +93,13 @@
             this.toolStripSeparator5.Name = "toolStripSeparator5";
             this.toolStripSeparator5.Size = new System.Drawing.Size(204, 6);
             // 
+            // progressBarToolStripMenuItem
+            // 
+            this.progressBarToolStripMenuItem.Name = "progressBarToolStripMenuItem";
+            this.progressBarToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
+            this.progressBarToolStripMenuItem.Text = "Progress Bar";
+            this.progressBarToolStripMenuItem.Click += new System.EventHandler(this.progressBarToolStripMenuItem_Click);
+            // 
             // form1ToolStripMenuItem
             // 
             this.form1ToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("form1ToolStripMenuItem.Image")));
@@ -104,12 +115,19 @@
             this.exitToolStripMenuItem.Text = "Fechar";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolsStripMenuItem_Click);
             // 
-            // progressBarToolStripMenuItem
+            // panelTabControlToolStripMenuItem
             // 
-            this.progressBarToolStripMenuItem.Name = "progressBarToolStripMenuItem";
-            this.progressBarToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
-            this.progressBarToolStripMenuItem.Text = "Progress Bar";
-            this.progressBarToolStripMenuItem.Click += new System.EventHandler(this.progressBarToolStripMenuItem_Click);
+            this.panelTabControlToolStripMenuItem.Name = "panelTabControlToolStripMenuItem";
+            this.panelTabControlToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
+            this.panelTabControlToolStripMenuItem.Text = "Panel";
+            this.panelTabControlToolStripMenuItem.Click += new System.EventHandler(this.panelTabControlToolStripMenuItem_Click);
+            // 
+            // tabControlToolStripMenuItem
+            // 
+            this.tabControlToolStripMenuItem.Name = "tabControlToolStripMenuItem";
+            this.tabControlToolStripMenuItem.Size = new System.Drawing.Size(78, 20);
+            this.tabControlToolStripMenuItem.Text = "TabControl";
+            this.tabControlToolStripMenuItem.Click += new System.EventHandler(this.tabControlToolStripMenuItem_Click);
             // 
             // MDIParentPrincipal
             // 
@@ -141,6 +159,8 @@
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem form1ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem progressBarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem panelTabControlToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tabControlToolStripMenuItem;
     }
 }
 
