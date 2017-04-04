@@ -1,56 +1,51 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <style>
-      table tr td{
-        border: 1px solid #ccc;
-        padding: 5px;
+<%- include('../shared/header') %>
+<div class="container">
+  <style>
+    table tr td{
+      border: 1px solid #ccc;
+      padding: 5px;
+    }
+    table tr:nth-child(1){
+      background-color: #ccc;
+    }
+  </style>
+  <script type="text/javascript">
+    var excluir = function(id){
+      if(confirm("Deseja realmente excluir ?")){
+        window.location = '/usuarios/' + id + '/excluir'
       }
-      table tr:nth-child(1){
-        background-color: #ccc;
-      }
-    </style>
-    <script type="text/javascript">
-      var excluir = function(id){
-        if(confirm("Deseja realmente excluir ?")){
-          window.location = '/usuarios/' + id + '/excluir'
-        }
-      }
-    </script>
-  </head>
-  <body>
-    <%- include('../shared/home') %>
+    }
+  </script>
+  <%- include('../shared/home') %>
 
-    <h1>Usuarios</h1>
-    <p>Dados do usuário na API</p>
+  <h1>Usuarios</h1>
+  <p>Dados do usuário na API</p>
 
-    <input type="button" id="novo-registro" onclick="window.location = '/usuarios/novo'" value="Novo"/>
+  <input type="button" id="novo-registro" onclick="window.location = '/usuarios/novo'" value="Novo"/>
 
-    <table>
-      <tr>
-          <td>ID</td>
-          <td>Nome</td>
-          <td>Login</td>
-          <td>Senha</td>
-          <td>Email</td>
-          <td>Alterar</td>
-          <td>Excluir</td>
-      </tr>
-      <% for(var i=0; i<usuarios.length; i++){ 
-        var usuario = usuarios[i];
-        %>
-      <tr>
-          <td><%= usuario.id %></td>
-          <td><%= usuario.nome %></td>
-          <td><%= usuario.login %></td>
-          <td><%= usuario.senha %></td>
-          <td><%= usuario.email %></td>
-          <td><input type="button" value="Alterar" onclick="window.location = '/usuarios/<%= usuario.id %>/editar'" /></td>
-          <td><input type="button" onclick="excluir(<%= usuario.id %>)" value="Excluir"/></td>
-      </tr>
-      <% } %>
-    </table>
-
-  </body>
-</html>
+  <table>
+    <tr>
+        <td>ID</td>
+        <td>Nome</td>
+        <td>Login</td>
+        <td>Senha</td>
+        <td>Email</td>
+        <td>Alterar</td>
+        <td>Excluir</td>
+    </tr>
+    <% for(var i=0; i<usuarios.length; i++){ 
+      var usuario = usuarios[i];
+      %>
+    <tr>
+        <td><%= usuario.id %></td>
+        <td><%= usuario.nome %></td>
+        <td><%= usuario.login %></td>
+        <td><%= usuario.senha %></td>
+        <td><%= usuario.email %></td>
+        <td><input type="button" value="Alterar" onclick="window.location = '/usuarios/<%= usuario.id %>/editar'" /></td>
+        <td><input type="button" onclick="excluir(<%= usuario.id %>)" value="Excluir"/></td>
+    </tr>
+    <% } %>
+  </table>
+</div>
+<%- include('../shared/footer') %>

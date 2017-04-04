@@ -1,17 +1,12 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Alteracao do pagina: <%= pagina.nome %></title>
-  </head>
-  <body>
-    <h1>Paginas</h1>
-    <input type="button" value="Voltar" onclick="window.location = '/paginas'" >
-    <form action="/paginas/<%= pagina.id %>/atualizar" method="post">
-      <fieldset>
-        <legend>Alteração do pagina: <%= pagina.nome %></legend>
-        <%- include('partials/form', {pagina: pagina}) %>
-        <input type="submit" value="Atualizar">
-      </fieldset>
-    </form>
-  </body>
-</html>
+<%- include('../shared/header') %>
+<div class="container">
+  <input type="button" value="Voltar" onclick="window.location = '/paginas'" >
+  <form action="/paginas/<%= pagina.id %>/atualizar" method="post">
+    <fieldset>
+      <legend>Alteração do pagina: <%= pagina.nome %></legend>
+      <%- include('partials/form', {pagina: pagina}) %>
+      <input type="submit" value="Atualizar">
+    </fieldset>
+  </form>
+</div>
+<%- include('../shared/footer') %>
