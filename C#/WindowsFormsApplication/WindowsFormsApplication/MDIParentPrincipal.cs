@@ -101,5 +101,10 @@ namespace WindowsFormsApplication
         {
             new FrmTabControl().Show();
         }
+
+        private void treeViewToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new FrmTree().Show();
+        }
     }
 }

@@ -124,18 +124,18 @@
   <data name="newToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         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
-        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
+        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
 </value>
   </data>
   <data name="openToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

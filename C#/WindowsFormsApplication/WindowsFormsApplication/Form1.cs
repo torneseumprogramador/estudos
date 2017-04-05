@@ -46,6 +46,7 @@ namespace WindowsFormsApplication
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            
             dadosDaEmpresa1.Busca = "jquery";
             var contextMenu = new ContextMenu();
             contextMenu.MenuItems.Add(new MenuItem("Abrir Ler Arquivo", abrirLerArquivo_Click));
