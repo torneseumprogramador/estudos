@@ -1,21 +1,6 @@
 <%- include('../shared/header') %>
 <div class="container">
-  <style>
-    table tr td{
-      border: 1px solid #ccc;
-      padding: 5px;
-    }
-    table tr:nth-child(1){
-      background-color: #ccc;
-    }
-  </style>
-  <script type="text/javascript">
-    var excluir = function(id){
-      if(confirm("Deseja realmente excluir ?")){
-        window.location = '/paginas/' + id + '/excluir'
-      }
-    }
-  </script>
+  <script src="/javascripts/validacoes.js" type="text/javascript"></script>
   <%- include('../shared/home') %>
 
   <h1>Paginas</h1>
@@ -28,8 +13,8 @@
         <td>ID</td>
         <td>Nome</td>
         <td>Preview</td>
-        <td>Alterar</td>
-        <td>Excluir</td>
+        <td class="alterar">Alterar</td>
+        <td class="excluir">Excluir</td>
     </tr>
     <% for(var i=0; i<paginas.length; i++){ 
       var pagina = paginas[i];
@@ -39,7 +24,7 @@
         <td><%= pagina.nome %></td>
         <td><a href="/paginas/<%= pagina.id %>/preview" target="_blank">Preview</a></td>
         <td><input type="button" value="Alterar" onclick="window.location = '/paginas/<%= pagina.id %>/editar'" /></td>
-        <td><input type="button" onclick="excluir(<%= pagina.id %>)" value="Excluir"/></td>
+        <td><input type="button" onclick="excluir(<%= pagina.id %>, '/paginas/<%= pagina.id %>/excluir')" value="Excluir"/></td>
     </tr>
     <% } %>
   </table>

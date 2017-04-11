@@ -1,21 +1,6 @@
 <%- include('../shared/header') %>
 <div class="container">
-  <style>
-    table tr td{
-      border: 1px solid #ccc;
-      padding: 5px;
-    }
-    table tr:nth-child(1){
-      background-color: #ccc;
-    }
-  </style>
-  <script type="text/javascript">
-    var excluir = function(id){
-      if(confirm("Deseja realmente excluir ?")){
-        window.location = '/usuarios/' + id + '/excluir'
-      }
-    }
-  </script>
+  <script src="/javascripts/validacoes.js" type="text/javascript"></script>
   <%- include('../shared/home') %>
 
   <h1>Usuarios</h1>
@@ -30,8 +15,8 @@
         <td>Login</td>
         <td>Senha</td>
         <td>Email</td>
-        <td>Alterar</td>
-        <td>Excluir</td>
+        <td class="alterar">Alterar</td>
+        <td class="excluir">Excluir</td>
     </tr>
     <% for(var i=0; i<usuarios.length; i++){ 
       var usuario = usuarios[i];
@@ -43,7 +28,7 @@
         <td><%= usuario.senha %></td>
         <td><%= usuario.email %></td>
         <td><input type="button" value="Alterar" onclick="window.location = '/usuarios/<%= usuario.id %>/editar'" /></td>
-        <td><input type="button" onclick="excluir(<%= usuario.id %>)" value="Excluir"/></td>
+        <td><input type="button" onclick="excluir(<%= usuario.id %>, '/usuarios/<%= usuario.id %>/excluir')" value="Excluir"/></td>
     </tr>
     <% } %>
   </table>
