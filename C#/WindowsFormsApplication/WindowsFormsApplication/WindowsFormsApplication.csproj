@@ -122,6 +122,12 @@
     <Compile Include="FrmTree.Designer.cs">
       <DependentUpon>FrmTree.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmWebBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWebBrowser.Designer.cs">
+      <DependentUpon>FrmWebBrowser.cs</DependentUpon>
+    </Compile>
     <Compile Include="MDIParentPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -166,6 +172,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmTree.resx">
       <DependentUpon>FrmTree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWebBrowser.resx">
+      <DependentUpon>FrmWebBrowser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MDIParentPrincipal.resx">
       <DependentUpon>MDIParentPrincipal.cs</DependentUpon>
