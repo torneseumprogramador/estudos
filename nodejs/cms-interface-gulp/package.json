@@ -1,0 +1,36 @@
+{
+  "name": "cms-interface",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "jshint": "./node_modules/jshint/bin/jshint app/*/*.js spec/app/*/*.js",
+    "behavior-test": "./node_modules/.bin/cucumber.js",
+    "unit-test": "./node_modules/jasmine/bin/jasmine.js",
+    "test": "./node_modules/jshint/bin/jshint app/*/*.js spec/app/*/*.js && ./node_modules/jasmine/bin/jasmine.js && ./node_modules/.bin/cucumber.js"
+  },
+  "dependencies": {
+    "body-parser": "~1.13.2",
+    "cookie-parser": "~1.3.5",
+    "debug": "~2.2.0",
+    "express": "~4.13.1",
+    "ejs": "*",
+    "morgan": "~1.6.1",
+    "serve-favicon": "~2.3.0",
+    "request": "*"
+  },
+  "devDependencies": {
+    "jshint": "*",
+    "jasmine": "*",
+    "chromedriver": "^2.25.1",
+    "cucumber": "^2.0.0-rc.6",
+    "selenium-webdriver": "^3.0.1",
+    "gulp": "*",
+    "gulp-minify": "*",
+    "gulp-uglify": "*",
+    "gulp-rename": "*",
+    "gulp-concat": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-cssmin": "*"
+  }
+}

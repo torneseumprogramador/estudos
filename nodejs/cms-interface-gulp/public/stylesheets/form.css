@@ -1,0 +1,21 @@
+form label{
+	width: 60px;
+    display: inline-block;
+}
+
+form fieldset{
+	margin-top: 20px;
+}
+
+form .campos-form{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+form input[type=text]{
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	width: 80%;
+	height: 30px;
+	margin-bottom: 4px;
+}

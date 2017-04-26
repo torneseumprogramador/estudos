@@ -1,0 +1,35 @@
+<%- include('../shared/header') %>
+<div class="container">
+  <%- include('../shared/home') %>
+
+  <h1>Usuarios</h1>
+  <p>Dados do usuário na API</p>
+
+  <input type="button" id="novo-registro" onclick="window.location = '/usuarios/novo'" value="Novo"/>
+
+  <table>
+    <tr>
+        <td>ID</td>
+        <td>Nome</td>
+        <td>Login</td>
+        <td>Senha</td>
+        <td>Email</td>
+        <td class="alterar">Alterar</td>
+        <td class="excluir">Excluir</td>
+    </tr>
+    <% for(var i=0; i<usuarios.length; i++){ 
+      var usuario = usuarios[i];
+      %>
+    <tr>
+        <td><%= usuario.id %></td>
+        <td><%= usuario.nome %></td>
+        <td><%= usuario.login %></td>
+        <td><%= usuario.senha %></td>
+        <td><%= usuario.email %></td>
+        <td><input type="button" value="Alterar" onclick="window.location = '/usuarios/<%= usuario.id %>/editar'" /></td>
+        <td><input type="button" onclick="excluir(<%= usuario.id %>, '/usuarios/<%= usuario.id %>/excluir')" value="Excluir"/></td>
+    </tr>
+    <% } %>
+  </table>
+</div>
+<%- include('../shared/footer') %>

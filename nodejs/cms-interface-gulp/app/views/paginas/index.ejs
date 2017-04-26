@@ -1,0 +1,31 @@
+<%- include('../shared/header') %>
+<div class="container">
+  <%- include('../shared/home') %>
+
+  <h1>Paginas</h1>
+  <p>Dados do pagina na API</p>
+
+  <input type="button" id="novo-registro" onclick="window.location = '/paginas/novo'" value="Novo"/>
+
+  <table>
+    <tr>
+        <td>ID</td>
+        <td>Nome</td>
+        <td>Preview</td>
+        <td class="alterar">Alterar</td>
+        <td class="excluir">Excluir</td>
+    </tr>
+    <% for(var i=0; i<paginas.length; i++){ 
+      var pagina = paginas[i];
+      %>
+    <tr>
+        <td><%= pagina.id %></td>
+        <td><%= pagina.nome %></td>
+        <td><a href="/paginas/<%= pagina.id %>/preview" target="_blank">Preview</a></td>
+        <td><input type="button" value="Alterar" onclick="window.location = '/paginas/<%= pagina.id %>/editar'" /></td>
+        <td><input type="button" onclick="excluir(<%= pagina.id %>, '/paginas/<%= pagina.id %>/excluir')" value="Excluir"/></td>
+    </tr>
+    <% } %>
+  </table>
+</div>
+<%- include('../shared/footer') %>

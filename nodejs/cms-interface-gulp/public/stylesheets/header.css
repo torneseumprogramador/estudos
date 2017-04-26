@@ -1,0 +1,18 @@
+body nav{
+  background-color: #283e4a;
+  height: 30px;
+  padding: 10px;
+}
+body nav ul li{
+  display: inline-block;
+}
+body nav ul li a{
+  text-decoration: none;
+  color: #283e4a;
+  display: block;
+  background-color: #fff;
+  width: 100px;
+  text-align: center;
+  height: 20px;
+  margin-right: 10px;
+}

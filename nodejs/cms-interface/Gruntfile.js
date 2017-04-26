@@ -17,5 +17,6 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.registerTask('comprimir', ['uglify', 'cssmin']);
   grunt.registerTask('default', ['uglify', 'cssmin']);
 };
