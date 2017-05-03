@@ -31,6 +31,8 @@
     "gulp-rename": "*",
     "gulp-concat": "*",
     "gulp-sourcemaps": "*",
-    "gulp-cssmin": "*"
+    "gulp-cssmin": "*",
+    "gulp-livereload": "*",
+    "nodemon": "*"
   }
 }

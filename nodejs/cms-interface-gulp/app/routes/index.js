@@ -8,6 +8,7 @@ var router = express.Router();
 router.get('/', HomeController.index);
 
 router.get('/usuarios', UsuariosController.index);
+router.get('/usuarios-teste', UsuariosController.teste);
 router.get('/usuarios/novo', UsuariosController.novo);
 router.post('/usuarios/cadastrar', UsuariosController.cadastrar);
 router.get('/usuarios/:id/editar', UsuariosController.editar);

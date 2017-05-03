@@ -9,6 +9,9 @@ var UsuariosController = {
       });
     });
   },
+  teste: function(request, response, next) {
+    response.send('olá reload -- danilo');
+  },
   editar: function(request, response, next) {
 
     new Usuario({id:request.params.id}).buscar(function(usuario){

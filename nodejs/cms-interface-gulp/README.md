@@ -1,5 +1,5 @@
 Como iniciar aplicação
-npm start
+npm start ou gulp
 
 Como validar o código
 npm run-script jshint
@@ -13,6 +13,5 @@ npm run-script behavior-test
 Rodar todos os menus testes
 npm run-script test
 
-Build staticos
-gulp comprimir
-
+Build staticos restart de browser e reiniciar aplicação
+gulp 
