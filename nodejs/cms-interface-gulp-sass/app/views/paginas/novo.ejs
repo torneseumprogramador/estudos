@@ -1,0 +1,14 @@
+<%- include('../shared/header') %>
+<div class="container">
+  <h1>Paginas</h1>
+  <input type="button" value="Voltar" onclick="window.location = '/paginas'" >
+  <form action="/paginas/cadastrar" method="post">
+    <fieldset>
+      <legend>Cadastro:</legend>
+      <div><%= erro %></div>
+      <%- include('partials/form') %>
+      <input type="submit" value="Salvar">
+    </fieldset>
+  </form>
+</div>
+<%- include('../shared/footer') %>

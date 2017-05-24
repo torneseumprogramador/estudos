@@ -1,0 +1,27 @@
+<%
+if(this.pagina === undefined){
+  this.pagina = {
+    id: "",
+    conteudo: ""
+  }
+}
+%>
+<script type="text/javascript" src="/javascripts/tinymce/tinymce.min.js"></script>
+<script type="text/javascript">
+	tinymce.init({ 
+		selector:'textarea',
+		plugins: [
+	      'advlist autolink link image lists charmap print preview hr anchor pagebreak spellchecker',
+	      'searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking',
+	      'save table contextmenu directionality emoticons template paste textcolor'
+	    ]
+	});
+</script>
+
+<div class="campos-form">
+	<div><label for="nome">Nome:</label><input type="text" value="<%= pagina.nome %>" name="nome" id="nome"></div>
+	<div>
+		<label for="conteudo">Conteudo:</label>
+		<textarea style="width:500px;height:200px" name="conteudo" id="conteudo"><%= pagina.conteudo %></textarea>
+	</div>
+</div>

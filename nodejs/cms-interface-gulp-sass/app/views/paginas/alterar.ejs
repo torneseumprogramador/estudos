@@ -1,0 +1,12 @@
+<%- include('../shared/header') %>
+<div class="container">
+  <input type="button" value="Voltar" onclick="window.location = '/paginas'" >
+  <form action="/paginas/<%= pagina.id %>/atualizar" method="post">
+    <fieldset>
+      <legend>Alteração do pagina: <%= pagina.nome %></legend>
+      <%- include('partials/form', {pagina: pagina}) %>
+      <input type="submit" value="Atualizar">
+    </fieldset>
+  </form>
+</div>
+<%- include('../shared/footer') %>

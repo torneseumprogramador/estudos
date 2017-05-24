@@ -1,0 +1,16 @@
+<%
+if(this.usuario === undefined){
+  this.usuario = {
+    id: "",
+    login: "",
+    senha: "",
+    email: ""
+  }
+}
+%>
+<div class="campos-form">
+	<div><label for="nome">Nome:</label><input type="text" value="<%= usuario.nome %>" name="nome" id="nome"></div>
+	<div><label for="login">Login:</label><input type="text" value="<%= usuario.login %>" name="login" id="login"></div>
+	<div><label for="senha">Senha:</label><input type="text" value="<%= usuario.senha %>" name="senha" id="senha"></div>
+	<div><label for="email">Email:</label><input type="text" value="<%= usuario.email %>" name="email" id="email"></div>
+</div>
