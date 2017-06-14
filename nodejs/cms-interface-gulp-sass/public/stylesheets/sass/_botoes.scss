@@ -1,11 +1,93 @@
 input[type=button], input[type=submit], button{
-	border: 1px solid #000;
-    border-radius: 4px;
-    width: 100px;
-    background-color: #dcdcdc;
-    color: black;
+  border: 1px solid #000;
+  border-radius: 4px;
+  width: 100px;
+  background-color: #dcdcdc;
+  color: black;
 }
 
 input[type=submit]{
-    background-color: #7cc3f5;
+  background-color: #7cc3f5;
+}
+
+/* ========== media queries =========== */
+@media (max-width: 380px) {
+  .teste{
+    color: blue;
+  }
+}
+
+@media (min-width: 380px) {
+  .teste{
+    color: red;
+  }
+}
+
+/* ========== mixins =========== */
+$estrutura_div_span_font: bold;
+@mixin estrutura_div_span{
+  div{
+    span{
+      font-weight: $estrutura_div_span_font;
+    }
+  }
+}
+
+header{
+  @include estrutura_div_span;
+}
+
+$estrutura_div_span_font: none;
+footer{
+  @include estrutura_div_span;
+}
+
+
+/* ========== variable =========== */
+$color:#fff;
+
+/* ========== if =========== */
+.if_com_cor{
+  @if $color == #fff{
+    color: white;
+  }
+  @else{
+    color: $color;
+  }
+}
+/* ========== for =========== */
+
+@for $i from 1 through 3 {
+  .botao-#{$i} { 
+    width: 10px + $i; 
+    font-size: 10px + $i;
+    @include estrutura_div_span;
+  }
+}
+
+/* ========== while =========== */
+
+$i: 1;
+$width: 60px;
+
+@while $i <= 5 {
+  .botao_while-#{$i} { 
+    width: $width; 
+  }
+  $width: $width + 90px;
+  $i: $i + 1;
+}
+
+/* ========== each =========== */
+
+$tamanhos: (
+  cinco_pixels: 5px, 
+  tres_pixels: 3px, 
+  dois_pixels: 2px, 
+);
+
+@each $tipo, $tamanho in $tamanhos {
+  .#{$tipo}{
+     width: $tamanho;
+  }
 }

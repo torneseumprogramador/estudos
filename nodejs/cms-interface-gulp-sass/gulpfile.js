@@ -21,7 +21,7 @@ gulp.task('css-build', function () {
     .pipe(sass().on('error', sass.logError))
     .pipe(gp_sourcemaps.init())
     .pipe(gp_rename('aplicacao.min.css'))
-    .pipe(cssmin())
+    // .pipe(cssmin())
     .pipe(gp_sourcemaps.write('./'))
     .pipe(gulp.dest('public/stylesheets/'))
 });
