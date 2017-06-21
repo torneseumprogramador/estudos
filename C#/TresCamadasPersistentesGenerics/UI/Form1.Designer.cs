@@ -57,11 +57,18 @@
             this.btnBuscar = new System.Windows.Forms.Button();
             this.cboComboBusca = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.dgUsuarios = new System.Windows.Forms.DataGridView();
+            this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Telefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CPF = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.btnExcluir = new System.Windows.Forms.Button();
             this.tabs.SuspendLayout();
             this.Usuario.SuspendLayout();
             this.Endereco.SuspendLayout();
             this.Resultado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridEnderecos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgUsuarios)).BeginInit();
             this.SuspendLayout();
             // 
             // tabs
@@ -72,11 +79,14 @@
             this.tabs.Location = new System.Drawing.Point(12, 12);
             this.tabs.Name = "tabs";
             this.tabs.SelectedIndex = 0;
-            this.tabs.Size = new System.Drawing.Size(587, 494);
+            this.tabs.Size = new System.Drawing.Size(587, 695);
             this.tabs.TabIndex = 7;
             // 
             // Usuario
             // 
+            this.Usuario.Controls.Add(this.btnExcluir);
+            this.Usuario.Controls.Add(this.txtId);
+            this.Usuario.Controls.Add(this.dgUsuarios);
             this.Usuario.Controls.Add(this.btnGravar);
             this.Usuario.Controls.Add(this.txtCPF);
             this.Usuario.Controls.Add(this.txtTelefone);
@@ -87,7 +97,7 @@
             this.Usuario.Location = new System.Drawing.Point(4, 22);
             this.Usuario.Name = "Usuario";
             this.Usuario.Padding = new System.Windows.Forms.Padding(3);
-            this.Usuario.Size = new System.Drawing.Size(579, 468);
+            this.Usuario.Size = new System.Drawing.Size(579, 669);
             this.Usuario.TabIndex = 0;
             this.Usuario.Text = "Usuario";
             this.Usuario.UseVisualStyleBackColor = true;
@@ -367,11 +377,60 @@
             this.label8.TabIndex = 23;
             this.label8.Text = "Usuario:";
             // 
+            // dgUsuarios
+            // 
+            this.dgUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgUsuarios.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Nome,
+            this.Telefone,
+            this.CPF});
+            this.dgUsuarios.Location = new System.Drawing.Point(15, 300);
+            this.dgUsuarios.Name = "dgUsuarios";
+            this.dgUsuarios.Size = new System.Drawing.Size(558, 314);
+            this.dgUsuarios.TabIndex = 13;
+            this.dgUsuarios.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgUsuarios_CellDoubleClick);
+            // 
+            // Nome
+            // 
+            this.Nome.DataPropertyName = "Nome";
+            this.Nome.HeaderText = "Nome";
+            this.Nome.Name = "Nome";
+            // 
+            // Telefone
+            // 
+            this.Telefone.DataPropertyName = "Telefone";
+            this.Telefone.HeaderText = "Telefone";
+            this.Telefone.Name = "Telefone";
+            // 
+            // CPF
+            // 
+            this.CPF.DataPropertyName = "CPF";
+            this.CPF.HeaderText = "CPF do Usuario";
+            this.CPF.Name = "CPF";
+            // 
+            // txtId
+            // 
+            this.txtId.Location = new System.Drawing.Point(445, 244);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(44, 20);
+            this.txtId.TabIndex = 14;
+            this.txtId.Visible = false;
+            // 
+            // btnExcluir
+            // 
+            this.btnExcluir.Location = new System.Drawing.Point(465, 620);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(86, 43);
+            this.btnExcluir.TabIndex = 15;
+            this.btnExcluir.Text = "Excluir";
+            this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(611, 518);
+            this.ClientSize = new System.Drawing.Size(604, 719);
             this.Controls.Add(this.tabs);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -384,6 +443,7 @@
             this.Resultado.ResumeLayout(false);
             this.Resultado.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridEnderecos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgUsuarios)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -419,6 +479,12 @@
         private System.Windows.Forms.Label lblTelefone;
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.DataGridView gridEnderecos;
+        private System.Windows.Forms.DataGridView dgUsuarios;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Telefone;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CPF;
+        private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.Button btnExcluir;
     }
 }
 

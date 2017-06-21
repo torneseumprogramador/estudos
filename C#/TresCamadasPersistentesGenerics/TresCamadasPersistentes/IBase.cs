@@ -8,7 +8,7 @@ namespace Database
 {
     public interface IBase
     {
-        string Key { get; }
+        int Key { get; }
         void Salvar();
         List<IBase> Todos();
         List<IBase> Busca();

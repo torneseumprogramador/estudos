@@ -10,13 +10,16 @@ namespace Business
 {
     public class Usuario : Base
     {
+        [OpcoesBase(UsarNoBancoDeDados = true, ChavePrimaria = true, UsarParaBuscar = true)]
+        public int Id { get; set; }
+
         [OpcoesBase(UsarNoBancoDeDados = true)]
         public string Nome { get; set; }
 
         [OpcoesBase(UsarNoBancoDeDados = true)]
         public string Telefone { get; set; }
 
-        [OpcoesBase(UsarNoBancoDeDados = true, ChavePrimaria = true, UsarParaBuscar = true)]
+        [OpcoesBase(UsarNoBancoDeDados = true, UsarParaBuscar = true)]
         public string CPF { get; set; }
 
         public List<Endereco> Enderecos
@@ -35,6 +38,17 @@ namespace Business
         public override string ToString()
         {
             return this.Nome;
+        }
+
+        public new List<Usuario> Todos()
+        {
+            var usuarios = new List<Usuario>();
+            foreach(var ibase in base.Todos())
+            {
+                usuarios.Add((Usuario)ibase);
+            }
+
+            return usuarios;
         }
     }
 }

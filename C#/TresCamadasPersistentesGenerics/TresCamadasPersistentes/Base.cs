@@ -14,7 +14,7 @@ namespace Database
     {
         private string connectionString = ConfigurationManager.AppSettings["SqlConnection"];
 
-        public string Key
+        public int Key
         {
             get
             {
@@ -23,10 +23,10 @@ namespace Database
                     OpcoesBase pOpcoesBase = (OpcoesBase)pi.GetCustomAttribute(typeof(OpcoesBase));
                     if (pOpcoesBase != null && pOpcoesBase.ChavePrimaria)
                     {
-                        return Convert.ToString(pi.GetValue(this));
+                        return Convert.ToInt32(pi.GetValue(this));
                     }
                 }
-                return null;
+                return 0;
             }
         }
         public virtual void Salvar()
@@ -42,12 +42,46 @@ namespace Database
                     OpcoesBase pOpcoesBase = (OpcoesBase)pi.GetCustomAttribute(typeof(OpcoesBase));
                     if (pOpcoesBase != null && pOpcoesBase.UsarNoBancoDeDados && !pOpcoesBase.AutoIncrementar)
                     {
-                        campos.Add(pi.Name);
-                        valores.Add("'" + pi.GetValue(this) + "'");
+                        if(this.Key == 0)
+                        {
+                            if (!pOpcoesBase.ChavePrimaria)
+                            {
+                                campos.Add(pi.Name);
+                                valores.Add("'" + pi.GetValue(this) + "'");
+                            }
+                        }
+                        else
+                        {
+                            if (!pOpcoesBase.ChavePrimaria)
+                            {
+                                valores.Add(" " + pi.Name + " = '" + pi.GetValue(this) + "'");
+                            }
+                        }
                     }
                 }
 
-                string queryString = "insert into " + this.GetType().Name + "s (" + string.Join(", ", campos.ToArray()) + ")values(" + string.Join(", ", valores.ToArray()) + ");";
+                string queryString = string.Empty;
+
+                if (this.Key == 0)
+                {
+                    queryString = "insert into " + this.GetType().Name + "s (" + string.Join(", ", campos.ToArray()) + ")values(" + string.Join(", ", valores.ToArray()) + ");";
+                }
+                else
+                {
+                    queryString = "update " + this.GetType().Name + "s  set " + string.Join(", ", valores.ToArray()) + " where id = " + this.Key + ";";
+                }
+                SqlCommand command = new SqlCommand(queryString, connection);
+                command.Connection.Open();
+                command.ExecuteNonQuery();
+            }
+        }
+
+        public virtual void Excluir()
+        {
+            using (SqlConnection connection = new SqlConnection(
+              connectionString))
+            {
+                string queryString = "delete from " + this.GetType().Name + "s where id = " + this.Key + "; ";
                 SqlCommand command = new SqlCommand(queryString, connection);
                 command.Connection.Open();
                 command.ExecuteNonQuery();
@@ -131,7 +165,7 @@ namespace Database
                 OpcoesBase pOpcoesBase = (OpcoesBase)pi.GetCustomAttribute(typeof(OpcoesBase));
                 if (pOpcoesBase != null && pOpcoesBase.UsarNoBancoDeDados)
                 {
-                    pi.SetValue(obj, reader[pi.Name].ToString());
+                    pi.SetValue(obj, reader[pi.Name]);
                 }
             }
         }
