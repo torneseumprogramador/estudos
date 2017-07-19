@@ -10,6 +10,8 @@ namespace Database
     {
         int Key { get; }
         void Salvar();
+        void Excluir();
+        void CriarTabela();
         List<IBase> Todos();
         List<IBase> Busca();
     }
