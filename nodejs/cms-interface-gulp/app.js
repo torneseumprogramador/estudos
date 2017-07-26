@@ -13,6 +13,18 @@ var app = express();
 app.set('views', path.join(__dirname, 'app/views'));
 app.set('view engine', 'ejs');
 
+app.use(function(req, res, next) {
+  // 60s x 60m x 24h 
+  // 3600 cache de 1 hora
+  // 600 cache de 10 minutos
+  res.setHeader('Cache-Control', 'max-age=60, public'); //Cache funciona para todas as instancias CDN e Browser
+  // res.setHeader('Cache-Control', 'max-age=30, private'); //Cache funciona somente para instancias CDN
+  // res.setHeader('Cache-Control', 'max-age=30, no-cache'); //Não coloca cache no navegador, porem pode trazer da CDN, opção default
+  // res.setHeader('Cache-Control', 'max-age=30, no-store'); //Não armazena cache no computador ou CDN
+  res.header('Vary', 'X-Device');
+  next();
+});
+
 // uncomment after placing your favicon in /public
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
