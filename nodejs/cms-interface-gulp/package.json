@@ -33,6 +33,7 @@
     "gulp-sourcemaps": "*",
     "gulp-cssmin": "*",
     "gulp-livereload": "*",
-    "nodemon": "*"
+    "nodemon": "*",
+    "node-cache": "*"
   }
 }

@@ -1,4 +1,6 @@
 var request = require("request");
+var NodeCache = require( "node-cache" );
+var myCache = new NodeCache();
 
 var Base = function(){};
 Base.prototype.baseHost = "http://localhost:3000";
@@ -93,26 +95,53 @@ Base.prototype.buscar = function(callback){
   var id = this.id;
   var restName = this.restName;
   var baseHost = this.baseHost;
-  request.head(baseHost + "/" + restName + ".json", function(){
-    token = this.response.headers.auth_token;
-    request.get({
-      url: baseHost + "/" + restName + "/" + id + ".json", 
-      headers: {'auth_token': token}
-    }, 
-    function(error, response, body) {
-      if(response.statusCode == 200){
-        var usuario = JSON.parse(response.body);
-        callback(usuario);
+  var key = "cache-" + this.restName + "-" + id;
+
+  // myCache.flushAll();
+  // myCache.del(key);
+
+  myCache.get(key, function( err, value ){
+    if( !err ){
+      if(value != undefined){
+        callback(value);
+        return;
       }
-      else{
-        var json = JSON.parse(response.body);
-        callback({
-          erro: true,
-          mensagem: json.erro
-        });
-      }
-    });
+    }
+
+    request.head(baseHost + "/" + restName + ".json", function(){
+      token = this.response.headers.auth_token;
+      request.get({
+        url: baseHost + "/" + restName + "/" + id + ".json", 
+        headers: {'auth_token': token}
+      }, 
+      function(error, response, body) {
+        if(response.statusCode == 200){
+          var value = JSON.parse(response.body);
+          var segundos = 10;
+          var minutos = segundos * 60
+          myCache.set( key, value, minutos, function( err, success ){
+            if( !err && success ){
+              callback(value);
+            }
+            else{
+              callback({
+                erro: true,
+                mensagem: "erro ao adicionar no cache"
+              });
+            }
+          });
+        }
+        else{
+          var json = JSON.parse(response.body);
+          callback({
+            erro: true,
+            mensagem: json.erro
+          });
+        }
+      });
+    }); 
   });
+
 };
 
 Base.prototype.todos = function(callback){
