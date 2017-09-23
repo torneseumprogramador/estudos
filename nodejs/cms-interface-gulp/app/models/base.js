@@ -1,6 +1,33 @@
 var request = require("request");
 var NodeCache = require( "node-cache" );
+
 var myCache = new NodeCache();
+
+var redis = require("redis");
+var clientRedis = redis.createClient();
+
+clientRedis.on("error", function (err) {
+    console.log("Erro ao conectar no redis " + err);
+});
+
+
+// var segundos = 30;
+// clientRedis.set('teste', 'value!', 'EX', segundos);
+
+// clientRedis.get("teste", function(err, reply) {
+//     console.log(reply);
+// });
+
+// clientRedis.set('teste', 'value!', 'EX', segundos, function( err, success ){
+//   if( !err && success ){
+//     console.log('value!');
+//   }
+//   else{
+//     console.log("erro ao adicionar no cache");
+//   }
+// });
+
+
 
 var Base = function(){};
 Base.prototype.baseHost = "http://localhost:3000";
@@ -100,9 +127,11 @@ Base.prototype.buscar = function(callback){
   // myCache.flushAll();
   // myCache.del(key);
 
-  myCache.get(key, function( err, value ){
+  clientRedis.get(key, function(err, value) {
+  // myCache.get(key, function( err, value ){
     if( !err ){
       if(value != undefined){
+        value = JSON.parse(value)
         callback(value);
         return;
       }
@@ -116,11 +145,12 @@ Base.prototype.buscar = function(callback){
       }, 
       function(error, response, body) {
         if(response.statusCode == 200){
-          var value = JSON.parse(response.body);
-          var segundos = 10;
-          var minutos = segundos * 60
-          myCache.set( key, value, minutos, function( err, success ){
+          var value = response.body;
+          var segundos = 60;
+          clientRedis.set(key, value, 'EX', segundos, function( err, success ){
+          // myCache.set( key, value, segundos, function( err, success ){
             if( !err && success ){
+              var value = JSON.parse(response.body);
               callback(value);
             }
             else{

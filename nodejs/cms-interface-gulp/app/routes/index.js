@@ -6,6 +6,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', HomeController.index);
+router.post('/', HomeController.index);
 
 router.get('/usuarios', UsuariosController.index);
 router.get('/usuarios-teste', UsuariosController.teste);

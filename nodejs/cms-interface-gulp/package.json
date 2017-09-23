@@ -17,7 +17,9 @@
     "ejs": "*",
     "morgan": "~1.6.1",
     "serve-favicon": "~2.3.0",
-    "request": "*"
+    "request": "*",
+    "node-cache": "*",
+    "redis": "*"
   },
   "devDependencies": {
     "jshint": "*",
@@ -33,7 +35,6 @@
     "gulp-sourcemaps": "*",
     "gulp-cssmin": "*",
     "gulp-livereload": "*",
-    "nodemon": "*",
-    "node-cache": "*"
+    "nodemon": "*"
   }
 }
