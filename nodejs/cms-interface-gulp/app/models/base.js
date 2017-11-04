@@ -146,7 +146,7 @@ Base.prototype.buscar = function(callback){
       function(error, response, body) {
         if(response.statusCode == 200){
           var value = response.body;
-          var segundos = 60;
+          var segundos = 1;
           clientRedis.set(key, value, 'EX', segundos, function( err, success ){
           // myCache.set( key, value, segundos, function( err, success ){
             if( !err && success ){
